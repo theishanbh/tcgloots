@@ -2,6 +2,8 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
+
+// comments!!
 const navigation = [
   { name: 'PRODUCT TRACKER', href: '#', current: true },
   { name: 'LIVE DEALS', href: '#', current: false },
