@@ -1,14 +1,10 @@
 const WelcomeTCGLoots = () => {
   return (
-    <div className=" bg-slate-500">
-        <div className="max-w-7xl mx-auto ">
-            <div className="py-4">
-                <h1 className=" text-3xl underline-offset-4 hover:text-regal-blue underline">
-                    Welcome to TCGLoots
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex necessitatibus nam voluptates quis at sit possimus sequi inventore numquam? Dolore sequi labore nulla? Odio sed, voluptatem, deserunt id est neque perferendis ea voluptatum quisquam quae mollitia!
-                </p>
+    <div className=" bg-gradient-to-r from-colors-grey-400 to-colors-grey-500">
+        <div className="">
+            <div className=" bg-colors-white w-3/5 mx-auto h-4/5">
+                <h1 className=" font-jost font-semibold text-3xl underline underline-offset-8 decoration-solid decoration-colors-yellow-primary">Welcome to TCGLOOTS!</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente asperiores sed quod qui recusandae, deserunt quam veritatis at beatae vitae repellat officia officiis, porro quaerat est obcaecati alias temporibus nihil possimus molestiae impedit facilis. Aliquid, expedita quo.</p>
             </div>
         </div>
     </div>
