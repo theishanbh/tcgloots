@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         <div className='font-jost text-base '>
           <p>All other trademarks and/or images cited herein are the property of their respective owners.</p>
-          <p>Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon.com or other retailer's at the time of purchase will apply to the purchase of this product. TCGLoots.com is a participant in the Amazon.com Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</p>
+          <p>Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon.com or other retailer&apos;s at the time of purchase will apply to the purchase of this product. TCGLoots.com is a participant in the Amazon.com Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</p>
           <p className='text-center pt-8'> COPYRIGHT © TCGLOOTS.COM </p>
         </div>
       </div>
