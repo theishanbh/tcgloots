@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Footer from '../components/Footer/Footer'
 import AwesomeGiveaways from '../components/Homepage/AwesomeGiveaways/AwesomeGiveaways'
+import DealsTracker from '../components/Homepage/DealsTracker/DealsTracker'
 import Slider from '../components/Homepage/HeroSection/Slider'
 import WelcomeTCGLoots from '../components/Homepage/HeroSection/WelcomeTCGLoots'
 import HowItWorks from '../components/Homepage/HowItWorks/HowItWorks'
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
         <Slider></Slider>
         <WelcomeTCGLoots></WelcomeTCGLoots>
         <ProductTracker></ProductTracker>
+        <DealsTracker></DealsTracker>
         <LiveDeals></LiveDeals>
         <InstoreTracker></InstoreTracker>
         <AwesomeGiveaways></AwesomeGiveaways>

@@ -17,7 +17,7 @@ module.exports = {
         'grey-400' : '#DDDDDD',
         'grey-500' : '#CCCCCC',
         'grey-600' : '#FCFCFC',
-        'grey-700' : '#F9F9F9',
+        'grey-700' : '#F4F4F4',
         // black
         'black-100' : "#545454",
         'black-200' : '#454545',
@@ -33,6 +33,16 @@ module.exports = {
       
       fontFamily : {
         'jost' : ['Jost', 'sans-serif']
+      },
+      flex :{
+        '2' : '2 2 0%',
+        '3' : '3 3 0%',
+        '4' : '4 4 0%',
+        '5' : '5 5 0%',
+        '6' : '6 6 0%',
+        '7' : '7 7 0%',
+        '8' : '8 8 0%',
+        '9' : '9 9 0%',
       }
     },
   },
