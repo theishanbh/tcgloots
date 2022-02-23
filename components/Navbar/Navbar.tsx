@@ -43,8 +43,8 @@ const Navbar = () => {
                                 <div className="flex-shrink-0 flex items-center">
                                 <img
                                     className="block h-8 w-auto"
-                                    src="./assets/tcglootslogo.png"
-                                    alt="Workflow"
+                                    src="./assets/logos/tcglootslogo.png"
+                                    alt="TCGLoots"
                                 />
                                 </div>
                                 <div className="hidden sm:block sm:ml-6">

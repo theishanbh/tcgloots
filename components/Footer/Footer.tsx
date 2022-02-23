@@ -11,19 +11,19 @@ const Footer = () => {
             <span>Join the community</span>
             <div className='flex items-center my-2'>
               <div className='bg-colors-white rounded h-full p-2 w-10'>
-                <img src="./assets/facebook.svg" alt="" className='mx-auto my-auto h-4/5'/>
+                <img src="./assets/logos/facebook.svg" alt="" className='mx-auto my-auto h-4/5'/>
               </div>
               <div className='bg-colors-white rounded h-full p-2 ml-1 w-10'>
-                <img src="./assets/instagram.svg" alt="" className='mx-auto my-auto h-4/5'/>
+                <img src="./assets/logos/instagram.svg" alt="" className='mx-auto my-auto h-4/5'/>
               </div>
               <div className='bg-colors-white rounded h-full p-2 ml-1 w-10'>
-                <img src="./assets/discord.svg" alt="" className='mx-auto my-auto h-4/5'/>
+                <img src="./assets/logos/discord.svg" alt="" className='mx-auto my-auto h-4/5'/>
               </div>
             </div>
           </div>
           {/* second */}
           <div className=' flex-1'>
-            <img src="./assets/lootslogo.png" alt="loots logo" className='mx-auto'/>
+            <img src="./assets/logos/lootslogo.png" alt="loots logo" className='mx-auto'/>
             
           </div>
           {/* third */}
