@@ -10,13 +10,13 @@ const Footer = () => {
           <div className='flex flex-col'>
             <span>Join the community</span>
             <div className='flex items-center my-2'>
-              <div className='bg-colors-white h-full p-2 w-10'>
+              <div className='bg-colors-white rounded h-full p-2 w-10'>
                 <img src="./assets/facebook.svg" alt="" className='mx-auto my-auto h-4/5'/>
               </div>
-              <div className='bg-colors-white h-full p-2 ml-1 w-10'>
+              <div className='bg-colors-white rounded h-full p-2 ml-1 w-10'>
                 <img src="./assets/instagram.svg" alt="" className='mx-auto my-auto h-4/5'/>
               </div>
-              <div className='bg-colors-white h-full p-2 ml-1 w-10'>
+              <div className='bg-colors-white rounded h-full p-2 ml-1 w-10'>
                 <img src="./assets/discord.svg" alt="" className='mx-auto my-auto h-4/5'/>
               </div>
             </div>
@@ -28,8 +28,8 @@ const Footer = () => {
           </div>
           {/* third */}
           <div className='flex'>
-            <a>Privacy Policy</a>
-            <a className='ml-2'>Terms</a>
+            <p className='cursor-pointer hover:underline'>Privacy Policy</p>
+            <p className='ml-2 cursor-pointer hover:underline'>Terms</p>
           </div>
         </div>
         <div className='font-jost text-base '>
