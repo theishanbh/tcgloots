@@ -1,7 +1,7 @@
 const WelcomeTCGLoots = () => {
   return (
     <div className=" bg-gradient-to-r from-colors-grey-400 to-colors-grey-500">
-        <div className="py-8 px-32">
+        <div className="py-8 max-w-7xl mx-auto">
             <div className="bg-colors-white mx-auto p-8">
                 {/* info welcome tcgLoots */}
                 <div>

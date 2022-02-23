@@ -2,7 +2,17 @@ import React from 'react'
 
 const LatestNews = () => {
   return (
-    <div>LatestNews</div>
+    <div>
+      <div>
+        {/* latest news items */}
+        <div className='flex'>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
   )
 }
 
