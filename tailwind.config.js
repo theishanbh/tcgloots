@@ -26,6 +26,8 @@ module.exports = {
         // blue
         'blue-primary' : "#55AEF0",
         'blue-100' : '#5AA3D9',
+        'blue-200' : '#1890CF',
+        'blue-discord' : '#5865F2',
         // green
         'green-primary' : "#82C732"
       },

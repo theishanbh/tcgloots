@@ -2,7 +2,7 @@ import React from 'react'
 
 const AwesomeGiveaways = () => {
   return (
-    <div className="font-jost bg-[url('/assets/homepage/awesomegiveaways/background.png')]">
+    <div className="font-jost bg-[url('/assets/homepage/awesomegiveaways/background.png')] bg-cover">
       <div className=' mx-auto max-w-7xl text-colors-white py-8'>
         <h1 className=" font-jost text-4xl font-semibold text-center py-8">Awesome Giveaways</h1>
         <div className=' max-w-7xl mx-auto my-4 p-4 bg-colors-yellow-100'>
@@ -64,6 +64,9 @@ const AwesomeGiveaways = () => {
             </div>
           </div>
           
+        </div>
+        <div>
+          <button className=" border bg-colors-white text-colors-black-100 font-jost text-xl rounded-md px-16 py-2">View All</button>
         </div>
       </div>
     </div>
