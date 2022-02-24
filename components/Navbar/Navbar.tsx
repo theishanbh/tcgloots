@@ -1,16 +1,17 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 
 
 // comments!!
 const navigation = [
-  { name: 'PRODUCT TRACKER', href: '#', current: true },
-  { name: 'LIVE DEALS', href: '#', current: false },
-  { name: 'GIVEAWAYS', href: '#', current: false },
-  { name: 'CONTACT', href: '#', current: false },
-  { name: 'FAQ', href: '#', current: false },
-  { name: 'CONTACT', href: '#', current: false },
+  { name: 'PRODUCT TRACKER', href: 'producttracker', current: true },
+  { name: 'LIVE DEALS', href: 'livedeals', current: false },
+  { name: 'GIVEAWAYS', href: 'giveaways', current: false },
+  { name: 'CONTACT', href: 'contact', current: false },
+  { name: 'FAQ', href: 'faq', current: false },
+  { name: 'NEWS', href: 'news', current: false },
 ]
 
 function classNames(...classes:any) {
@@ -51,29 +52,39 @@ const Navbar = () => {
                                     <div className="flex flex-1 justify-start space-x-4 items-center">
                                         {navigation.map((item) => (
                                             item.name == 'GIVEAWAYS' ? 
-                                            <a
-                                                key={item.name}
-                                                href={item.href}
-                                                className={classNames(
-                                                item.current ? ' text-white' : ' text-colors-grey-100 hover:bg-gray-700 hover:text-white',
-                                                'px-3 py-2 font-jost text-base rounded-md font-medium inline-flex items-center'
-                                                )}
-                                                aria-current={item.current ? 'page' : undefined}
+                                            <Link
+                                                href={`/${item.href}`}
                                             >
-                                                <img src="./assets/logos/giveaways.png" alt="" className='inline h-full' />
-                                                <span className='ml-2'> {item.name} </span>
-                                            </a> :
+                                                <a
+                                                    key={item.name}
+                                                    href={item.href}
+                                                    className={classNames(
+                                                    item.current ? ' text-white' : ' text-colors-grey-100 hover:bg-gray-700 hover:text-white',
+                                                    'px-3 py-2 font-jost text-base rounded-md font-medium inline-flex items-center uppercase'
+                                                    )}
+                                                    aria-current={item.current ? 'page' : undefined}
+                                                >
+                                                    <img src="./assets/logos/giveaways.png" alt="" className='inline h-full' />
+                                                    <span className='ml-2'> {item.name} </span>
+                                                </a> 
+                                            </Link>
+                                                
+                                            :
+                                            <Link
+                                                href={`/${item.href}`}
+                                            >
                                             <a
                                             key={item.name}
                                             href={item.href}
                                             className={classNames(
                                             item.current ? 'bg-gray-900 text-white' : 'text-colors-grey-100 hover:bg-gray-700 hover:text-white',
-                                            'px-3 py-2 rounded-md font-jost text-base font-medium'
+                                            'px-3 py-2 rounded-md font-jost text-base font-medium uppercase'
                                             )}
                                             aria-current={item.current ? 'page' : undefined}
-                                        >
-                                            {item.name}
-                                        </a> 
+                                            >
+                                                {item.name}
+                                            </a> 
+                                            </Link>
                                         ))}
                                     </div>
                                 </div>
