@@ -41,55 +41,57 @@ const Navbar = () => {
                             </div>
                             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex-shrink-0 flex items-center">
-                                <img
-                                    className="block h-8 w-auto"
-                                    src="./assets/logos/tcglootslogo.png"
-                                    alt="TCGLoots"
-                                />
+                                    <img
+                                        className="block h-8 w-auto"
+                                        src="./assets/logos/tcglootslogo.png"
+                                        alt="TCGLoots"
+                                    />
                                 </div>
-                                <div className="hidden sm:block sm:ml-6">
-                                <div className="flex space-x-4">
-                                    {navigation.map((item) => (
-                                        item.name == 'GIVEAWAYS' ? 
-                                        <a
+                                <div className="hidden sm:flex-1 sm:flex sm:ml-6">
+                                    <div className="flex flex-1 justify-start space-x-4 items-center">
+                                        {navigation.map((item) => (
+                                            item.name == 'GIVEAWAYS' ? 
+                                            <a
+                                                key={item.name}
+                                                href={item.href}
+                                                className={classNames(
+                                                item.current ? ' text-white' : ' text-colors-grey-100 hover:bg-gray-700 hover:text-white',
+                                                'px-3 py-2 font-jost text-base rounded-md font-medium inline-flex items-center'
+                                                )}
+                                                aria-current={item.current ? 'page' : undefined}
+                                            >
+                                                <img src="./assets/logos/giveaways.png" alt="" className='inline h-full' />
+                                                <span className='ml-2'> {item.name} </span>
+                                            </a> :
+                                            <a
                                             key={item.name}
                                             href={item.href}
                                             className={classNames(
-                                            item.current ? ' text-white' : ' text-colors-grey-100 hover:bg-gray-700 hover:text-white',
-                                            'px-3 py-2 rounded-md text-sm font-medium inline-flex'
+                                            item.current ? 'bg-gray-900 text-white' : 'text-colors-grey-100 hover:bg-gray-700 hover:text-white',
+                                            'px-3 py-2 rounded-md font-jost text-base font-medium'
                                             )}
                                             aria-current={item.current ? 'page' : undefined}
                                         >
-                                            {/* <i src="./assets/giveaway.svg" alt="" className='h-2/4'/> {item.name} */}
                                             {item.name}
-                                        </a> :
-                                        <a
-                                        key={item.name}
-                                        href={item.href}
-                                        className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-colors-grey-100 hover:bg-gray-700 hover:text-white',
-                                        'px-3 py-2 rounded-md text-sm font-medium'
-                                        )}
-                                        aria-current={item.current ? 'page' : undefined}
-                                    >
-                                        {item.name}
-                                    </a> 
-                                    ))}
-                                </div>
+                                        </a> 
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                                <button
-                                type="button"
-                                className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                                >
-                                <span className="sr-only">View notifications</span>
-                                <BellIcon className="h-6 w-6" aria-hidden="true" />
-                                </button>
+                                {/* <button
+                                    type="button"
+                                    className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                    >
+                                    <span className="sr-only">View notifications</span>
+                                    <BellIcon className="h-6 w-6" aria-hidden="true" />    
+                                </button> */}
+                                <button className='border font-jost text-colors-grey-100 text-base font-medium rounded-md px-12 py-2'>LOGIN</button>
+                                <button className='border font-jost text-colors-white bg-colors-yellow-primary text-base font-medium rounded-md px-12 py-2 ml-2'>REGISTER</button>
 
                                 {/* Profile dropdown */}
-                                <Menu as="div" className="ml-3 relative">
-                                </Menu>
+                                {/* <Menu as="div" className="ml-3 relative">
+                                </Menu> */}
                             </div>
                         </div>
                     </div>

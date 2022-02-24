@@ -1,8 +1,8 @@
 const WelcomeTCGLoots = () => {
   return (
     <div className=" bg-gradient-to-r from-colors-grey-400 to-colors-grey-500">
-        <div className="py-8 max-w-7xl mx-auto">
-            <div className="bg-colors-white mx-auto p-8 flex">
+        <div className="py-32 px-28 max-w-7xl mx-auto relative">
+            <div className=" relative bg-colors-white mx-auto p-8 flex">
                 {/* info welcome tcgLoots */}
                 <div className="flex-4">
                   <h1 className=" font-jost font-semibold text-3xl underline underline-offset-8 decoration-solid decoration-colors-yellow-primary">Welcome to TCGLOOTS!</h1>
@@ -12,6 +12,7 @@ const WelcomeTCGLoots = () => {
                 <div className="flex-1">
                   <img src="./assets/homepage/welcometgcloots/images.png" alt="" />
                 </div>
+            <img src="./assets/homepage/welcometgcloots/lootbox.png" className="absolute -bottom-32 -right-28" alt="" />
             </div>
         </div>
     </div>
