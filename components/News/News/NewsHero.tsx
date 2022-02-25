@@ -27,7 +27,7 @@ const NewsHero = () => {
                 <div className='bg-colors-white shadow-lg rounded-md'>
                   {/* image container */}
                   <div className=' border-b border-colors-grey-100 '>
-                    <img src="./assets/news/news/image3.png" alt="" className='h-full w-full' />
+                    <img src="./assets/news/news/image2.png" alt="" className='h-full w-full' />
                   </div>
                   {/* text container */}
                   <div className='flex flex-col p-2'>

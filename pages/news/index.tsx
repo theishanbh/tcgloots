@@ -1,5 +1,6 @@
 import Navbar from '../../components/Navbar/Navbar'
 import NewsHero from '../../components/News/News/NewsHero'
+import NewsArticles from '../../components/News/NewsArticles/NewsArticles'
 
 const News = () => {
   return (
@@ -7,6 +8,7 @@ const News = () => {
         <div className=''>
             <Navbar></Navbar>
             <NewsHero></NewsHero>
+            <NewsArticles></NewsArticles>
         </div>
     </div>
   )
