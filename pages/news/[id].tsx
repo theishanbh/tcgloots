@@ -12,7 +12,7 @@ const Post = ({blog} : {blog:any}) => {
                     <div className="flex-2">
                         <div className="flex flex-col">
                             <h1 className=" text-4xl font-semibold">Lorem ipsum dolor sit amet</h1>
-                            <span className=" font-light text-xl text-colors-black-200 py-4">12 Dec 2021</span>
+                            <span className=" font-light text-xl text-black-200 py-4">12 Dec 2021</span>
                             {/* img container */}
                             <div className="py-4">
                                 <Image
@@ -34,7 +34,7 @@ const Post = ({blog} : {blog:any}) => {
                     <div className="flex-1 px-4">
                         <h2 className="text-center mx-auto pb-4">Lorem, ipsum</h2>
                         <div>
-                            <div className="flex justify-start border-solid border-b-2 border-colors-black-300 p-2" >
+                            <div className="flex justify-start border-solid border-b-2 border-black-300 p-2" >
                                 <div className="relative h-28 w-28 flex-shrink-0 border border-gray-200 rounded-md overflow-hidden">
                                     <a target="_blank" className="no-underline hover:underline">
                                     <Image
@@ -47,10 +47,10 @@ const Post = ({blog} : {blog:any}) => {
                                 </div>
                                 <div className="flex flex-col ml-4 w-auto py-2">
                                     <div className="no-underline text-xl font-medium"> Lorem ipsum dolor sit </div>
-                                    <div className="text-justify text-sm text-colors-grey-100 mt-auto"> 1 Dec 2021 </div>
+                                    <div className="text-justify text-sm text-grey-primary mt-auto"> 1 Dec 2021 </div>
                                 </div>
                             </div>
-                            <div className="flex justify-start border-solid border-b-2 border-colors-black-300 p-2" >
+                            <div className="flex justify-start border-solid border-b-2 border-black-300 p-2" >
                                 <div className="relative h-28 w-28 flex-shrink-0 border border-gray-200 rounded-md overflow-hidden">
                                     <a target="_blank" className="no-underline hover:underline">
                                     <Image
@@ -63,10 +63,10 @@ const Post = ({blog} : {blog:any}) => {
                                 </div>
                                 <div className="flex flex-col ml-4 w-auto py-2">
                                     <div className="no-underline text-xl font-medium"> Lorem ipsum dolor sit </div>
-                                    <div className="text-justify text-sm text-colors-grey-100 mt-auto"> 1 Dec 2021 </div>
+                                    <div className="text-justify text-sm text-grey-primary mt-auto"> 1 Dec 2021 </div>
                                 </div>
                             </div>
-                            <div className="flex justify-start border-solid border-b-2 border-colors-black-300 p-2" >
+                            <div className="flex justify-start border-solid border-b-2 border-black-300 p-2" >
                                 <div className="relative h-28 w-28 flex-shrink-0 border border-gray-200 rounded-md overflow-hidden">
                                     <a target="_blank" className="no-underline hover:underline">
                                     <Image
@@ -79,10 +79,10 @@ const Post = ({blog} : {blog:any}) => {
                                 </div>
                                 <div className="flex flex-col ml-4 w-auto py-2">
                                     <div className="no-underline text-xl font-medium"> Lorem ipsum dolor sit </div>
-                                    <div className="text-justify text-sm text-colors-grey-100 mt-auto"> 1 Dec 2021 </div>
+                                    <div className="text-justify text-sm text-grey-primary mt-auto"> 1 Dec 2021 </div>
                                 </div>
                             </div>
-                            <div className="flex justify-start border-solid border-b-2 border-colors-black-300 p-2" >
+                            <div className="flex justify-start border-solid border-b-2 border-black-300 p-2" >
                                 <div className="relative h-28 w-28 flex-shrink-0 border border-gray-200 rounded-md overflow-hidden">
                                     <a target="_blank" className="no-underline hover:underline">
                                     <Image
@@ -95,13 +95,13 @@ const Post = ({blog} : {blog:any}) => {
                                 </div>
                                 <div className="flex flex-col ml-4 w-auto py-2">
                                     <div className="no-underline text-xl font-medium"> Lorem ipsum dolor sit </div>
-                                    <div className="text-justify text-sm text-colors-grey-100 mt-auto"> 1 Dec 2021 </div>
+                                    <div className="text-justify text-sm text-grey-primary mt-auto"> 1 Dec 2021 </div>
                                 </div>
                                 
                             </div>
                             {/* button */}
                             <div>
-                                <button className=" my-2 border bg-colors-white text-colors-black-100 font-jost text-xl rounded-md px-16 py-2">View All</button>
+                                <button className=" my-2 border bg-white text-black-100 font-jost text-xl rounded-md px-16 py-2">View All</button>
                             </div>
                         </div>
                         

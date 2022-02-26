@@ -3,20 +3,20 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='bg-colors-black-300 '>
-      <div className='max-w-7xl mx-auto py-8 text-colors-white'>
+    <div className='bg-black-300 '>
+      <div className='max-w-7xl mx-auto py-8 text-white'>
         <div className='flex justify-center py-6'>
           {/* first */}
           <div className='flex flex-col'>
             <span>Join the community</span>
             <div className='flex items-center my-2'>
-              <div className='bg-colors-white rounded h-full p-2 w-10'>
+              <div className='bg-white rounded h-full p-2 w-10'>
                 <img src="./assets/logos/facebook.svg" alt="" className='mx-auto my-auto h-4/5'/>
               </div>
-              <div className='bg-colors-white rounded h-full p-2 ml-1 w-10'>
+              <div className='bg-white rounded h-full p-2 ml-1 w-10'>
                 <img src="./assets/logos/instagram.svg" alt="" className='mx-auto my-auto h-4/5'/>
               </div>
-              <div className='bg-colors-white rounded h-full p-2 ml-1 w-10'>
+              <div className='bg-white rounded h-full p-2 ml-1 w-10'>
                 <img src="./assets/logos/discord.svg" alt="" className='mx-auto my-auto h-4/5'/>
               </div>
             </div>

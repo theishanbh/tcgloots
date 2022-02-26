@@ -12,18 +12,18 @@ const ContactUs = () => {
                 <div className="mx-auto max-w-7xl font-jost ">
                     <div className='flex overflow-hidden items-center justify-center py-28'>
                         {/* items container */}
-                        <div className=' bg-colors-grey-600 p-4 bg-opacity-70 rounded-lg'>
+                        <div className=' bg-grey-600 p-4 bg-opacity-70 rounded-lg'>
                             <div className='flex flex-col'>
                                 {/* contact us logo and name */}
                                 <div className='flex items-center'>
-                                    <div className='flex items-center shadow-xl p-4 bg-colors-white rounded-lg'>
+                                    <div className='flex items-center shadow-xl p-4 bg-white rounded-lg'>
                                         <Image
                                             src={require("../../assets/contactus/email.svg")}
                                             alt='hello'
                                             className='  shadow-md p-4'
                                         />
                                     </div>
-                                    <h1 className='ml-4 box-border text-4xl border-b-4 text-colors-black-200 border-colors-yellow-primary'>
+                                    <h1 className='ml-4 box-border text-4xl border-b-4 text-black-200 border-yellow-primary'>
                                         Contact Us
                                     </h1>
                                 </div>
@@ -84,7 +84,7 @@ const ContactUs = () => {
                                 </div>
                                 {/* button */}
                                 <div className='text-right'>
-                                    <button className='border font-jost text-colors-white bg-colors-yellow-primary text-base font-medium rounded-md px-12 py-2'>SEND</button>
+                                    <button className='border font-jost text-white bg-yellow-primary text-base font-medium rounded-md px-12 py-2'>SEND</button>
                                 </div>
                             </div>
                         </div>

@@ -63,7 +63,7 @@ const Navbar = () => {
                                                     key={item.name}
                                                     href={item.href}
                                                     className={classNames(
-                                                    item.current ? ' text-white' : ' text-colors-grey-100 hover:bg-gray-700 hover:text-white',
+                                                    item.current ? ' text-white' : ' text-grey-primary hover:bg-gray-700 hover:text-white',
                                                     'px-3 py-2 font-jost text-base rounded-md font-medium inline-flex items-center uppercase'
                                                     )}
                                                     aria-current={item.current ? 'page' : undefined}
@@ -81,7 +81,7 @@ const Navbar = () => {
                                             key={item.name}
                                             href={item.href}
                                             className={classNames(
-                                            item.current ? 'bg-gray-900 text-white' : 'text-colors-grey-100 hover:bg-gray-700 hover:text-white',
+                                            item.current ? 'bg-gray-900 text-white' : 'text-grey-primary hover:bg-gray-700 hover:text-white',
                                             'px-3 py-2 rounded-md font-jost text-base font-medium uppercase'
                                             )}
                                             aria-current={item.current ? 'page' : undefined}
@@ -101,8 +101,8 @@ const Navbar = () => {
                                     <span className="sr-only">View notifications</span>
                                     <BellIcon className="h-6 w-6" aria-hidden="true" />    
                                 </button> */}
-                                <button className='border font-jost text-colors-grey-100 text-base font-medium rounded-md px-12 py-2'>LOGIN</button>
-                                <button className='border font-jost text-colors-white bg-colors-yellow-primary text-base font-medium rounded-md px-12 py-2 ml-2'>REGISTER</button>
+                                <button className='border font-jost text-grey-primary text-base font-medium rounded-md px-12 py-2'>LOGIN</button>
+                                <button className='border font-jost text-white bg-yellow-primary text-base font-medium rounded-md px-12 py-2 ml-2'>REGISTER</button>
 
                                 {/* Profile dropdown */}
                                 {/* <Menu as="div" className="ml-3 relative">

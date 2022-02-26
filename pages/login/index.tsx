@@ -12,7 +12,7 @@ const ContactUs = () => {
                 <div className="mx-auto max-w-7xl font-jost ">
                     <div className='flex overflow-hidden items-center justify-center py-28'>
                         {/* items container */}
-                        <div className=' bg-colors-grey-600 p-4 bg-opacity-70 rounded-lg'>
+                        <div className=' bg-grey-600 p-4 bg-opacity-70 rounded-lg'>
                             <div className='flex flex-col'>
                                 {/* your email */}
                                 <div className='flex flex-col'>
@@ -45,7 +45,7 @@ const ContactUs = () => {
                                 </div>
                                 {/* button */}
                                 <div className='text-center my-4'>
-                                <   button className='border font-jost bg-colors-white text-colors-grey-100 text-base font-medium rounded-md px-12 py-2'>LOG IN</button>
+                                <   button className='border font-jost bg-white text-grey-primary text-base font-medium rounded-md px-12 py-2'>LOG IN</button>
                                 </div>
                                 
                                 <div>

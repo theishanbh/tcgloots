@@ -8,7 +8,7 @@ const Default = () => {
                 <h1 className=' text-8xl font-bold'>404</h1>
                 <p className=' text-2xl w-full py-4'>We couldn't find the page you were looking for. Maybe our FAQ can help?</p>
                 <div>
-                    <button className=" my-2 border text-colors-blue-primary bg-colors-white border-colors-blue-primary font-jost text-xl rounded-md px-16 py-2">Back To Home</button>
+                    <button className=" my-2 border text-blue-primary bg-white border-blue-primary font-jost text-xl rounded-md px-16 py-2">Back To Home</button>
                 </div>
             </div>
         </div>
