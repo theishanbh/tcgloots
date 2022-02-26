@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 // comments!!
@@ -42,10 +43,13 @@ const Navbar = () => {
                             </div>
                             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex-shrink-0 flex items-center">
-                                    <img
-                                        className="block h-8 w-auto"
-                                        src="./assets/logos/tcglootslogo.png"
+                                    <Image
+                                        className="block "
+                                        src={require('../../assets/tcglootslogo.png')}
                                         alt="TCGLoots"
+                                        height={50}
+                                        width={50}
+                                        objectFit='contain'
                                     />
                                 </div>
                                 <div className="hidden sm:flex-1 sm:flex sm:ml-6">
