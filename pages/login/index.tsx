@@ -50,7 +50,7 @@ const ContactUs = () => {
                                 
                                 <div>
                                     <span>
-                                        Don't have an account? Register
+                                        Don&apos;t have an account? Register
                                     </span>
                                 </div>
                             </div>
