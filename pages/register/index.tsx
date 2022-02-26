@@ -12,85 +12,77 @@ const ContactUs = () => {
                 <div className="mx-auto max-w-7xl font-jost ">
                     <div className='flex overflow-hidden items-center justify-center py-28'>
                         {/* items container */}
-                        <div className=' flex bg-grey-600 bg-opacity-70 rounded-lg'>
-                            <div className='flex-4 bg-blue-primary'>
+                        <div className=' flex bg-grey-600 bg-opacity-70 rounded-r-xl shadow-2xl'>
+                            <div className='flex-4 bg-blue-primary rounded-l-md'>
                                 <Image
                                     src={require("../../assets/register/register.png")}
                                 />
                             </div>
-                            <div className=' flex-5 p-6'>
+                            <div className=' flex-5 p-6 rounded-r-md'>
                                 <div className='flex flex-col'>
-                                    {/* contact us logo and name */}
-                                    <div className='flex items-center'>
-                                        <div className='flex items-center shadow-xl p-4 bg-white rounded-lg'>
-                                            <Image
-                                                src={require("../../assets/contactus/email.svg")}
-                                                alt='hello'
-                                                className='  shadow-md p-4'
+                                    {/* your email */}
+                                    <div className='flex flex-col'>
+                                        <span className=' text-lg font-medium'>Email Address</span>
+                                        <div className='mt-2'>
+                                            <input 
+                                                type="text"
+                                                placeholder='Email Address'
+                                                className='p-2 rounded-lg text-lg'
                                             />
                                         </div>
-                                        <h1 className='ml-4 box-border text-4xl border-b-4 text-black-200 border-yellow-primary'>
-                                            Contact Us
-                                        </h1>
                                     </div>
-                                    {/* your name and email */}
-                                    <div className='flex mt-8'>
-                                        {/* your name */}
-                                        <div className='flex flex-col'>
-                                            <span className=' text-lg font-medium'>Your Name</span>
-                                            <div className='mt-2'>
-                                                <input 
-                                                    type="text"
-                                                    placeholder='Your Name'
-                                                    className='p-2 rounded-lg text-lg'
-                                                />
-                                            </div>
-                                        </div>
-                                        {/* your email */}
-                                        <div className='flex flex-col ml-6'>
-                                            <span className=' text-lg font-medium'>Your Email</span>
-                                            <div className='mt-2'>
-                                                <input 
-                                                    type="text"
-                                                    placeholder='Your Email'
-                                                    className='p-2 rounded-lg text-lg'
-                                                />
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    {/* Subject dropdown menu */}
-                                    <div className='flex flex-col mt-6'>
-                                        <span className=' text-lg font-medium'>Subject</span>
-                                        <div className='mt-2 w-full'>
-                                            <form action="">
-                                                <select 
-                                                    placeholder="What's your message about"
-                                                    className='p-2 rounded-lg text-lg w-full'
-                                                >
-                                                    <option value="" disabled selected>Select your option</option>
-                                                    <option> Any</option>
-                                                    <option> Deals</option>
-                                                    <option> Pizza</option>
-                                                    <option> Sides</option>
-                                                </select>
-                                            </form>
-                                            
-                                        </div>
-                                    </div>
-                                    {/* message */}
-                                    <div className='flex flex-col mt-6'>
-                                        <span className=' text-lg font-medium'>Message</span>
+                                    {/* username */}
+                                    <div className='flex flex-col'>
+                                        <span className=' text-lg font-medium'>Username</span>
                                         <div className='mt-2'>
-                                            <textarea 
-                                                placeholder='Your Message'
-                                                className='p-2 rounded-lg text-lg resize-none w-full'
+                                            <input 
+                                                type="text"
+                                                placeholder='Username'
+                                                className='p-2 rounded-lg text-lg'
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* Password */}
+                                    <div className='flex flex-col'>
+                                        <span className=' text-lg font-medium'>Password</span>
+                                        <div className='mt-2'>
+                                            <input 
+                                                type="password"
+                                                placeholder='Password'
+                                                className='p-2 rounded-lg text-lg'
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* declare  */}
+                                    <div className='flex mt-5 items-center'>
+                                        <input type="checkbox" name="" id="" className='' />
+                                        <div className='flex flex-col ml-3'>
+                                            <span>I declare that I have read and accept:</span>
+                                            <span>Conditions of the server and to Privacy Policy.</span>
+                                        </div>
+                                    </div>
+                                    {/* or */}
+                                    <div className='flex justify-center items-center'>
+                                        <div className='flex-1 h-px bg-black'></div>
+                                        <div className='px-3'>OR</div>
+                                        <div className='flex-1 h-px bg-black'></div>
+                                    </div>
+                                    {/* icons facebook and discord */}
+                                    <div className='flex justify-center items-center'>
+                                        <div className='p-2 rounded-full border-black border h-16 w-16 flex items-center justify-center'>
+                                            <Image
+                                                src={require("../../assets/register/facebook.svg")}
+                                            />
+                                        </div>
+                                        <div className='p-2 rounded-full border-black border h-16 w-16 flex items-center justify-center ml-4'>
+                                            <Image
+                                                src={require("../../assets/register/google.svg")}
                                             />
                                         </div>
                                     </div>
                                     {/* button */}
                                     <div className='text-right'>
-                                        <button className='border font-jost text-white bg-yellow-primary text-base font-medium rounded-md px-12 py-2'>SEND</button>
+                                        <button className='border font-jost text-white bg-yellow-primary text-base font-medium rounded-md px-12 py-2'>REGISTER</button>
                                     </div>
                                 </div>
                             </div>
