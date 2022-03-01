@@ -4,6 +4,34 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      // white
+      'white': '#FFFFFF',
+      // yellow
+      'yellow-primary' : '#FFCC30',
+      'yellow-secondary' : '#FCE59F',
+      // grey
+      'grey-primary' : "#888888",
+      'grey-200' : '#EEEEEE',
+      'grey-300' : '#F2F4F7',
+      'grey-400' : '#DDDDDD',
+      'grey-500' : '#CCCCCC',
+      'grey-600' : '#FCFCFC',
+      'grey-700' : '#F4F4F4',
+      'grey-800' : '#F7F8FC',
+      // slate
+      // black
+      'black-100' : "#545454",
+      'black-200' : '#454545',
+      'black-300' : '#606060',
+      // blue
+      'blue-primary' : "#55AEF0",
+      'blue-100' : '#5AA3D9',
+      'blue-200' : '#1890CF',
+      'blue-discord' : '#5865F2',
+      // green
+      'green-primary' : "#82C732"
+    },
     
     extend: {
       
@@ -20,33 +48,7 @@ module.exports = {
         '8' : '8 8 0%',
         '9' : '9 9 0%',
       },
-      colors: {
-      // white
-      'white': '#FFFFFF',
-      // yellow
-      'yellow-primary' : '#FFCC30',
-      'yellow-secondary' : '#FCE59F',
-      // grey
-      'grey-primary' : "#888888",
-      'grey-200' : '#EEEEEE',
-      'grey-300' : '#F2F4F7',
-      'grey-400' : '#DDDDDD',
-      'grey-500' : '#CCCCCC',
-      'grey-600' : '#FCFCFC',
-      'grey-700' : '#F4F4F4',
-      // slate
-      // black
-      'black-100' : "#545454",
-      'black-200' : '#454545',
-      'black-300' : '#606060',
-      // blue
-      'blue-primary' : "#55AEF0",
-      'blue-100' : '#5AA3D9',
-      'blue-200' : '#1890CF',
-      'blue-discord' : '#5865F2',
-      // green
-      'green-primary' : "#82C732"
-    },
+      
     },
   },
   plugins: [],
