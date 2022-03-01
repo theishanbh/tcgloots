@@ -11,7 +11,7 @@ const Settings = () => {
             <div className="mx-auto max-w-7xl font-jost ">
                 {/* heading */}
                 <div className="">
-                    <h1 className=' text-4xl font-medium py-8'>Settings</h1>
+                    <h1 className='text-4xl font-medium py-8'>Settings</h1>
                 </div>
                 {/* settings */}
                 <div className='p-4 bg-grey-500'>
