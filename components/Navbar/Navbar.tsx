@@ -7,10 +7,10 @@ import Image from 'next/image'
 
 // comments!!
 const navigation = [
-  { name: 'PRODUCT TRACKER', href: 'producttracker', current: true },
+  { name: 'PRODUCT TRACKER', href: 'trackerpage', current: true },
   { name: 'LIVE DEALS', href: 'livedeals', current: false },
   { name: 'GIVEAWAYS', href: 'giveaways', current: false },
-  { name: 'CONTACT', href: 'contact', current: false },
+  { name: 'CONTACT', href: 'contactus', current: false },
   { name: 'FAQ', href: 'faq', current: false },
   { name: 'NEWS', href: 'news', current: false },
 ]
@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <div>
             <div>
-                <Disclosure as="nav" className="bg-gray-800 hello">
+                <Disclosure as="nav">
                 {({ open }) => (
                     <>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -42,16 +42,19 @@ const Navbar = () => {
                                 </Disclosure.Button>
                             </div>
                             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                                <div className="flex-shrink-0 flex items-center">
-                                    <Image
-                                        className="block "
-                                        src={require('../../assets/tcglootslogo.png')}
-                                        alt="TCGLoots"
-                                        height={50}
-                                        width={50}
-                                        objectFit='contain'
-                                    />
-                                </div>
+                                <Link href="/">
+                                    <div className="relative flex-shrink-0 flex items-center">
+                                        <Image
+                                            className=" cursor-pointer"
+                                            src={require('../../assets/tcglootslogo.png')}
+                                            alt="TCGLoots"
+                                            height={50}
+                                            width={50}
+                                            objectFit='contain'
+                                            
+                                        />
+                                    </div>
+                                </Link>
                                 <div className="hidden sm:flex-1 sm:flex sm:ml-6">
                                     <div className="flex flex-1 justify-start space-x-4 items-center">
                                         {navigation.map((item) => (
@@ -62,10 +65,7 @@ const Navbar = () => {
                                                 <a
                                                     key={item.name}
                                                     href={item.href}
-                                                    className={classNames(
-                                                    item.current ? ' text-white' : ' text-grey-primary hover:bg-gray-700 hover:text-white',
-                                                    'px-3 py-2 font-jost text-base rounded-md font-medium inline-flex items-center uppercase'
-                                                    )}
+                                                    className={classNames('px-3 py-2 font-jost text-grey-400 text-base rounded-md font-medium inline-flex items-center uppercase')}
                                                     aria-current={item.current ? 'page' : undefined}
                                                 >
                                                     <img src="./assets/logos/giveaways.png" alt="" className='inline h-full' />
@@ -80,10 +80,7 @@ const Navbar = () => {
                                             <a
                                             key={item.name}
                                             href={item.href}
-                                            className={classNames(
-                                            item.current ? 'bg-gray-900 text-white' : 'text-grey-primary hover:bg-gray-700 hover:text-white',
-                                            'px-3 py-2 rounded-md font-jost text-base font-medium uppercase'
-                                            )}
+                                            className={classNames('px-3 py-2 rounded-md font-jost text-grey-400 text-base font-medium uppercase')}
                                             aria-current={item.current ? 'page' : undefined}
                                             >
                                                 {item.name}
@@ -101,8 +98,8 @@ const Navbar = () => {
                                     <span className="sr-only">View notifications</span>
                                     <BellIcon className="h-6 w-6" aria-hidden="true" />    
                                 </button> */}
-                                <button className='border font-jost text-grey-primary text-base font-medium rounded-md px-12 py-2'>LOGIN</button>
-                                <button className='border font-jost text-white bg-yellow-primary text-base font-medium rounded-md px-12 py-2 ml-2'>REGISTER</button>
+                                <button className='border border-grey-400 font-jost text-grey-400 text-base font-medium rounded-md px-10 py-2'>LOGIN</button>
+                                <button className='border font-jost text-white-100 bg-yellow-200 text-base font-medium rounded-md px-10 py-2 ml-2'>REGISTER</button>
 
                                 {/* Profile dropdown */}
                                 {/* <Menu as="div" className="ml-3 relative">
