@@ -6,6 +6,18 @@ module.exports = {
   theme: {
     colors: {
       // white
+      white : {
+        'primary' : '#FFFFFF',
+      },
+      // black
+      // slate
+      // yellow
+      // brown
+      // red
+      // pink
+      // blue
+      // green
+      // white
       'white': '#FFFFFF',
       // yellow
       'yellow-primary' : '#FFCC30',

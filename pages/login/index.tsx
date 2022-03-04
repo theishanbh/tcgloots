@@ -45,7 +45,7 @@ const ContactUs = () => {
                                 </div>
                                 {/* button */}
                                 <div className='text-center my-4'>
-                                <   button className='border font-jost bg-white text-grey-primary text-base font-medium rounded-md px-12 py-2'>LOG IN</button>
+                                    <button className='border font-jost bg-white text-grey-primary text-base font-medium rounded-md px-12 py-2'>LOG IN</button>
                                 </div>
                                 
                                 <div>
