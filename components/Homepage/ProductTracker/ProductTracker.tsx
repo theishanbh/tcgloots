@@ -103,7 +103,16 @@ const ProductTracker = () =>{
                         {/*  */}
                         <div className="text-center px-12">
                             <p className=" text-4xl font-light">Want to suggest a product for us to track?</p>
-                            <button className=" bg-blue-300 text-white-100 text-xl inline-flex hover:bg-blue-100 mt-6 text-white font-bold py-2 px-4 rounded"> Submit a suggestion <img src="./assets/rightarrow.svg" className="ml-2"/> </button>
+                            <button className=" bg-blue-300 text-white-100 text-xl flex items-center hover:bg-blue-100 mt-6 text-white font-bold py-2 px-4 rounded"> 
+                                <span>
+                                    Submit a suggestion 
+                                </span>
+                                <div className='relative flex justify-center items-center ml-2'>
+                                    <Image
+                                        src={require("../../../assets/homepage/producttracker/rightarrow.svg")}
+                                    />
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>

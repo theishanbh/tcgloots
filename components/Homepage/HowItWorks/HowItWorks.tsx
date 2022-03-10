@@ -4,9 +4,9 @@ const HowItWorks = () => {
   return (
     <div className="font-jost bg-[url('/assets/homepage/howitworks/background.png')] bg-cover bg-no-repeat bg-center">
       <div className='mx-auto max-w-7xl px-20 py-8'>
-        <div className='px-20 py-8 bg-white'>
+        <div className='px-20 py-8 bg-white-100'>
           <div className=''>
-            <h1 className=" text-4xl font-jost font-semibold py-8 underline underline-offset-8 decoration-yellow-primary">How does it work?</h1>
+            <h1 className=" text-7xl font-jost py-8 underline underline-offset-8 decoration-yellow-200">How does it work?</h1>
             <p className=' text-xl font-light text-grey-primary'>Tell us which product you are interested in. When it is in stock, we instantly send a notification to your:</p>
             <div>
             <div className='flex flex-row'>
