@@ -6,12 +6,12 @@ const HowItWorks = () => {
       <div className='mx-auto max-w-7xl px-20 py-8'>
         <div className='px-20 py-8 bg-white-100'>
           <div className=''>
-            <h1 className=" text-7xl font-jost py-8 underline underline-offset-8 decoration-yellow-200">How does it work?</h1>
-            <p className=' text-xl font-light text-grey-primary'>Tell us which product you are interested in. When it is in stock, we instantly send a notification to your:</p>
+            <h1 className=" text-7xl font-jost py-8 underline underline-offset-8 leading-10 decoration-yellow-200">How does it work?</h1>
+            <p className=' text-2lg text-grey-400 font-light text-grey-primary'>Tell us which product you are interested in. When it is in stock, we instantly send a notification to your:</p>
             <div>
             <div className='flex flex-row'>
               {/* left */}
-              <div className='flex-1 flex flex-col justify-around'>
+              <div className='flex-1 flex flex-col justify-around font-medium'>
                 {/* first phone/tablet*/}
                 <div className='flex'>
                   <div className=''>
@@ -19,9 +19,9 @@ const HowItWorks = () => {
                   </div>
                   {/* info container */}
                   <div className='flex flex-col pl-4'>
-                    <span className=' font-medium text-xl text-grey-primary leading-none'>PHONE OR TABLET</span>
+                    <span className=' text-xl text-grey-400 leading-none'>PHONE OR TABLET</span>
                     <span className='pt-1'>
-                      <span className=' text-blue-discord text-xl'>Discord </span>
+                      <span className=' text-blue-100 text-xl'>Discord </span>
                       <img src="./assets/logos/discord.svg" alt="" className='inline'/>
                       <span className='text-xl'> or </span>
                       <span className='text-blue-200 text-xl'>Telegram </span>
@@ -36,7 +36,7 @@ const HowItWorks = () => {
                   </div>
                   {/* info container */}
                   <div className='flex flex-col pl-4'>
-                    <span className=' font-medium text-xl text-grey-primary leading-none'>EMAIL</span>
+                    <span className=' text-xl text-grey-400 leading-none'>EMAIL</span>
                     <span className='pt-1'>
                       <span className='text-blue-200 text-xl'>Register </span>
                     </span>
@@ -49,7 +49,7 @@ const HowItWorks = () => {
                   </div>
                   {/* info container */}
                   <div className='flex flex-col pl-4'>
-                    <span className=' font-medium text-xl text-grey-primary leading-none'>BROWSER</span>
+                    <span className=' text-xl text-grey-400 leading-none'>BROWSER</span>
                     <span className='pt-1'>
                       <span className='text-blue-200 text-xl'>Register </span>
                     </span>
