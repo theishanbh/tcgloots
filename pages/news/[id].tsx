@@ -1,12 +1,13 @@
 import { Fragment, useState,useEffect } from "react"
 import Image from "next/image"
 import Navbar from "../../components/Navbar/Navbar"
+import Footer from "../../components/Footer/Footer"
 
 const Post = ({blog} : {blog:any}) => {
     return (
         <div>
+            <Navbar></Navbar>
             <div className="mx-auto max-w-7xl font-jost">
-                <Navbar></Navbar>
                 <div className="flex py-8">
                     {/* Articles */}
                     <div className="flex-2 pr-20">
@@ -33,10 +34,26 @@ const Post = ({blog} : {blog:any}) => {
                         </div>
                     </div>
                     {/* second block */}
-                    <div className="flex-1 px-4">
+                    <div className="flex-1 flex flex-col px-4">
                         <h2 className="text-center mx-auto pb-4">Lorem, ipsum</h2>
                         <div>
-                            <div className="flex justify-start border-solid border-b-2 border-black-300 p-2" >
+                            <div className="flex justify-start border-solid border-b-2 border-grey-600 p-2" >
+                                <div className="relative flex-1 flex-shrink-0 border border-gray-200 rounded-md overflow-hidden">
+                                    <a target="_blank" className="no-underline hover:underline">
+                                    <Image
+                                        src = {require("../../assets/image1.png")}
+                                        alt = {"alt"}
+                                        objectFit= "cover"
+                                        layout="fill"
+                                    />
+                                    </a>
+                                </div>
+                                <div className="flex flex-2 flex-col ml-4 w-auto py-2">
+                                    <div className="no-underline text-2xl font-medium"> Lorem ipsum dolor sit </div>
+                                    <div className="text-justify text-sm text-grey-primary mt-auto"> 1 Dec 2021 </div>
+                                </div>
+                            </div>
+                            <div className="flex justify-start border-solid border-b-2 border-grey-600 p-2" >
                                 <div className="relative h-28 w-28 flex-shrink-0 border border-gray-200 rounded-md overflow-hidden">
                                     <a target="_blank" className="no-underline hover:underline">
                                     <Image
@@ -52,7 +69,7 @@ const Post = ({blog} : {blog:any}) => {
                                     <div className="text-justify text-sm text-grey-primary mt-auto"> 1 Dec 2021 </div>
                                 </div>
                             </div>
-                            <div className="flex justify-start border-solid border-b-2 border-black-300 p-2" >
+                            <div className="flex justify-start border-solid border-b-2 border-grey-600 p-2" >
                                 <div className="relative h-28 w-28 flex-shrink-0 border border-gray-200 rounded-md overflow-hidden">
                                     <a target="_blank" className="no-underline hover:underline">
                                     <Image
@@ -68,23 +85,7 @@ const Post = ({blog} : {blog:any}) => {
                                     <div className="text-justify text-sm text-grey-primary mt-auto"> 1 Dec 2021 </div>
                                 </div>
                             </div>
-                            <div className="flex justify-start border-solid border-b-2 border-black-300 p-2" >
-                                <div className="relative h-28 w-28 flex-shrink-0 border border-gray-200 rounded-md overflow-hidden">
-                                    <a target="_blank" className="no-underline hover:underline">
-                                    <Image
-                                        src = {require("../../assets/image1.png")}
-                                        alt = {"alt"}
-                                        objectFit= "cover"
-                                        layout="fill"
-                                    />
-                                    </a>
-                                </div>
-                                <div className="flex flex-col ml-4 w-auto py-2">
-                                    <div className="no-underline text-xl font-medium"> Lorem ipsum dolor sit </div>
-                                    <div className="text-justify text-sm text-grey-primary mt-auto"> 1 Dec 2021 </div>
-                                </div>
-                            </div>
-                            <div className="flex justify-start border-solid border-b-2 border-black-300 p-2" >
+                            <div className="flex justify-start p-2" >
                                 <div className="relative h-28 w-28 flex-shrink-0 border border-gray-200 rounded-md overflow-hidden">
                                     <a target="_blank" className="no-underline hover:underline">
                                     <Image
@@ -106,10 +107,16 @@ const Post = ({blog} : {blog:any}) => {
                                 <button className=" my-2 border bg-white text-black-100 font-jost text-xl rounded-md px-16 py-2">View All</button>
                             </div>
                         </div>
-                        
+                        <div className="relative">
+                            <Image
+                                src={require("../../assets/news/chest.png")}
+                                className="opacity-25"
+                            ></Image>
+                        </div>
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     )
 }
