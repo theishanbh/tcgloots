@@ -55,6 +55,7 @@ module.exports = {
         200 : "#FFCC30",
         300 : "#F9D260",
         400 : "#FCE59F",
+        500 : "#FFD235"
       },
       // brown
       brown : {

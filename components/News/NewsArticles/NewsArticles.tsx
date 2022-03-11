@@ -116,7 +116,7 @@ const NewsArticles = () => {
             </section>
             {/* button */}
             <div className=" text-center bg-white-100 py-8">
-              <button className=" border border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-2 shadow-full">Read More News</button>
+              <button className=" border border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-2 shadow-full">Load More</button>
           </div>
         </div>
     </div>
