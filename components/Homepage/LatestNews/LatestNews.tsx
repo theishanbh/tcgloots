@@ -4,7 +4,7 @@ const LatestNews = () => {
   return (
     <div>
       <div className=' max-w-7xl mx-auto font-jost'>
-        <h1 className=" text-4xl font-semibold text-center py-12">Latest News</h1>
+      <h1 className=" font-jost text-8xl text-black-200 font-semibold text-center py-12">Latest News</h1>
         {/* latest news items */}
         <div className='flex'>
           <div className='w-1/4 flex flex-col p-4'>
