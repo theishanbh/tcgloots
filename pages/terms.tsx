@@ -8,7 +8,7 @@ const Terms = () => {
         <div className=' font-jost'>
             <Navbar></Navbar>
             <div className='mx-auto max-w-7xl'>
-                <h1 className=' text-5xl font-semibold text-black-200 mt-12 text-center'>Terms</h1>
+                <h1 className=' text-8xl font-semibold text-black-200 mt-12 text-center'>Terms</h1>
                 <div>
                     <img src="./assets/terms.png" alt="" className=' h-72 w-72 object-cover object-center scale-150 mx-auto'/>
                 </div>

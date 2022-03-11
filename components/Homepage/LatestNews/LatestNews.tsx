@@ -29,8 +29,8 @@ const LatestNews = () => {
           </div>
         </div>
         {/* buuton */}
-        <div>
-          <button className=" border font-jost text-xl rounded-md px-16 py-2">Read more news</button>
+        <div className=" text-right bg-white-100 py-8">
+            <button className=" border border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-2 shadow-full">Read More News</button>
         </div>
       </div>
     </div>
