@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -21,13 +22,41 @@ const Footer = () => {
               <div className=' flex-grow px-12'>
                 <div>
                   <div className='flex justify-between text-lg'>
-                    <a>Register</a>
+                    <Link
+                      href={"/register"}
+                    >
+                      <a>Register</a>
+                    </Link>
+                    <Link
+                      href={'/contactus'}
+                    >
                     <a>Contact</a>
+                    </Link>
+                    <Link
+                      href={'/faq'}
+                    >
                     <a>FAQ</a>
+                    </Link>
+                    <Link
+                      href={'/unsubscribe'}
+                    >
                     <a>Unsubscribe</a>
+                    </Link>
+                    <Link
+                      href={'/terms'}
+                    >
                     <a>Terms of Use</a>
+                    </Link>
+                    <Link
+                      href={'/privacypolicy'}
+                    >
                     <a>Privacy Policy</a>
+                    </Link>
+                    <Link
+                      href={'/terms'}
+                    >
                     <a>Terms</a>
+                    </Link>
                   </div>
                 </div>
               </div>

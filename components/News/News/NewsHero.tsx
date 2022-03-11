@@ -2,7 +2,7 @@ import React from 'react'
 
 const NewsHero = () => {
   return (
-    <div className="bg-[url('/assets/news/news/background.png')] bg-bottom bg-cover py-12">
+    <div className="bg-[url('/assets/news/news/background.png')] bg-bottom bg-cover max-w-7xl mx-auto bg-no-repeat  py-12">
         <div className='mx-auto max-w-7xl font-jost'>
             <h1 className="font-jost text-4xl font-semibold text-center">News</h1>
             <div className='flex flex-wrap py-8'>
