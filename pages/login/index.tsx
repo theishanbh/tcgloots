@@ -3,7 +3,7 @@ import React from 'react'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 
-const ContactUs = () => {
+const Login = () => {
   return (
     <div>
         <div className="">
@@ -12,45 +12,48 @@ const ContactUs = () => {
                 <div className="mx-auto max-w-7xl font-jost ">
                     <div className='flex overflow-hidden items-center justify-center py-28'>
                         {/* items container */}
-                        <div className=' bg-grey-600 p-4 bg-opacity-70 rounded-lg'>
+                        <div className=' bg-white-100 p-4 bg-opacity-90 rounded-lg shadow-full'>
                             <div className='flex flex-col'>
                                 {/* your email */}
                                 <div className='flex flex-col'>
-                                    <span className=' text-lg font-medium'>Your Email</span>
+                                    <span className=' text-xl font-medium'>Email</span>
                                     <div className='mt-2'>
                                         <input 
                                             type="text"
                                             placeholder='Your Email'
-                                            className='p-2 rounded-lg text-lg'
+                                            className='p-2 rounded-lg text-lg w-full'
                                         />
                                     </div>
                                 </div>
                                 {/* your Password */}
                                 <div className='flex flex-col mt-6'>
-                                    <span className=' text-lg font-medium'>Your Password</span>
+                                    <span className=' text-xl font-medium'>Password</span>
                                     <div className='mt-2'>
                                         <input 
                                             type="text"
                                             placeholder='Your Password'
-                                            className='p-2 rounded-lg text-lg'
+                                            className='p-2 rounded-lg text-lg w-full'
                                         />
                                     </div>
                                 </div>
-                                <div className='flex'>
+                                <div className='flex justify-between leading-none py-6 text-2sm'>
                                     <div className='flex'>
                                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
-                                        <label htmlFor="vehicle1" className='ml-2'>Remember me</label>
+                                        <label htmlFor="vehicle1" className='pl-1'>Remember me</label>
                                     </div>
-                                    <div className='ml-auto'>Forgot Passowrd</div>
+                                    <div className='pl-40'>Forgot Password? </div>
                                 </div>
                                 {/* button */}
-                                <div className='text-center my-4'>
-                                    <button className='border font-jost bg-white text-grey-primary text-base font-medium rounded-md px-12 py-2'>LOG IN</button>
+                                <div className=" text-center py-8">
+                                    <button className=" border bg-white-100 border-grey-400 font-jost text-lg text-grey-400 rounded-md px-16 py-2 shadow-full">LOG IN</button>
                                 </div>
                                 
-                                <div>
+                                <div className='text-center inline-flex justify-center'>
                                     <span>
-                                        Don&apos;t have an account? Register
+                                        Don&apos;t have an account? 
+                                        <span className='pl-1 text-blue-300'>
+                                            Register
+                                        </span>
                                     </span>
                                 </div>
                             </div>
@@ -65,4 +68,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default Login
