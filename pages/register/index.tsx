@@ -3,7 +3,7 @@ import React from 'react'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 
-const ContactUs = () => {
+const Register = () => {
   return (
     <div>
         <div className="">
@@ -12,7 +12,7 @@ const ContactUs = () => {
                 <div className="mx-auto max-w-5xl font-jost ">
                     <div className='flex overflow-hidden items-center justify-center py-16 px-2'>
                         {/* items container */}
-                        <div className=' flex bg-grey-600 bg-opacity-70 rounded-r-xl shadow-full'>
+                        <div className=' flex bg-grey-600 bg-opacity-80 rounded-r-xl shadow-full'>
                             {/* left block */}
                             <div className='relative flex items-center justify-center flex-4 shadow-full bg-blue-primary rounded-l-md'>
                                 <div className="absolute h-full w-full">
@@ -65,27 +65,27 @@ const ContactUs = () => {
                                         </div>
                                     </div>
                                     {/* declare  */}
-                                    <div className='flex mt-5 items-center'>
+                                    <div className='flex mt-5'>
                                         <input type="checkbox" name="" id="" className='' />
                                         <div className='flex flex-col ml-3'>
-                                            <span>I declare that I have read and accept:</span>
+                                            <span className=' leading-none'>I declare that I have read and accept:</span>
                                             <span>Conditions of the server and to Privacy Policy.</span>
                                         </div>
                                     </div>
                                     {/* or */}
                                     <div className='flex justify-center items-center'>
-                                        <div className='flex-1 h-px bg-black'></div>
+                                        <div className='flex-1 h-px bg-grey-600'></div>
                                         <div className='px-3'>OR</div>
-                                        <div className='flex-1 h-px bg-black'></div>
+                                        <div className='flex-1 h-px bg-grey-600'></div>
                                     </div>
                                     {/* icons facebook and discord */}
                                     <div className='flex justify-center items-center py-2'>
-                                        <div className='relative p-2 rounded-full border-grey-200 border h-12 w-12 flex items-center justify-center'>
+                                        <div className='relative p-2 rounded-full border-grey-600 border h-12 w-12 flex items-center justify-center'>
                                             <Image
                                                 src={require("../../assets/register/facebook.svg")}
                                             />
                                         </div>
-                                        <div className='relative p-2 rounded-full border-grey-200 border h-12 w-12 flex items-center justify-center ml-4'>
+                                        <div className='relative p-2 rounded-full border-grey-600 border h-12 w-12 flex items-center justify-center ml-4'>
                                             <Image
                                                 src={require("../../assets/register/google.svg")}
                                             />
@@ -109,4 +109,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default Register
