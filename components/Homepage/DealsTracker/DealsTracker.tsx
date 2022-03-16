@@ -8,7 +8,7 @@ const DealsTracker = () => {
             <h1 className=" font-jost text-8xl text-black-200 font-semibold text-center py-8">Deals Tracker</h1>
             <div className='flex flex-wrap'>
                 <div className="w-1/3 p-4 ">
-                  <div className='flex shadow-full bg-white'>
+                  <div className='flex shadow-full bg-white rounded-xl'>
                     <div className="flex-3">
                         <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full object-contain"/>
                     </div>
@@ -23,7 +23,7 @@ const DealsTracker = () => {
                   </div>
                 </div>
                 <div className="w-1/3 p-4 ">
-                  <div className='flex shadow-full bg-white'>
+                  <div className='flex shadow-full bg-white rounded-xl'>
                     <div className="flex-3">
                         <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full object-contain"/>
                     </div>
@@ -38,7 +38,7 @@ const DealsTracker = () => {
                   </div>
                 </div>
                 <div className="w-1/3 p-4 ">
-                  <div className='flex shadow-full bg-white'>
+                  <div className='flex shadow-full bg-white rounded-xl'>
                     <div className="flex-3">
                         <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full object-contain"/>
                     </div>
@@ -53,7 +53,7 @@ const DealsTracker = () => {
                   </div>
                 </div>
                 <div className="w-1/3 p-4 ">
-                  <div className='flex shadow-full bg-white'>
+                  <div className='flex shadow-full bg-white rounded-xl'>
                     <div className="flex-3">
                         <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full object-contain"/>
                     </div>
@@ -68,7 +68,7 @@ const DealsTracker = () => {
                   </div>
                 </div>
                 <div className="w-1/3 p-4 ">
-                  <div className='flex shadow-full bg-white'>
+                  <div className='flex shadow-full bg-white rounded-xl'>
                     <div className="flex-3">
                         <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full object-contain"/>
                     </div>
@@ -83,7 +83,7 @@ const DealsTracker = () => {
                   </div>
                 </div>
                 <div className="w-1/3 p-4 ">
-                  <div className='flex shadow-full bg-white'>
+                  <div className='flex shadow-full bg-white rounded-xl'>
                     <div className="flex-3">
                         <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full object-contain"/>
                     </div>
