@@ -64,28 +64,28 @@ const Footer = () => {
               <div className=''>
                 <div>
                   <div className="flex items-center">
-                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-1'>
+                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
                       <div className="relative flex justify-center items-center p-2">
                         <Image
                           src={require("../../assets/footer/facebook.svg")}
                         ></Image>
                       </div>
                     </div>
-                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-1'>
+                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
                       <div className="relative flex justify-center items-center p-2">
                         <Image
                           src={require("../../assets/footer/instagram.svg")}
                         ></Image>
                       </div>
                     </div>
-                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-1'>
+                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
                       <div className="relative flex justify-center items-center p-2">
                         <Image
                           src={require("../../assets/footer/twitter.svg")}
                         ></Image>
                       </div>
                     </div>
-                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-1'>
+                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
                       <div className="relative flex justify-center items-center p-2">
                         <Image
                           src={require("../../assets/footer/discord.svg")}
