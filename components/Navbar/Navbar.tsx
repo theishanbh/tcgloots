@@ -24,7 +24,7 @@ function classNames(...classes:any) {
 const Navbar = () => {
     return (
         <div>
-            <div>
+            <div className=" shadow-lg relative">
                 <Disclosure as="nav">
                 {({ open }) => (
                     <>
