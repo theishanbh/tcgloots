@@ -10,7 +10,7 @@ const NewsHero = () => {
               <div className='flex flex-col w-1/4 px-4 '>
                 <div className='bg-slate-500 shadow-full rounded-md'>
                   {/* image container */}
-                  <div className=' border-b border-grey-primary '>
+                  <div className=''>
                     <img src="./assets/news/news/image1.png" alt="" className='h-full w-full' />
                   </div>
                   {/* text container */}
@@ -27,7 +27,7 @@ const NewsHero = () => {
               <div className='flex flex-col w-1/4 px-4 '>
                 <div className='bg-slate-500 shadow-full rounded-md'>
                   {/* image container */}
-                  <div className=' border-b border-grey-primary '>
+                  <div className=''>
                     <div className="relative">
                       <Image
                         src = {require("../../../assets/news/image2.png")}
@@ -49,7 +49,7 @@ const NewsHero = () => {
               <div className='flex flex-col w-1/4 px-4 '>
                 <div className='bg-slate-500 shadow-full rounded-md'>
                   {/* image container */}
-                  <div className=' border-b border-grey-primary '>
+                  <div className=''>
                   <div className="relative">
                       <Image
                         src = {require("../../../assets/news/image1.png")}
@@ -71,7 +71,7 @@ const NewsHero = () => {
               <div className='flex flex-col w-1/4 px-4 '>
                 <div className='bg-slate-500 shadow-full rounded-md'>
                   {/* image container */}
-                  <div className=' border-b border-grey-primary '>
+                  <div className=''>
                     <div className="relative">
                         <Image
                           src = {require("../../../assets/news/image2.png")}
