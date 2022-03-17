@@ -9,6 +9,7 @@ const News = () => {
             <Navbar></Navbar>
             <NewsHero></NewsHero>
             <NewsArticles></NewsArticles>
+            <Footer></Footer>
         </div>
     </div>
   )
