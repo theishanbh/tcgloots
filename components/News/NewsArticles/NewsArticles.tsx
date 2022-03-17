@@ -9,9 +9,9 @@ const NewsArticles = () => {
             {/* Categories */}
             <div className=' bg-white shadow-lg bg-white-100 p-4 border-4 rounded-lg border-grey-600'>
                 <div className='flex text-black-100'>
-                    <a className=' px-8 text-xl border-r'>ALL</a>
-                    <a className=' px-8 text-xl border-r'>FEATURED</a>
-                    <a className=' px-8 text-xl border-r'>CATEGORY</a>
+                    <a className=' px-8 text-xl border-r border-grey-600'>ALL</a>
+                    <a className=' px-8 text-xl border-r border-grey-600'>FEATURED</a>
+                    <a className=' px-8 text-xl border-r border-grey-600'>CATEGORY</a>
                     <a className=' px-8 text-xl'>CATEGORY</a>
                 </div>
             </div>
