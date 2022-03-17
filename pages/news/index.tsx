@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import NewsHero from '../../components/News/News/NewsHero'
 import NewsArticles from '../../components/News/NewsArticles/NewsArticles'
