@@ -12,69 +12,74 @@ const FAQ = () => {
             <div>
               <div className='relative h-full'>
                 <div className='mx-auto max-w-7xl'>
-                  <div className='flex flex-col font-jost'>
-                    <h1 className='text-center text-5xl font-semibold pt-20'>FAQ</h1>
+                  <div className='flex flex-col font-jost relative'>
+                    <Image
+                      src={require("../../assets/faq/background.png")}
+                      layout="fill"
+                      className="z-0"
+                    />
+                    <h1 className='text-center text-5xl font-semibold pt-20 z-10 relative'>FAQ</h1>
                     <p className=' text-xl text-center py-20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
                     <div>
                       <div className="flex">
                         {/* accoutn */}
                         <div className=" w-1/5 p-4 h-48">
-                          <div className='flex flex-col border border-blue-discord bg-blue-300 p-4 justify-between items-center h-full bg-grey-800'>
+                          <div className='flex flex-col border border-blue-500 bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
                             {/* img container */}
                             <div className='flex-1 flex justify-center items-center relative'>
                               <Image
                                 src={require("../../assets/faq/account.svg")}
                               />
                             </div>
-                            <div className=' font-medium text-xl'>ACCOUNTS</div>
+                            <div className=' font-medium text-xl text-blue-300'>ACCOUNTS</div>
                           </div>
                         </div>
                         {/* games */}
                         <div className=" w-1/5 p-4 h-48">
-                          <div className='flex flex-col border border-blue-discord bg-blue-300 p-4 justify-between items-center h-full bg-grey-800'>
+                          <div className='flex flex-col border border-blue-500 bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
                             {/* img container */}
                             <div className='flex-1 flex justify-center items-center relative'>
                               <Image
                                 src={require("../../assets/faq/games.svg")}
                               />
                             </div>
-                            <div className=' font-medium text-xl'>GAMES</div>
+                            <div className=' font-medium text-xl text-blue-300'>GAMES</div>
                           </div>
                         </div>
                         {/* rewards */}
                         <div className=" w-1/5 p-4 h-48">
-                          <div className='flex flex-col border border-blue-discord bg-blue-300 p-4 justify-between items-center h-full bg-grey-800'>
+                          <div className='flex flex-col border border-blue-500 bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
                             {/* img container */}
                             <div className='flex-1 flex justify-center items-center relative'>
                               <Image
                                 src={require("../../assets/faq/rewards.svg")}
                               />
                             </div>
-                            <div className=' font-medium text-xl'>REWARDS</div>
+                            <div className=' font-medium text-xl text-blue-300'>REWARDS</div>
                           </div>
                         </div>
                         {/* website features */}
                         <div className=" w-1/5 p-4 h-48">
-                          <div className='flex flex-col border border-blue-discord bg-blue-300 p-4 justify-between items-center h-full bg-grey-800'>
+                          <div className='flex flex-col border border-blue-500 bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
                             {/* img container */}
                             <div className='flex-1 flex justify-center items-center relative'>
                               <Image
                                 src={require("../../assets/faq/websitefeatures.svg")}
                               />
                             </div>
-                            <div className=' font-medium text-xl'>WEBSITE FEATURES</div>
+                            <div className=' font-medium text-xl text-blue-300'>WEBSITE FEATURES</div>
                           </div>
                         </div>
                         {/* payments */}
                         <div className=" w-1/5 p-4 h-48">
-                          <div className='flex flex-col border border-blue-discord bg-blue-300 p-4 justify-between items-center h-full bg-grey-800'>
+                          <div className='flex flex-col border border-blue-500 bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
                             {/* img container */}
                             <div className='flex-1 flex justify-center items-center relative'>
                               <Image
                                 src={require("../../assets/faq/payments.svg")}
                               />
                             </div>
-                            <div className=' font-medium text-xl'>PAYMENTS</div>
+                            <div className=' font-medium text-xl text-blue-300'>PAYMENTS</div>
                           </div>
                         </div>
                       </div>
@@ -92,7 +97,7 @@ const FAQ = () => {
               {/* faq answers and questions */}
               <div className='mx-auto max-w-7xl font-jost py-16'>
                 {/* container */}
-                <div className='py-8 px-4 bg-grey-800 border-blue-discord border'>
+                <div className='py-8 px-4 bg-grey-800 border-blue-500 border'>
                   <div className="flex flex-row flex-wrap text-lg font-medium">
                     <div className="w-1/2 p-2">
                       <div className="border border-blue-200 py-4 pl-8 bg-white">
