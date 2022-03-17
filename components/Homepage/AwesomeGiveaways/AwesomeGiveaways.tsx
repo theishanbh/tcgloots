@@ -6,7 +6,7 @@ const AwesomeGiveaways = () => {
     <div className="font-jost bg-[url('/assets/homepage/awesomegiveaways/background.png')] bg-cover">
       <div className=' mx-auto max-w-7xl text-white py-8'>
         <h1 className=" font-jost text-8xl font-semibold text-center text-white-100 py-8">Awesome Giveaways!</h1>
-        <div className=' max-w-7xl mx-auto my-4 p-4 bg-yellow-400 rounded-lg'>
+        <div className=' max-w-7xl mx-auto my-4 px-4 py-8 bg-yellow-400 rounded-lg'>
           <div className='flex flex-wrap'>
             <div className='flex flex-col w-1/5 px-4 '>
               <div className='bg-white-100 shadow-lg rounded-md flex-1'>

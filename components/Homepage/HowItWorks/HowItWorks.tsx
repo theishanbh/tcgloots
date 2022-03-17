@@ -3,7 +3,7 @@ import React from 'react'
 const HowItWorks = () => {
   return (
     <div className="font-jost bg-[url('/assets/homepage/howitworks/background.png')] bg-cover bg-no-repeat bg-center">
-      <div className='mx-auto max-w-7xl px-20 py-8'>
+      <div className='mx-auto max-w-7xl px-20 py-24'>
         <div className='px-20 py-8 bg-white-100'>
           <div className=''>
             <h1 className=" text-7xl font-jost py-8 underline underline-offset-8 leading-10 decoration-yellow-200">How does it work?</h1>
