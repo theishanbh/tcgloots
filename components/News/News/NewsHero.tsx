@@ -16,7 +16,7 @@ const NewsHero = () => {
                   {/* text container */}
                   <div className='flex flex-col py-2 px-4'>
                     <p className=' font-medium text-2xl text-black-100'>Lorem ipsum dolor sit amet</p>
-                    <span className=' text-grey-primary text-lg py-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</span>
+                    <span className=' text-grey-primary text-lg py-8 font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</span>
                     <div className='flex justify-between items-center'>
                       <p className=' text-2sm'>1 Dec 2021</p>
                       <button className='border bg-grey-600 text-grey-400 font-jost text-base rounded-md px-1'>Category</button>
@@ -38,7 +38,7 @@ const NewsHero = () => {
                   {/* text container */}
                   <div className='flex flex-col py-2 px-4'>
                     <p className=' font-medium text-2xl text-black-100'>Lorem ipsum dolor sit amet</p>
-                    <span className=' text-grey-primary text-lg py-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</span>
+                    <span className=' text-grey-primary text-lg py-8 font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</span>
                     <div className='flex justify-between items-center'>
                       <p className=' text-2sm'>1 Dec 2021</p>
                       <button className='border bg-yellow-500 text-brown-100 font-jost text-base rounded-md px-1'>Featured</button>
@@ -60,7 +60,7 @@ const NewsHero = () => {
                   {/* text container */}
                   <div className='flex flex-col py-2 px-4'>
                     <p className=' font-medium text-2xl text-black-100'>Lorem ipsum dolor sit amet</p>
-                    <span className=' text-grey-primary text-lg py-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</span>
+                    <span className=' text-grey-primary text-lg py-8 font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</span>
                     <div className='flex justify-between items-center'>
                       <p className=' text-2sm'>1 Dec 2021</p>
                       <button className='border bg-slate-200 text-blue-300 font-jost text-base rounded-md px-1'>Category</button>
@@ -82,7 +82,7 @@ const NewsHero = () => {
                   {/* text container */}
                   <div className='flex flex-col py-2 px-4'>
                     <p className=' font-medium text-2xl text-black-100'>Lorem ipsum dolor sit amet</p>
-                    <span className=' text-grey-primary text-lg py-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</span>
+                    <span className=' text-grey-primary text-lg py-8 font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</span>
                     <div className='flex justify-between items-center'>
                       <p className=' text-2sm'>1 Dec 2021</p>
                       <button className='border bg-yellow-500 text-brown-100 font-jost text-base rounded-md px-1'>Featured</button>
