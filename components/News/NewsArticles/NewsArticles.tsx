@@ -16,9 +16,9 @@ const NewsArticles = () => {
                 </div>
             </div>
             {/* blogs */}
-            <section className="bg-white pt-1 px-12">
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
-                  <div className="flex flex-col-reverse flex-3 mr-8">
+            <section className="bg-white pt-1 px-12 w-full">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 px-4 xl:px-0">
+                  <div className="flex flex-col-reverse flex-3">
                     <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
                         <div 
                           className="relative justify-center items-center my-auto flex-shrink-0 overflow-hidden"
@@ -36,14 +36,14 @@ const NewsArticles = () => {
                             <span className=" text-6xl font-medium text-black-100 text-center md:text-left lg:text-left xl:text-left no-underline hover:underline pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
                             </Link>
                             <div className="text-xl font-light text-black-100 text-center md:text-left lg:text-left xl:text-left overflow-ellipsis overflow-hidden whitespace-nowrap"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </div>
-                            <div className=" text-2sm text-black-100 text-center mt-auto md:text-left lg:text-left xl:text-left pt-3"> 1 Dec 2021 </div>
+                            <div className=" text-2sm text-black-100 text-center mt-auto md:text-left lg:text-left xl:text-left pt-3 pb-3"> 1 Dec 2021 </div>
                         </div>
                       </div>
                     </div>
               </div>
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
-                  <div className="flex flex-col-reverse flex-3 mr-8">
-                    <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 px-4 xl:px-0">
+                  <div className="flex flex-col-reverse flex-3">
+                    <div className="flex w-full flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
                         <div 
                           className="relative justify-center items-center my-auto flex-shrink-0 overflow-hidden"
                         >
@@ -60,19 +60,19 @@ const NewsArticles = () => {
                             <span className=" text-6xl font-medium text-black-100 text-center md:text-left lg:text-left xl:text-left no-underline hover:underline pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
                             </Link>
                             <div className="text-xl font-light text-black-100 text-center md:text-left lg:text-left xl:text-left overflow-ellipsis overflow-hidden whitespace-nowrap"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </div>
-                            <div className=" text-2sm text-black-100 text-center mt-auto md:text-left lg:text-left xl:text-left pt-3"> 1 Dec 2021 </div>
+                            <div className=" text-2sm text-black-100 text-center mt-auto md:text-left lg:text-left xl:text-left pt-3 pb-3"> 1 Dec 2021 </div>
                         </div>
                       </div>
                     </div>
               </div>
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
-                  <div className="flex flex-col-reverse flex-3 mr-8">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 px-4 xl:px-0">
+                  <div className="flex flex-col-reverse flex-3">
                     <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
                         <div 
                           className="relative justify-center items-center my-auto flex-shrink-0"
                         >
                             <Image
-                              src={require("../../../assets/news/image3.png")}
+                              src={require("../../../assets/news/image4.png")}
                               objectFit="cover"
                               className=' rounded-lg'
                             />
@@ -84,13 +84,13 @@ const NewsArticles = () => {
                             <span className=" text-6xl text-black-100 font-medium text-center md:text-left lg:text-left xl:text-left no-underline hover:underline pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
                             </Link>
                             <div className="text-xl font-light text-black-100 text-center md:text-left lg:text-left xl:text-left overflow-ellipsis overflow-hidden whitespace-nowrap"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </div>
-                            <div className=" text-2sm text-black-100 text-center mt-auto md:text-left lg:text-left xl:text-left pt-3"> 1 Dec 2021 </div>
+                            <div className=" text-2sm text-black-100 text-center mt-auto md:text-left lg:text-left xl:text-left pt-3 pb-3"> 1 Dec 2021 </div>
                         </div>
                       </div>
                     </div>
               </div>
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
-                  <div className="flex flex-col-reverse flex-3 mr-8">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 px-4 xl:px-0">
+                  <div className="flex flex-col-reverse flex-3">
                     <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
                         <div 
                           className="relative justify-center items-center my-auto flex-shrink-0 overflow-hidden"
@@ -108,7 +108,7 @@ const NewsArticles = () => {
                             <span className=" text-6xl text-black-100 font-medium text-center md:text-left lg:text-left xl:text-left no-underline hover:underline pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
                             </Link>
                             <div className="text-xl font-light text-black-100 text-center md:text-left lg:text-left xl:text-left overflow-ellipsis overflow-hidden whitespace-nowrap"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </div>
-                            <div className=" text-2sm text-black-100 text-center mt-auto md:text-left lg:text-left xl:text-left pt-3"> 1 Dec 2021 </div>
+                            <div className=" text-2sm text-black-100 text-center mt-auto md:text-left lg:text-left xl:text-left pt-3 pb-3"> 1 Dec 2021 </div>
                         </div>
                       </div>
                     </div>
