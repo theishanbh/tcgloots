@@ -7,7 +7,7 @@ const NewsArticles = () => {
     <div className="bg-slate-300">
         <div className=' max-w-7xl mx-auto font-jost py-12'>
             {/* Categories */}
-            <div className=' bg-white shadow-lg bg-white-100 p-4 border-4 rounded-lg border-slate-100'>
+            <div className=' bg-white shadow-lg bg-white-100 p-4 border-4 rounded-lg border-grey-600'>
                 <div className='flex text-black-100'>
                     <a className=' px-8 text-xl border-r'>ALL</a>
                     <a className=' px-8 text-xl border-r'>FEATURED</a>
@@ -16,8 +16,8 @@ const NewsArticles = () => {
                 </div>
             </div>
             {/* blogs */}
-            <section className="bg-white pt-1">
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 mx-auto max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
+            <section className="bg-white pt-1 px-12">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
                   <div className="flex flex-col-reverse flex-3 mr-8">
                     <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
                         <div 
@@ -41,7 +41,7 @@ const NewsArticles = () => {
                       </div>
                     </div>
               </div>
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row mx-auto max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
                   <div className="flex flex-col-reverse flex-3 mr-8">
                     <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
                         <div 
@@ -65,7 +65,7 @@ const NewsArticles = () => {
                       </div>
                     </div>
               </div>
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row mx-auto max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
                   <div className="flex flex-col-reverse flex-3 mr-8">
                     <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
                         <div 
@@ -89,7 +89,7 @@ const NewsArticles = () => {
                       </div>
                     </div>
               </div>
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row mx-auto max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl px-4 xl:px-0">
                   <div className="flex flex-col-reverse flex-3 mr-8">
                     <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
                         <div 
@@ -115,7 +115,7 @@ const NewsArticles = () => {
               </div>
             </section>
             {/* button */}
-            <div className=" text-center bg-white-100 py-8">
+            <div className=" text-center bg-slate-300 py-8">
               <button className=" border border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-2 shadow-full">Load More</button>
           </div>
         </div>
