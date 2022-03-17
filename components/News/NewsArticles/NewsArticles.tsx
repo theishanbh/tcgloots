@@ -4,10 +4,10 @@ import React from 'react'
 
 const NewsArticles = () => {
   return (
-    <div>
-        <div className=' max-w-7xl mx-auto font-jost py-8'>
+    <div className="bg-slate-300">
+        <div className=' max-w-7xl mx-auto font-jost py-12'>
             {/* Categories */}
-            <div className=' bg-white shadow-lg p-4 border-4 rounded-lg border-slate-100'>
+            <div className=' bg-white shadow-lg bg-white-100 p-4 border-4 rounded-lg border-slate-100'>
                 <div className='flex text-black-100'>
                     <a className=' px-8 text-xl border-r'>ALL</a>
                     <a className=' px-8 text-xl border-r'>FEATURED</a>
