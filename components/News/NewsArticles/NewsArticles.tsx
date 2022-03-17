@@ -16,7 +16,7 @@ const NewsArticles = () => {
                 </div>
             </div>
             {/* blogs */}
-            <section className="bg-white pt-1 px-12 w-full">
+            <section className="bg-white pt-1 px-4 w-full">
               <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 px-4 xl:px-0">
                   <div className="flex flex-col-reverse flex-3">
                     <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
