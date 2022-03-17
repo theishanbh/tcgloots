@@ -18,13 +18,13 @@ const FAQ = () => {
                       layout="fill"
                       className="z-0"
                     />
-                    <h1 className='text-center text-5xl font-semibold pt-20 z-10 relative'>FAQ</h1>
+                    <h1 className='text-center text-8xl text-black-200 font-semibold pt-20 z-10 relative'>FAQ</h1>
                     <p className=' text-xl text-center py-20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
                     <div>
                       <div className="flex">
                         {/* accoutn */}
                         <div className=" w-1/5 p-4 h-48">
-                          <div className='flex flex-col border border-blue-500 bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
+                          <div className='flex flex-col border border-blue-500 rounded-lg bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
                             {/* img container */}
                             <div className='flex-1 flex justify-center items-center relative'>
                               <Image
@@ -36,7 +36,7 @@ const FAQ = () => {
                         </div>
                         {/* games */}
                         <div className=" w-1/5 p-4 h-48">
-                          <div className='flex flex-col border border-blue-500 bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
+                          <div className='flex flex-col border border-blue-500 rounded-lg bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
                             {/* img container */}
                             <div className='flex-1 flex justify-center items-center relative'>
                               <Image
@@ -48,7 +48,7 @@ const FAQ = () => {
                         </div>
                         {/* rewards */}
                         <div className=" w-1/5 p-4 h-48">
-                          <div className='flex flex-col border border-blue-500 bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
+                          <div className='flex flex-col border border-blue-500 rounded-lg bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
                             {/* img container */}
                             <div className='flex-1 flex justify-center items-center relative'>
                               <Image
@@ -60,7 +60,7 @@ const FAQ = () => {
                         </div>
                         {/* website features */}
                         <div className=" w-1/5 p-4 h-48">
-                          <div className='flex flex-col border border-blue-500 bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
+                          <div className='flex flex-col border border-blue-500 rounded-lg bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
                             {/* img container */}
                             <div className='flex-1 flex justify-center items-center relative'>
                               <Image
@@ -72,7 +72,7 @@ const FAQ = () => {
                         </div>
                         {/* payments */}
                         <div className=" w-1/5 p-4 h-48">
-                          <div className='flex flex-col border border-blue-500 bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
+                          <div className='flex flex-col border border-blue-500 rounded-lg bg-blue-400 p-4 justify-between items-center h-full bg-grey-800'>
                             {/* img container */}
                             <div className='flex-1 flex justify-center items-center relative'>
                               <Image
@@ -97,65 +97,65 @@ const FAQ = () => {
               {/* faq answers and questions */}
               <div className='mx-auto max-w-7xl font-jost py-16'>
                 {/* container */}
-                <div className='py-8 px-4 bg-grey-800 border-blue-500 border'>
+                <div className='py-8 px-4 bg-grey-800 border-grey-600 border bg-blue-400 rounded-lg'>
                   <div className="flex flex-row flex-wrap text-lg font-medium">
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                         How to sign up? 
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       Why can’t I log in?
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       How to add-remove a friend?
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       How to remove the account?
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       I have an issue with my account, how can I contact you?
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       I have an issue with my account, how can I contact you?
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       Can I connect my current TCGLoots account with my Steam acccount that was used in the deleted account?
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       Can I connect my current TCGLoots account with my Steam acccount that was used in the deleted account?
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       I got banned for”untrustworthy connection”. What should I do?
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       I got banned for”untrustworthy connection”. What should I do?
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       Can I change password while being logged in?
                       </div>
                     </div>
                     <div className="w-1/2 p-2">
-                      <div className="border border-blue-200 py-4 pl-8 bg-white">
+                      <div className="border border-blue-500 py-4 px-8 text-grey-400 bg-white-100 rounded-lg">
                       Can I change password while being logged in?
                       </div>
                     </div>
