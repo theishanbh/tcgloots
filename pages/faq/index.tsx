@@ -10,14 +10,14 @@ const FAQ = () => {
             <Navbar></Navbar>
 
             <div>
-              <div className='relative h-full'>
+              <div className="relative h-full bg-[url('/assets/faq/background.png')] bg-cover bg-no-repeat bg-[center_top_8rem]">
                 <div className='mx-auto max-w-7xl'>
-                  <div className='flex flex-col font-jost relative'>
-                    <Image
+                  <div className="flex flex-col font-jost relative ">
+                    {/* <Image
                       src={require("../../assets/faq/background.png")}
                       layout="fill"
                       className="z-0"
-                    />
+                    /> */}
                     <h1 className='text-center text-8xl text-black-200 font-semibold pt-20 z-10 relative'>FAQ</h1>
                     <p className=' text-xl text-center py-20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
                     <div>
