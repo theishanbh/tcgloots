@@ -6,21 +6,21 @@ import Navbar from '../../components/Navbar/Navbar'
 const Settings = () => {
   return (
     <div>
-        <div>
+        <div className="bg-slate-500">
             <Navbar></Navbar>
-            <div className="mx-auto max-w-7xl font-jost ">
+            <div className="mx-auto max-w-7xl font-jost bg-slate-600 ">
                 {/* heading */}
                 <div className="">
-                    <h1 className='text-4xl font-medium py-8'>Settings</h1>
+                    <h1 className='text-8xl font-medium py-8'>Settings</h1>
                 </div>
                 {/* settings */}
-                <div className='bg-grey-500 p-1'>
+                <div className='p-1 pl-12'>
                     <div className='flex'>
                         {/* left */}
                         <div className='flex flex-col flex-4'>
                             {/* first box */}
                             <div className='p-1'>
-                                <div className=' bg-white p-4'>
+                                <div className=' bg-white-100 p-4'>
                                     {/* container */}
                                     <div className='flex flex-col'>
                                         {/* username */}
@@ -62,7 +62,7 @@ const Settings = () => {
                             {/* second box */}
                             <div>
                                 <div className='p-1'>
-                                    <div className='flex flex-col bg-white p-4'>
+                                    <div className='flex flex-col bg-white-100 p-4'>
                                         <div className='flex items-center'>
                                             {/* image question mark */}
                                             <div className='relative flex items-center justify-center'>
@@ -92,7 +92,7 @@ const Settings = () => {
                             <div className='flex'>
                                 {/* left section */}
                                 <div className='flex-1 p-1'>
-                                    <div className='flex flex-col bg-white p-4'>
+                                    <div className='flex flex-col bg-white-100 p-4'>
                                         <div className="flex">
                                             <div>
                                                 <Image
@@ -132,7 +132,7 @@ const Settings = () => {
                                 </div>
                                 {/* right section */}
                                 <div className='flex-1 p-1'>
-                                    <div className='flex flex-col bg-white p-4'>
+                                    <div className='flex flex-col bg-white-100 p-4'>
                                         <div className="flex">
                                             <div>
                                                 <Image
@@ -171,8 +171,8 @@ const Settings = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='p-1 flex-grow'>
-                                <div className='p-4 bg-white flex '>
+                            <div className='p-1 '>
+                                <div className='p-4 bg-white-100 flex flex-grow '>
                                     <div className='relative'>
                                         <Image
                                             src={require("../../assets/settings/discord.svg")}
@@ -191,6 +191,9 @@ const Settings = () => {
                                                 <p> ·  After joining the above text channel, visit our #notification-controls channel and follow the instructions.</p>
                                             </div>
                                         </div>
+                                        <div className=" text-right bg-white-100 py-8">
+                                            <button className=" border border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-2 shadow-full">View All</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -198,8 +201,8 @@ const Settings = () => {
                     </div>
                 </div>
                 {/* button */}
-                <div className='text-center '>
-                    <button className='border font-jost text-white bg-yellow-primary text-base font-medium rounded-md px-12 py-2 ml-2'>SAVE CHANGES</button>
+                <div className=" text-right bg-white-100 py-8">
+                    <button className=" border border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-2 shadow-full">View All</button>
                 </div>
             </div>
             <Footer></Footer>
