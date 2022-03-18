@@ -103,7 +103,7 @@ const ProductTracker = () =>{
                         {/*  */}
                         <div className="text-center px-12">
                             <p className=" text-4xl font-light">Want to suggest a product for us to track?</p>
-                            <button className=" bg-blue-300 text-white-100 text-xl flex items-center hover:bg-blue-100 mt-6 text-white font-bold py-2 px-4 rounded"> 
+                            <button className=" bg-blue-300 text-white-100 text-xl flex items-center m-auto hover:bg-blue-100 mt-6 text-white py-2 px-4 rounded"> 
                                 <span>
                                     Submit a suggestion 
                                 </span>
