@@ -192,7 +192,7 @@ const Settings = () => {
                                                 {/*  */}
                                                 <div>
                                                     <p> · Unfortunately receiving alerts from specific Text channels in Discord takes a little more effort.</p>
-                                                    <p> ·  After joining the above text channel, visit our #notification-controls channel and follow the instructions.</p>
+                                                    <p> ·  After joining the above text channel, visit our <span className="text-blue-300"> #notification-controls </span> channel and follow the instructions.</p>
                                                 </div>
                                             </div>
                                             <div className=" text-right pt-8">
