@@ -8,7 +8,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -21,7 +21,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -34,7 +34,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -47,7 +47,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -60,7 +60,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -73,7 +73,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -86,7 +86,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -99,7 +99,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -112,7 +112,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -125,7 +125,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -138,7 +138,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -151,7 +151,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -164,7 +164,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -177,7 +177,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />
@@ -190,7 +190,7 @@ const Slider = () => {
         {/* slider item */}
         <div className='px-2 flex-grow-0 flex-shrink-0'>
           <div className="flex items-center justify-center border border-grey-600 rounded-xl bg-slate-100 py-1">
-            <div className='relative px-2'>
+            <div className='relative px-2 flex justify-center items-center'>
               <Image
                 src={require("../../../assets/homepage/herosection/default.png")}
               />

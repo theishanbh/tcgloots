@@ -24,11 +24,11 @@ function classNames(...classes:any) {
 const Navbar = () => {
     return (
         <div>
-            <div className=" shadow-lg relative">
+            <div className=" shadow-lg relative py-3">
                 <Disclosure as="nav">
                 {({ open }) => (
                     <>
-                    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                    <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                         <div className="relative flex items-center justify-between h-16">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
@@ -48,8 +48,8 @@ const Navbar = () => {
                                             className=" cursor-pointer"
                                             src={require('../../assets/tcglootslogo.png')}
                                             alt="TCGLoots"
-                                            height={50}
-                                            width={50}
+                                            height={70}
+                                            width={70}
                                             objectFit='contain'
                                             
                                         />
@@ -65,7 +65,7 @@ const Navbar = () => {
                                                 <a
                                                     key={item.name}
                                                     href={item.href}
-                                                    className={classNames('px-3 py-2 font-jost text-grey-400 text-base rounded-md font-medium inline-flex items-center uppercase')}
+                                                    className={classNames('pl-10 py-2 font-jost text-grey-400 text-base rounded-md font-medium inline-flex items-center uppercase')}
                                                     aria-current={item.current ? 'page' : undefined}
                                                 >
                                                     <img src="./assets/logos/giveaways.png" alt="" className='inline h-full' />
@@ -80,7 +80,7 @@ const Navbar = () => {
                                             <a
                                             key={item.name}
                                             href={item.href}
-                                            className={classNames('px-3 py-2 rounded-md font-jost text-grey-400 text-base font-medium uppercase')}
+                                            className={classNames('pl-10 py-2 rounded-md font-jost text-grey-400 text-base font-medium uppercase')}
                                             aria-current={item.current ? 'page' : undefined}
                                             >
                                                 {item.name}
