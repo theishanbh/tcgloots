@@ -100,6 +100,7 @@ module.exports = {
         '9' : '9 9 0%',
       },
       boxShadow: {
+        half : "0px 0px 6px 6px rgba(0, 0, 0, 0.02)",
         full : "0px 0px 6px 6px rgba(0, 0, 0, 0.04)",
         xs: "0 0 0 1px rgba(0, 0, 0, 0.16)",
         sm: "0 1px 2px 0 rgba(0, 0, 0, 0.16)",
