@@ -68,6 +68,7 @@ const Footer = () => {
                       <div className="relative flex justify-center items-center p-2">
                         <Image
                           src={require("../../assets/footer/facebook.svg")}
+                          className="scale-75"
                         ></Image>
                       </div>
                     </div>
@@ -75,6 +76,7 @@ const Footer = () => {
                       <div className="relative flex justify-center items-center p-2">
                         <Image
                           src={require("../../assets/footer/instagram.svg")}
+                          className="scale-75"
                         ></Image>
                       </div>
                     </div>
@@ -82,6 +84,7 @@ const Footer = () => {
                       <div className="relative flex justify-center items-center p-2">
                         <Image
                           src={require("../../assets/footer/twitter.svg")}
+                          className="scale-75"
                         ></Image>
                       </div>
                     </div>
@@ -89,6 +92,7 @@ const Footer = () => {
                       <div className="relative flex justify-center items-center p-2">
                         <Image
                           src={require("../../assets/footer/discord.svg")}
+                          className="scale-75"
                         ></Image>
                       </div>
                     </div>
