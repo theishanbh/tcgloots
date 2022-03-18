@@ -25,14 +25,9 @@ const StreamersWeSupport = () => {
             </div>
           </div>
           {/* other streamers */}
-          <div className='relative w-full py-24'>
-            <Image
-              src={require("../../../assets/homepage/streamerswesupport/background.png")}
-              layout="fill"
-              objectFit='contain'
-            ></Image>
-            <div className='flex items-center justify-between px-4 bg-slate-600 shadow-full py-4'>
-              <div className='flex flex-col items-center'>
+          <div className="relative w-full py-24 bg-[url('/assets/homepage/streamerswesupport/background.png')] bg-cover">
+            <div className='flex items-center justify-between px-4 bg-slate-400 bg-opacity-60 shadow-full py-4'>
+              <div className="flex flex-col items-center ">
                 <div className='relative'>
                   <Image
                     src={require("../../../assets/homepage/streamerswesupport/person1.png")}
