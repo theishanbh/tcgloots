@@ -26,7 +26,7 @@ const StreamersWeSupport = () => {
           </div>
           {/* other streamers */}
           <div className="relative w-full py-24 bg-[url('/assets/homepage/streamerswesupport/background.png')] bg-cover">
-            <div className='flex items-center justify-between px-4 bg-slate-400 bg-opacity-60 shadow-full py-4'>
+            <div className='flex items-center justify-between px-4 bg-slate-400 bg-opacity-70 shadow-full py-4'>
               <div className="flex flex-col items-center ">
                 <div className='relative'>
                   <Image
