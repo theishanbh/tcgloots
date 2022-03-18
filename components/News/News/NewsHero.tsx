@@ -26,7 +26,7 @@ const NewsHero = () => {
                   </div>
                 </div>
                 <div className='flex flex-col w-1/4 px-4 '>
-                  <div className='bg-slate-500 shadow-full rounded-md'>
+                  <div className='bg-slate-500 shadow-full rounded-xl'>
                     {/* image container */}
                     <div className=''>
                       <div className="relative">
@@ -48,10 +48,10 @@ const NewsHero = () => {
                   </div>
                 </div>
                 <div className='flex flex-col w-1/4 px-4 '>
-                  <div className='bg-slate-500 shadow-full rounded-md'>
+                  <div className='bg-slate-500 shadow-full rounded-xl'>
                     {/* image container */}
                     <div className=''>
-                    <div className="relative">
+                      <div className="relative">
                         <Image
                           src = {require("../../../assets/news/image1.png")}
                           layout="responsive"

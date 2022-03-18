@@ -17,9 +17,9 @@ const NewsArticles = () => {
             </div>
             {/* blogs */}
             <section className="bg-white pt-1 px-4 w-full">
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 px-4 xl:px-0">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row px-4 xl:px-0">
                   <div className="flex flex-col-reverse flex-3">
-                    <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
+                    <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-4 border-grey-600 py-10" >
                         <div 
                           className="relative justify-center items-center my-auto flex-shrink-0 overflow-hidden"
                         >
@@ -41,9 +41,9 @@ const NewsArticles = () => {
                       </div>
                     </div>
               </div>
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 px-4 xl:px-0">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row px-4 xl:px-0">
                   <div className="flex flex-col-reverse flex-3">
-                    <div className="flex w-full flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
+                    <div className="flex w-full flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-4 border-grey-600 py-10" >
                         <div 
                           className="relative justify-center items-center my-auto flex-shrink-0 overflow-hidden"
                         >
@@ -65,9 +65,9 @@ const NewsArticles = () => {
                       </div>
                     </div>
               </div>
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 px-4 xl:px-0">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row px-4 xl:px-0">
                   <div className="flex flex-col-reverse flex-3">
-                    <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
+                    <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-4 border-grey-600 py-10" >
                         <div 
                           className="relative justify-center items-center my-auto flex-shrink-0"
                         >
@@ -89,9 +89,9 @@ const NewsArticles = () => {
                       </div>
                     </div>
               </div>
-              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row pt-12 px-4 xl:px-0">
+              <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row px-4 xl:px-0">
                   <div className="flex flex-col-reverse flex-3">
-                    <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-2 border-grey-600 py-10" >
+                    <div className="flex flex-col items-center md:items-start lg:items-start xl:items-start sm:flex-col md:flex-row lg:flex-row justify-start border-solid border-b-4 border-grey-600 py-10" >
                         <div 
                           className="relative justify-center items-center my-auto flex-shrink-0 overflow-hidden"
                         >
@@ -115,8 +115,8 @@ const NewsArticles = () => {
               </div>
             </section>
             {/* button */}
-            <div className=" text-center bg-slate-300 py-8">
-              <button className=" border border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-2 shadow-full">Load More</button>
+            <div className=" text-center py-8">
+              <button className=" border bg-white-100 border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-2 shadow-full">Load More</button>
           </div>
         </div>
     </div>
