@@ -95,6 +95,7 @@ const Footer = () => {
                           className="scale-75"
                         ></Image>
                       </div>
+                      <div></div>
                     </div>
                   </div>
                 </div>
