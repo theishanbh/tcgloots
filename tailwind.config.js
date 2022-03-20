@@ -10,7 +10,7 @@ module.exports = {
       '2sm': '.938rem',
       base: '1rem',
       lg: '1.125rem',
-      '2lg' : '1.188rem',
+      '2lg': '1.188rem',
       xl: '1.25rem',
       '2xl': '1.375rem',
       '3xl': '1.5rem',
@@ -23,85 +23,85 @@ module.exports = {
     },
     colors: {
       // white
-      transparent : 'transparent',
-      white : {
-        100 : '#FFFFFF',
+      transparent: 'transparent',
+      white: {
+        100: '#FFFFFF',
       },
       // black
-      black : {
-        100 : "#454545",
-        200 : "#545454",
+      black: {
+        100: "#454545",
+        200: "#545454",
       },
-      grey : {
-        100 : "#555555",
-        200 : "#666666",
-        300 : "#606060",
-        400 : "#888888",
-        500 : "#CCCCCC",
-        600 : "#DDDDDD",
+      grey: {
+        100: "#555555",
+        200: "#666666",
+        300: "#606060",
+        400: "#888888",
+        500: "#CCCCCC",
+        600: "#DDDDDD",
       },
       // slate
-      slate : {
-        100 : "#EEEEEE",
-        200 : "#F4F4F4",
-        300 : "#F2F4F7",
-        400 : "#F9F9F9",
-        500 : "#FCFCFC",
-        600 : "#FAFAFA",
-        
+      slate: {
+        100: "#EEEEEE",
+        200: "#F4F4F4",
+        300: "#F2F4F7",
+        400: "#F9F9F9",
+        500: "#FCFCFC",
+        600: "#FAFAFA",
+
       },
       // yellow
-      yellow : {
-        100 : "#FDAE22",
-        200 : "#FFCC30",
-        300 : "#F9D260",
-        400 : "#FCE59F",
-        500 : "#FFD235"
+      yellow: {
+        100: "#FDAE22",
+        200: "#FFCC30",
+        300: "#F9D260",
+        400: "#FCE59F",
+        500: "#FFD235"
       },
       // brown
-      brown : {
-        100 : "#8D6E00"
+      brown: {
+        100: "#8D6E00"
       },
       // red
-      red : {
-        100 : "#C40016",
+      red: {
+        100: "#C40016",
       },
       // pink
-      pink : {
-        100 : "#FCE8E8"
+      pink: {
+        100: "#FCE8E8"
       },
       // blue
-      blue : {
-        100 : "#5865F2",
-        200 : "#1890CF",
-        300 : "#55AEF0",
-        400 : "#F7F8FC",
-        500 : "#56ADEF"
+      blue: {
+        100: "#5865F2",
+        200: "#1890CF",
+        300: "#55AEF0",
+        400: "#F7F8FC",
+        500: "#56ADEF"
       },
       // green
-      green : {
-        100 : "#82C732",
+      green: {
+        100: "#82C732",
       },
     },
-    
+
     extend: {
-      
-      fontFamily : {
-        'jost' : ['Jost', 'sans-serif']
+
+      fontFamily: {
+        'jost': ['Jost', 'sans-serif']
       },
-      flex :{
-        '2' : '2 2 0%',
-        '3' : '3 3 0%',
-        '4' : '4 4 0%',
-        '5' : '5 5 0%',
-        '6' : '6 6 0%',
-        '7' : '7 7 0%',
-        '8' : '8 8 0%',
-        '9' : '9 9 0%',
+      flex: {
+        '2': '2 2 0%',
+        '3': '3 3 0%',
+        '4': '4 4 0%',
+        '5': '5 5 0%',
+        '6': '6 6 0%',
+        '7': '7 7 0%',
+        '8': '8 8 0%',
+        '9': '9 9 0%',
       },
       boxShadow: {
-        half : "0px 0px 6px 6px rgba(0, 0, 0, 0.02)",
-        full : "0px 0px 6px 6px rgba(0, 0, 0, 0.04)",
+        half: "0px 0px 6px 6px rgba(0, 0, 0, 0.02)",
+        full: "0px 0px 6px 6px rgba(0, 0, 0, 0.04)",
         xs: "0 0 0 1px rgba(0, 0, 0, 0.16)",
         sm: "0 1px 2px 0 rgba(0, 0, 0, 0.16)",
         default: "0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.03)",
@@ -113,10 +113,19 @@ module.exports = {
         outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
         none: "none",
       },
-      maxWidth : {
-        '7xl' : '1440px'
+      maxWidth: {
+        '7xl': '1440px'
+      },
+      screens:{
+        'tep': '280px',
+        'thp': '300px',
+        'tfp': '350px',
+        'fhp': '400px',
+        'ffp': '450px',
+        'fihp': '500px',
+        'fifp': '550px',
+        'shp': '600px'
       }
-      
     },
   },
   plugins: [],
