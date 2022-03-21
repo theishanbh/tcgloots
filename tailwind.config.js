@@ -124,7 +124,10 @@ module.exports = {
         'ffp': '450px',
         'fihp': '500px',
         'fifp': '550px',
-        'shp': '600px'
+        'shp': '600px',
+        'sehp': '700px',
+        'otp': '1000px',
+        'twefp': '1285px'
       }
     },
   },
