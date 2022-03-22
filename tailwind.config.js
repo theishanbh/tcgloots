@@ -126,6 +126,7 @@ module.exports = {
         'fifp': '550px',
         'shp': '600px',
         'sehp': '700px',
+        'efp': '850px',
         'otp': '1000px',
         'twefp': '1285px'
       }
