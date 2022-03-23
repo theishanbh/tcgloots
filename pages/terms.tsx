@@ -2,20 +2,21 @@ import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import Image from 'next/image'
+import terms from '../public/assets/terms.png'
+
 
 const Terms = () => {
     return (
         <>
             <div className='font-jost'>
                 <Navbar></Navbar>
-                <div className='tep:text-center mb-8 mt-12'>
-                    <h1 className=' text-5xl tep:text-5xl tfp:text-7xl ffp:text-8xl text font-semibold text-black-200 text-center mb-5'>Terms</h1>
+                <h1 className=' text-5xl tep:text-5xl tfp:text-7xl ffp:text-8xl text font-semibold text-black-200 text-center mt-12'>Terms</h1>
+                <div className='tep:text-center w-4/6 h-4/5 my-5 mx-auto'>
                     <Image
-                        src='/../public/assets/terms.png'
-                        alt='terms.png here'
+                        src={terms}
+                        alt='terms image here'
+                        height={230}
                         className="object-cover"
-                        width={700}
-                        height={270}
                     />
                 </div>
                 <div className='mx-auto max-w-7xl'>
