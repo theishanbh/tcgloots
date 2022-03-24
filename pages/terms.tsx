@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import Image from 'next/image'
-import terms from '../public/assets/terms.png'
+import terms from '../assets/terms.png'
 
 
 const Terms = () => {
@@ -10,8 +10,8 @@ const Terms = () => {
         <>
             <div className='font-jost'>
                 <Navbar></Navbar>
-                <h1 className=' text-5xl tep:text-5xl tfp:text-7xl ffp:text-8xl text font-semibold text-black-200 text-center mt-12'>Terms</h1>
-                <div className='tep:text-center w-4/6 h-4/5 my-5 mx-auto'>
+                <h1 className='  text-8xl text font-semibold text-black-200 text-left sm:text-center mt-12 px-8 py-8 sm:py-0 2xl:px-0'>Terms</h1>
+                <div className='tep:text-center w-4/6 h-4/5 my-5 mx-auto justify-center items-center hidden sm:flex'>
                     <Image
                         src={terms}
                         alt='terms image here'
@@ -19,7 +19,7 @@ const Terms = () => {
                         className="object-cover"
                     />
                 </div>
-                <div className='mx-auto max-w-7xl'>
+                <div className='mx-auto max-w-7xl px-8 2xl:px-0'>
                     <div className='flex flex-col mb-8'>
                         <h1 className=' font-medium text-2xl tep:text-center tfp:ml-5 fhp:text-left'>1. General Provision and Definitions</h1>
                         <div className=' text-xl mt-10 tep:text-left tep:mx-5'>The purpose of the Terms and Conditions of the TCG Loots website is to set out the terms and conditions of operation, functioning and use of the TCG Loots Portal available on the Internet at www.gamehag.com as well as the rights and obligations of the Administrator, Users and entities using the Portal.</div>

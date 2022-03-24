@@ -2,18 +2,18 @@ import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 import Image from 'next/image'
-import privacy from '../public/assets/terms.png'
+import terms from '../assets/terms.png'
 
 const PrivacyPolicy = () => {
     return (
         <>
             <div className='font-jost'>
                 <Navbar></Navbar>
-                <h1 className=' text-5xl tep:text-5xl tfp:text-7xl ffp:text-8xl font-semibold text-black-200 text-center mt-12'>Privacy Policy</h1>
-                <div className='tep:text-center w-4/6 h-4/5 my-5 mx-auto'>
+                <h1 className='  text-8xl text font-semibold text-black-200 text-left sm:text-center mt-12 px-8 py-8 sm:py-0 2xl:px-0'>Privacy Policy</h1>
+                <div className='tep:text-center w-4/6 h-4/5 my-5 mx-auto justify-center items-center hidden sm:flex'>
                     <Image
-                        src={privacy}
-                        alt='privacy policy image here'
+                        src={terms}
+                        alt='terms image here'
                         height={230}
                         className="object-cover"
                     />
