@@ -117,18 +117,14 @@ module.exports = {
         '7xl': '1440px'
       },
       screens:{
-        'tep': '280px',
-        'thp': '300px',
-        'tfp': '350px',
-        'fhp': '400px',
-        'ffp': '450px',
-        'fihp': '500px',
-        'fifp': '550px',
-        'shp': '600px',
-        'sehp': '700px',
-        'efp': '850px',
-        'otp': '1000px',
-        'twefp': '1285px'
+        'smmob':'320px', //small mobile
+        'mob': '500px', // mobile
+        'sm': '640px', // small
+        'md': '768px', // medium
+        'lg': '1024px', // large
+        'xl': '1280px', // extra large
+        '2xl': '1440px',
+        '3xl': '1536px',
       }
     },
   },
