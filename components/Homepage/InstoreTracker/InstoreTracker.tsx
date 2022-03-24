@@ -32,7 +32,7 @@ const InstoreTracker = () => {
                 </div>
               </div>
               {/* first left */}
-              <div className='bg-white-100 w-auto inline-block p-3 shadow-xl rounded-lg scale-90 shrink-0 absolute left-40 z-10 blur-sm'>
+              <div className='bg-white-100 w-auto inline-block p-3 shadow-xl rounded-lg scale-90 shrink-0 absolute left-40 z-20 blur-sm'>
                 <div className="flex flex-col">
                   {/* iamge */}
                   <div>
