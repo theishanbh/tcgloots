@@ -105,6 +105,8 @@ module.exports = {
       boxShadow: {
         half: "0px 0px 6px 6px rgba(0, 0, 0, 0.02)",
         full: "0px 0px 6px 6px rgba(0, 0, 0, 0.04)",
+        badge: "0 5px 10px rgba(0,0,0,0.1)",
+        badgefull: "148px -148px #82C732",
         xs: "0 0 0 1px rgba(0, 0, 0, 0.16)",
         sm: "0 1px 2px 0 rgba(0, 0, 0, 0.16)",
         default: "0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.03)",
