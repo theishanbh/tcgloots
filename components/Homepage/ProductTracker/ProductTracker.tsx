@@ -10,61 +10,48 @@ const ProductTracker = () =>{
                     <div className="flex flex-wrap">
                         <div className="w-1/6">
                             <div className=" bg-white h-4/5 p-4 rounded-xl">
-                                <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
+                                <div className="relative h-full w-full p-2 shadow-full rounded-lg">
+                                    <Image
+                                        src={require("../../../assets/homepage/producttracker/image.png")}
+                                        layout="fill"
+                                    />
+                                    <span className="bg-yellow-200 absolute py-1 text-lg font-jost font-medium text-black-100 px-6 rounded-lg">NEW</span>
+                                </div>
+                                {/* <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/> */}
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
                         <div className="w-1/6">
                             <div className=" bg-white h-4/5 p-4 ">
-                                <img src="./assets/homepage/producttracker/image2.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
+                                <div className="relative h-full w-full p-2 shadow-full rounded-lg">
+                                    <Image
+                                        src={require("../../../assets/homepage/producttracker/image.png")}
+                                        layout="fill"
+                                    />
+                                    
+                                </div>
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
                         <div className="w-1/6">
                             <div className=" bg-white h-4/5 p-4 ">
-                                <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
+                            <div className="relative h-full w-full p-2 shadow-full rounded-lg">
+                                    <Image
+                                        src={require("../../../assets/homepage/producttracker/image.png")}
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
                         <div className="w-1/6">
                             <div className=" bg-white h-4/5 p-4 ">
-                                <img src="./assets/homepage/producttracker/image2.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
-                            </div>
-                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
-                        </div>
-                        <div className="w-1/6">
-                            <div className=" bg-white h-4/5 p-4 ">
-                                <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
-                            </div>
-                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
-                        </div>
-                        <div className="w-1/6">
-                            <div className=" bg-white h-4/5 p-4 ">
-                                <img src="./assets/homepage/producttracker/image2.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
-                            </div>
-                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
-                        </div>
-                        <div className="w-1/6">
-                            <div className=" bg-white h-4/5 p-4 ">
-                                <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
-                            </div>
-                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
-                        </div>
-                        <div className="w-1/6">
-                            <div className=" bg-white h-4/5 p-4 ">
-                                <img src="./assets/homepage/producttracker/image2.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
-                            </div>
-                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
-                        </div>
-                        <div className="w-1/6">
-                            <div className=" bg-white h-4/5 p-4 ">
-                                <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
-                            </div>
-                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
-                        </div>
-                        <div className="w-1/6">
-                            <div className=" bg-white h-4/5 p-4 ">
-                                <img src="./assets/homepage/producttracker/image2.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
+                            <div className="relative h-full w-full p-2 shadow-full rounded-lg">
+                                    <Image
+                                        src={require("../../../assets/homepage/producttracker/image.png")}
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
@@ -76,7 +63,69 @@ const ProductTracker = () =>{
                         </div>
                         <div className="w-1/6">
                             <div className=" bg-white h-4/5 p-4 ">
-                                <img src="./assets/homepage/producttracker/image2.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
+                            <div className="relative h-full w-full p-2 shadow-full rounded-lg">
+                                    <Image
+                                        src={require("../../../assets/homepage/producttracker/image.png")}
+                                        layout="fill"
+                                    />
+                                </div>
+                            </div>
+                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
+                        </div>
+                        <div className="w-1/6">
+                            <div className=" bg-white h-4/5 p-4 ">
+                            <div className="relative h-full w-full p-2 shadow-full rounded-lg">
+                                    <Image
+                                        src={require("../../../assets/homepage/producttracker/image.png")}
+                                        layout="fill"
+                                    />
+                                    <span className="bg-yellow-200 absolute py-1 text-lg font-jost font-medium text-black-100 px-6 rounded-lg">NEW</span>
+                                </div>
+                            </div>
+                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
+                        </div>
+                        <div className="w-1/6">
+                            <div className=" bg-white h-4/5 p-4 ">
+                            <div className="relative h-full w-full p-2 shadow-full rounded-lg">
+                                    <Image
+                                        src={require("../../../assets/homepage/producttracker/image.png")}
+                                        layout="fill"
+                                    />
+                                </div>
+                            </div>
+                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
+                        </div>
+                        <div className="w-1/6">
+                            <div className=" bg-white h-4/5 p-4 ">
+                                <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
+                            </div>
+                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
+                        </div>
+                        <div className="w-1/6">
+                            <div className=" bg-white h-4/5 p-4 ">
+                            <div className="relative h-full w-full p-2 shadow-full rounded-lg">
+                                    <Image
+                                        src={require("../../../assets/homepage/producttracker/image.png")}
+                                        layout="fill"
+                                    />
+                                </div>
+                            </div>
+                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
+                        </div>
+                        <div className="w-1/6">
+                            <div className=" bg-white h-4/5 p-4 ">
+                                <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/>
+                            </div>
+                            <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
+                        </div>
+                        <div className="w-1/6">
+                            <div className=" bg-white h-4/5 p-4 ">
+                            <div className="relative h-full w-full p-2 shadow-full rounded-lg">
+                                    <Image
+                                        src={require("../../../assets/homepage/producttracker/image.png")}
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
