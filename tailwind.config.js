@@ -1,3 +1,5 @@
+const { transform } = require("typescript");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -126,6 +128,15 @@ module.exports = {
         'xl': '1280px', // extra large
         '2xl': '1440px',
         '3xl': '1536px',
+      },
+      animation:{
+        'ltor': 'scrolling 30s linear infinite'
+      },
+      keyframes: {
+        scrolling: {
+          '0%': { transform : 'translateX(0vw)'},
+          '100%': { transform : 'translateX(-100vw)'}
+        }
       }
     },
   },
