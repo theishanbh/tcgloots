@@ -72,7 +72,7 @@ const ProductTracker = () =>{
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
-                        <div className="w-1/6">
+                        {/* <div className="w-1/6">
                             <div className=" bg-white h-4/5 p-4 ">
                             <div className="relative h-full w-full p-2 shadow-full rounded-lg">
                                     <Image
@@ -128,7 +128,7 @@ const ProductTracker = () =>{
                                 </div>
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
-                        </div>
+                        </div> */}
                         
                     </div>
                     {/* button */}
