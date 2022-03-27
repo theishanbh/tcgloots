@@ -126,6 +126,7 @@ module.exports = {
         'mob': '500px', // mobile
         'sm': '640px', // small
         'md': '768px', // medium
+        '2md' : '900px', // (md + lg)/2 = (768 + 1024)/2 = 896 (approx 900)
         'lg': '1024px', // large
         'xl': '1280px', // extra large
         '2xl': '1440px',

@@ -8,10 +8,10 @@ const Footer = () => {
       <div className='mx-auto pt-8 text-white-100'>
         <div className=' bg-grey-300'>
           <div className='mx-auto max-w-7xl py-4'>
-            <div className='flex justify-between items-center py-6'>
+            <div className='flex justify-between items-center py-6 px-4 2xl:px-2'>
 
               {/* first */}
-              <div className='flex flex-col'>
+              <div className=' flex-col hidden lg:flex'>
                 {/* image container */}
                 <div className='relative'>
                   <Image
@@ -22,62 +22,64 @@ const Footer = () => {
               </div>
 
               {/* second */}
-              <div className='flex-grow px-12'>
-                <div className='tep:flex tep:justify-between sehp:flex  sehp:justify-start'>
-                  <div className='flex justify-between text-lg'>
-                    {/* <div className='tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'> */}
-                      <Link href={"/register"}><a>Register</a></Link>
-                      <Link href={'/contactus'}><a>Contact</a></Link>
-                      <Link href={'/faq'}><a>FAQ</a></Link>
-                    {/* </div> */}
-                    {/* <div className=''> */}
-                    {/* <div className='tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'> */}
-                      <Link href={'/unsubscribe'}><a  className='otp:ml-8'>Unsubscribe</a></Link>
-                      <Link href={'/terms'}><a>Terms of Use</a></Link>
-                      <Link href={'/privacypolicy'}><a>Privacy Policy</a></Link>
-                      <Link href={'/terms'}><a>Terms</a></Link>
-                    {/* </div> */}
+              <div className="flex justify-between flex-grow">
+                <div className='flex flex-grow justify-between items-center pr-4 lg:pr-12'>
+                  <div className='flex justify-between flex-grow'>
+                    <div className='flex text-lg flex-grow justify-evenly items-center'>
+                      <div className='flex justify-evenly flex-grow tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'>
+                        <Link href={"/register"}><a>Register</a></Link>
+                        <Link href={'/contactus'}><a>Contact</a></Link>
+                        <Link href={'/faq'}><a>FAQ</a></Link>
+                      </div>
+                      {/* <div className=''> */}
+                      <div className=' flex justify-between flex-grow tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'>
+                        <Link href={'/unsubscribe'}><a  className='otp:ml-8'>Unsubscribe</a></Link>
+                        <Link href={'/terms'}><a>Terms of Use</a></Link>
+                        <Link href={'/privacypolicy'}><a>Privacy Policy</a></Link>
+                        <Link href={'/terms'}><a>Terms</a></Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              {/* third icons*/}
-              <div className=''>
-                <div>
-                  <div className="flex items-center">
+                {/* third */}
+                <div className=''>
+                  <div>
+                    <div className="flex items-center justify-end">
 
-                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
-                      <div className="relative flex justify-center items-center p-2">
-                        <Image src={require("../../assets/footer/facebook.svg")}
-                          alt="Facebook image here"
-                          className="scale-75"/>
+                      <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
+                        <div className="relative flex justify-center items-center p-2">
+                          <Image src={require("../../assets/footer/facebook.svg")}
+                            alt="Facebook image here"
+                            className="scale-75"/>
+                        </div>
                       </div>
-                    </div>
 
-                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
-                      <div className="relative flex justify-center items-center p-2">
-                        <Image src={require("../../assets/footer/instagram.svg")}
-                          alt="Instagram image here"
-                          className="scale-75"
-                        />
+                      <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
+                        <div className="relative flex justify-center items-center p-2">
+                          <Image src={require("../../assets/footer/instagram.svg")}
+                            alt="Instagram image here"
+                            className="scale-75"
+                          />
+                        </div>
                       </div>
-                    </div>
 
-                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
-                      <div className="relative flex justify-center items-center p-2">
-                        <Image src={require("../../assets/footer/twitter.svg")}
-                          alt="Twitter image here"
-                          className="scale-75"/>
+                      <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
+                        <div className="relative flex justify-center items-center p-2">
+                          <Image src={require("../../assets/footer/twitter.svg")}
+                            alt="Twitter image here"
+                            className="scale-75"/>
+                        </div>
                       </div>
-                    </div>
 
-                    <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
-                      <div className="relative flex justify-center items-center p-2">
-                        <Image src={require("../../assets/footer/discord.svg")}
-                          alt="Discord image here"
-                          className="scale-75"/>
+                      <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
+                        <div className="relative flex justify-center items-center p-2">
+                          <Image src={require("../../assets/footer/discord.svg")}
+                            alt="Discord image here"
+                            className="scale-75"/>
+                        </div>
                       </div>
-                    </div>
 
+                    </div>
                   </div>
                 </div>
               </div>
