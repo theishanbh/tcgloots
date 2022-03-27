@@ -29,9 +29,9 @@ const Navbar = () => {
                 <Disclosure as="nav">
                     {({ open }) => (
                         <>
-                            <div className="max-w-7xl mx-auto sehp:px-6 lg:px-8">
+                            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                                 <div className="relative flex items-center justify-between h-16">
-                                    <div className="absolute inset-y-0 left-0 flex items-center sehp:hidden">
+                                    <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                         {/* Mobile menu button*/}
                                         <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                             <span className="sr-only">Open main menu</span>
@@ -42,9 +42,9 @@ const Navbar = () => {
                                             )}
                                         </Disclosure.Button>
                                     </div>
-                                    <div className="flex-1 flex items-center justify-center sehp:items-stretch sehp:justify-start">
+                                    <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                                         <Link passHref href="/">
-                                            <div className="relative flex-shrink-0 flex items-center sehp:w-12 otp:w-20 otp:h-20 sehp:-mx-2 sehp:h-12">
+                                            <div className="relative flex-shrink-0 flex items-center">
                                                 <Image
                                                     className=" cursor-pointer"
                                                     src={require('../../assets/tcglootslogo.png')}
@@ -55,26 +55,26 @@ const Navbar = () => {
                                                 />
                                             </div>
                                         </Link>
-                                        <div className="hidden sehp:flex-1 sehp:flex sehp:ml-6">
-                                            <div className="flex flex-1 justify-start space-x-4 twefp:space-x-14 items-center">
+                                        <div className="hidden sm:flex-1 sm:flex sm:ml-6">
+                                            <div className="flex flex-1 justify-start space-x-4 items-center">
                                                 {navigation.map((item) => (
                                                     item.name == 'GIVEAWAYS' ?
                                                         <Link href={`/${item.href}`}>
                                                             <a
                                                                 key={item.name}
                                                                 href={item.href}
-                                                                className={classNames('py-2 twefp:text-xl twefp:pl-0 sehp:text-sm otp:text-lg font-jost text-grey-400 text-base rounded-md font-medium inline-flex items-center uppercase')}
+                                                                className={classNames('pl-10 py-2 font-jost text-grey-400 text-base rounded-md font-medium inline-flex items-center uppercase')}
                                                                 aria-current={item.current ? 'page' : undefined}
                                                             >
-                                                                {/* <img src="./assets/logos/giveaways.png" alt="" className='inline h-full' /> */}
-                                                                <div className='sehp:inline sehp:w-4 sehp:h-full'>
+                                                                <img src="./assets/logos/giveaways.png" alt="" className='inline h-full' />
+                                                                {/* <div className='sehp:inline sehp:w-4 sehp:h-full'>
                                                                     <Image
                                                                         src={giveaway}
                                                                         alt='giveaway image here'
                                                                         // width={20}
                                                                         // height={30}
                                                                     />
-                                                                </div>
+                                                                </div> */}
                                                                 <span className='ml-2'> {item.name} </span>
                                                             </a>
                                                         </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
                                                             <a
                                                                 key={item.name}
                                                                 href={item.href}
-                                                                className={classNames('twefp:ml-10 twefp:text-xl otp:px-0 sehp:text-sm sehp:-mx-1 sehp:pl-2 otp:text-lg rounded-md font-jost text-grey-400 text-base font-medium uppercase')}
+                                                                className={classNames('pl-10 py-2 rounded-md font-jost text-grey-400 text-base font-medium uppercase')}
                                                                 aria-current={item.current ? 'page' : undefined}
                                                             >
                                                                 {item.name}
@@ -93,7 +93,7 @@ const Navbar = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="absolute inset-y-0 right-0 flex items-center pr-2 sehp:static sehp:inset-auto sehp:ml-6 sehp:pr-0">
+                                    <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                         {/* <button
                                     type="button"
                                     className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
@@ -102,10 +102,10 @@ const Navbar = () => {
                                     <BellIcon className="h-6 w-6" aria-hidden="true" />    
                                 </button> */}
                                         <Link passHref href={"/login"}>
-                                            <button className='border sehp:visible tep:invisible twefp:text-xl twefp:ml-0  sehp:px-2 sehp:py-1 sehp:-ml-4 otp:px-3 otp:py-2.5 otp:-ml-2 border-grey-400 font-jost text-grey-400 text-base font-medium rounded-md px-10 py-2'>LOGIN</button>
+                                            <button className='border border-grey-400 font-jost text-grey-400 text-base font-medium rounded-md px-10 py-2'>LOGIN</button>
                                         </Link>
                                         <Link passHref href={"/register"}>
-                                            <button className='border sehp:visible tep:invisible twefp:text-xl twefp:ml-3 twefp:-mr-5 sehp:px-2 sehp:ml-1 sehp:py-1 otp:px-3 otp:py-2.5 otp:-mr-2 font-jost text-white-100 bg-yellow-200 text-base font-medium rounded-md px-10 py-2 ml-2'>REGISTER</button>
+                                            <button className='border font-jost text-white-100 bg-yellow-200 text-base font-medium rounded-md px-10 py-2 ml-2'>REGISTER</button>
                                         </Link>
 
                                         {/* Profile dropdown */}
@@ -115,7 +115,7 @@ const Navbar = () => {
                                 </div>
                             </div>
 
-                            <Disclosure.Panel className="sehp:hidden">
+                            <Disclosure.Panel className="sm:hidden">
                                 <div className="px-2 pt-2 pb-3 space-y-1">
                                     {navigation.map((item) => (
                                         <Disclosure.Button
