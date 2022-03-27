@@ -25,21 +25,21 @@ const Footer = () => {
               <div className="flex justify-between flex-grow flex-col 2md:flex-row">
                 {/* menu items */}
                 <div className='flex flex-grow justify-between items-center pr-4 lg:pr-12'>
-                  <div className='flex justify-between flex-grow'>
-                    <div className='flex text-lg flex-grow justify-center 2md:justify-evenly 2md:items-center'>
+                  <div className='flex flex-grow justify-center 2md:justify-between'>
+                    <div className='flex text-lg justify-between 2md:flex-grow 2md:justify-evenly 2md:items-center'>
                       {/* first block items */}
-                      <div className='flex justify-evenly 2md:flex-grow flex-col 2md:flex-row tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'>
+                      <div className='flex 2md:justify-evenly pl-4 2md:pl-0 2md:flex-grow flex-col 2md:flex-row tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'>
                         <Link href={"/register"}><a>Register</a></Link>
-                        <Link href={'/contactus'}><a>Contact</a></Link>
-                        <Link href={'/faq'}><a>FAQ</a></Link>
+                        <Link href={'/contactus'}><a className=' pt-2 2md:pt-0'>Contact</a></Link>
+                        <Link href={'/faq'}><a className=' pt-2 2md:pt-0'>FAQ</a></Link>
                       </div>
                       {/* <div className=''> */}
                       {/* second block items */}
-                      <div className=' flex justify-between 2md:flex-grow flex-col 2md:flex-row tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'>
-                        <Link href={'/unsubscribe'}><a  className='otp:ml-8'>Unsubscribe</a></Link>
-                        <Link href={'/terms'}><a>Terms of Use</a></Link>
-                        <Link href={'/privacypolicy'}><a>Privacy Policy</a></Link>
-                        <Link href={'/terms'}><a>Terms</a></Link>
+                      <div className=' flex justify-between pl-4 2md:pl-0 2md:flex-grow flex-col 2md:flex-row tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'>
+                        <Link href={'/unsubscribe'}><a>Unsubscribe</a></Link>
+                        <Link href={'/terms'}><a className=' pt-2 2md:pt-0'>Terms of Use</a></Link>
+                        <Link href={'/privacypolicy'}><a className=' pt-2 2md:pt-0'>Privacy Policy</a></Link>
+                        <Link href={'/terms'}><a className=' pt-2 2md:pt-0'>Terms</a></Link>
                       </div>
                     </div>
                   </div>
