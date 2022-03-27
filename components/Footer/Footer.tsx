@@ -22,17 +22,20 @@ const Footer = () => {
               </div>
 
               {/* second */}
-              <div className="flex justify-between flex-grow">
+              <div className="flex justify-between flex-grow flex-col 2md:flex-row">
+                {/* menu items */}
                 <div className='flex flex-grow justify-between items-center pr-4 lg:pr-12'>
                   <div className='flex justify-between flex-grow'>
-                    <div className='flex text-lg flex-grow justify-evenly items-center'>
-                      <div className='flex justify-evenly flex-grow tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'>
+                    <div className='flex text-lg flex-grow justify-center 2md:justify-evenly 2md:items-center'>
+                      {/* first block items */}
+                      <div className='flex justify-evenly 2md:flex-grow flex-col 2md:flex-row tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'>
                         <Link href={"/register"}><a>Register</a></Link>
                         <Link href={'/contactus'}><a>Contact</a></Link>
                         <Link href={'/faq'}><a>FAQ</a></Link>
                       </div>
                       {/* <div className=''> */}
-                      <div className=' flex justify-between flex-grow tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'>
+                      {/* second block items */}
+                      <div className=' flex justify-between 2md:flex-grow flex-col 2md:flex-row tep:flex tep:space-y-5 tep:flex-col sehp:space-y-0 sehp:flex sehp:space-x-2 efp:space-x-6 otp:space-x-8 twefp:space-x-12 sehp:justify-start sehp:flex-row'>
                         <Link href={'/unsubscribe'}><a  className='otp:ml-8'>Unsubscribe</a></Link>
                         <Link href={'/terms'}><a>Terms of Use</a></Link>
                         <Link href={'/privacypolicy'}><a>Privacy Policy</a></Link>
@@ -41,10 +44,9 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                {/* third */}
+                {/* third box - social icons */}
                 <div className=''>
-                  <div>
-                    <div className="flex items-center justify-end">
+                    <div className="flex items-center justify-center pt-6 2md:pt-0 2md:justify-end">
 
                       <div className='border border-grey-600 h-10 w-10 flex items-center rounded-md justify-center ml-2'>
                         <div className="relative flex justify-center items-center p-2">
@@ -78,9 +80,7 @@ const Footer = () => {
                             className="scale-75"/>
                         </div>
                       </div>
-
                     </div>
-                  </div>
                 </div>
               </div>
             </div>

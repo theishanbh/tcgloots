@@ -8,7 +8,7 @@ const WelcomeTCGLoots = () => {
                 {/* info welcome tcgLoots */}
                 <div className="flex-4">
                   <div className=" border-b-yellow-200 border-b-4 w-full sm:w-max pb-3 mx-auto md:mx-0">
-                    <h1 className=" font-jost font-semibold text-8xl md:text-6xl text-center md:text-left break-words">Welcome to TCGLOOTS!</h1>
+                    <h1 className=" font-jost font-semibold text-8xl md:text-6xl text-center md:text-left">Welcome to TCGLOOTS!</h1>
                   </div>
                   
                   <p className="font-jost text-xl pt-6 hidden md:block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente asperiores sed quod qui recusandae, deserunt quam veritatis at beatae vitae repellat officia officiis, porro quaerat est obcaecati alias temporibus nihil possimus molestiae impedit facilis. Aliquid, expedita quo.</p>
