@@ -8,7 +8,7 @@ const ProductTracker = () =>{
                 <div className="max-w-7xl mx-auto">
                     <h1 className=" font-jost text-8xl text-black-200 font-semibold text-center py-12">Products Tracker</h1>
                     <div className="flex flex-wrap">
-                        <div className=" w-1/2 mob:w-1/3 lg:w-1/6">
+                        <div className=" w-1/2 mob:w-1/3 xl:w-1/6">
                             <div className=" bg-white p-4 rounded-xl">
                                 <div className="relative flex justify-center items-center h-full w-full p-2 shadow-full rounded-lg">
                                     <Image
@@ -21,7 +21,7 @@ const ProductTracker = () =>{
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
-                        <div className=" w-1/2 mob:w-1/3 lg:w-1/6">
+                        <div className=" w-1/2 mob:w-1/3 xl:w-1/6">
                             <div className=" bg-white p-4 rounded-xl">
                                 <div className="relative flex justify-center items-center h-full w-full p-2 shadow-full rounded-lg">
                                     <Image
@@ -33,7 +33,7 @@ const ProductTracker = () =>{
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
-                        <div className=" w-1/2 mob:w-1/3 lg:w-1/6">
+                        <div className=" w-1/2 mob:w-1/3 xl:w-1/6">
                             <div className=" bg-white p-4 rounded-xl">
                                 <div className="relative flex justify-center items-center h-full w-full p-2 shadow-full rounded-lg">
                                     <Image
@@ -45,7 +45,7 @@ const ProductTracker = () =>{
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
-                        <div className=" w-1/2 mob:w-1/3 lg:w-1/6">
+                        <div className=" w-1/2 mob:w-1/3 xl:w-1/6">
                             <div className=" bg-white p-4 rounded-xl">
                                 <div className="relative flex justify-center items-center h-full w-full p-2 shadow-full rounded-lg">
                                     <Image
@@ -57,7 +57,7 @@ const ProductTracker = () =>{
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
-                        <div className=" w-1/2 mob:w-1/3 lg:w-1/6">
+                        <div className=" w-1/2 mob:w-1/3 xl:w-1/6">
                             <div className=" bg-white p-4 rounded-xl">
                                 <div className="relative flex justify-center items-center h-full w-full p-2 shadow-full rounded-lg">
                                     <Image
@@ -69,7 +69,7 @@ const ProductTracker = () =>{
                             </div>
                             <p className=" text-lg text-black-100 text-center h-1/5">Lorem, ipsum dolor</p>
                         </div>
-                        <div className=" w-1/2 mob:w-1/3 lg:w-1/6">
+                        <div className=" w-1/2 mob:w-1/3 xl:w-1/6">
                             <div className=" bg-white p-4 rounded-xl">
                                 <div className="relative flex justify-center items-center h-full w-full p-2 shadow-full rounded-lg">
                                     <Image

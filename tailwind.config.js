@@ -87,6 +87,18 @@ module.exports = {
       },
     },
 
+    screens :{
+      'smmob':'320px', //small mobile
+      'mob': '500px', // mobile
+      'sm': '640px', // small
+      'md': '768px', // medium
+      '2md' : '900px', // (md + lg)/2 = (768 + 1024)/2 = 896 (approx 900)
+      'lg': '1024px', // large
+      'xl': '1280px', // extra large
+      '2xl': '1440px',
+      '3xl': '1536px',
+    },
+
     extend: {
 
       fontFamily: {
@@ -122,15 +134,15 @@ module.exports = {
         '7xl': '1440px'
       },
       screens:{
-        'smmob':'320px', //small mobile
-        'mob': '500px', // mobile
-        'sm': '640px', // small
-        'md': '768px', // medium
-        '2md' : '900px', // (md + lg)/2 = (768 + 1024)/2 = 896 (approx 900)
-        'lg': '1024px', // large
-        'xl': '1280px', // extra large
-        '2xl': '1440px',
-        '3xl': '1536px',
+        // 'smmob':'320px', //small mobile
+        // 'mob': '500px', // mobile
+        // 'sm': '640px', // small
+        // 'md': '768px', // medium
+        // '2md' : '900px', // (md + lg)/2 = (768 + 1024)/2 = 896 (approx 900)
+        // 'lg': '1024px', // large
+        // 'xl': '1280px', // extra large
+        // '2xl': '1440px',
+        // '3xl': '1536px',
       },
       animation:{
         'ltor': 'scrolling 30s linear infinite'
