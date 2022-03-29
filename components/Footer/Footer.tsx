@@ -8,17 +8,16 @@ const Footer = () => {
       <div className='mx-auto pt-8 smmob:pt-0 2md:pt-8 text-white-100'>
         <div className=' bg-grey-300'>
           <div className='mx-auto max-w-7xl py-4'>
-            <div className='flex justify-between items-center py-6 px-4 2xl:px-2'>
+            <div className='flex justify-between items-center py-6 2md:py-8 px-4 2xl:px-2'>
 
               {/* first */}
-              <div className='flex-col 2md:absolute 2md:left-0 2md:pl-1.5 lg:pl-3 smmob:absolute smmob:left-24 mob:absolute mob:left-44 sm:absolute sm:left-60 lg:flex'>
+              <div className='flex-col lg:flex smmob:absolute smmob:left-24 smmob:-mt-24 mob:absolute mob:left-40 mob:-mt-14 sm:absolute sm:left-56 sm:-mt-20 md:left-72 2md:absolute 2md:left-1 2md:-mt-10 lg:absolute lg:left-7 2xl:left-8'>
                 {/* image container */}
-                <div className='relative smmob:h-72 2md:h-32 2md:w-16'>
+                <div className='relative smmob:h-48 smmob:w-28 mob:h-56 mob:w-32 sm:h-72 sm:w-40 2md:h-32 2md:w-20'>
                   <Image
                     src={require("../../assets/footer/lootslogo.png")}
                     alt="footer image here"
-                    height={210}
-                    width={120}
+                    layout='fill'
                   />
                 </div>
               </div>
