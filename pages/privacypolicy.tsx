@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
 
                         {/* first point */}
                         <div>
-                            <h1 className='smmob:text-center mob:text-left mx-5 tep:text-center tep:text-xl tfp:text-2xl ffp:mx-3 fifp:text-3xl shp:text-left font-medium text-2xl'>1. Object and principles of the Privacy Policy</h1>
+                            <h1 className='smmob:text-left mob:text-left mx-5 tep:text-center tep:text-xl tfp:text-2xl ffp:mx-3 fifp:text-3xl shp:text-left font-medium text-2xl'>1. Object and principles of the Privacy Policy</h1>
                             <div className='smmob:mx-4 tep:mx-10 tep:text-lg tfp:text-xl ffp:mx-7 shp:mx-3 text-xl mt-10'>1.This Privacy Policy sets out the principles of processing and protection of personal information pertaining to Users of the www.TCGLoots.com Portal. It constitutes an integral part of the Terms and Conditions of the www.TCGLoots.com website. </div>
                             <div className='smmob:mx-4 tep:mx-10 tep:text-lg tfp:text-xl ffp:mx-7 shp:mx-3 text-xl mt-10'>2.The Administrator shall protect the personal information against unauthorised access, loss, alteration, damage or destruction and shall process the information entrusted thereto in conformity with the legal regulations in force, and in particular in conformity with the requirements of the Personal Data Protection Act of xx yy zzzz and all related legal acts,</div>
                             <div className='smmob:mx-4 tep:mx-10 tep:text-lg tfp:text-xl ffp:mx-7 shp:mx-3 text-xl mt-10'>3.The www.TCGLoots.com website respects Users’ right to privacy and makes every effort to ensure the most comprehensive protection of the personal information entrusted to it.</div>
@@ -32,7 +32,7 @@ const PrivacyPolicy = () => {
 
                         {/* second point */}
                         <div className=' mt-10'>
-                            <h1 className='smmob:text-center mob:text-left tep:mx-5 tep:text-xl tep:text-center tfp:text-2xl ffp:mx-3 fifp:text-3xl  mx-5 shp:text-left font-medium text-2xl'>2. Type and purpose of processed personal information</h1>
+                            <h1 className='smmob:text-left mob:text-left tep:mx-5 tep:text-xl tep:text-center tfp:text-2xl ffp:mx-3 fifp:text-3xl  mx-5 shp:text-left font-medium text-2xl'>2. Type and purpose of processed personal information</h1>
                             <div className='smmob:mx-4 tep:mx-10 tep:text-lg tfp:text-xl ffp:mx-7 shp:mx-3 text-xl mt-10'>1.Personal information is processed on the basis of a consent granted by the User upon registration with the Portal. </div>
                             <div className='smmob:mx-4 tep:mx-10 tep:text-lg tfp:text-xl ffp:mx-7 shp:mx-3 text-xl mt-10'>
                                 <p>2.Personal information referred to in 2.1 above includes particulars enabling identification of the User and determining his identity, i.e.:</p>
@@ -48,14 +48,14 @@ const PrivacyPolicy = () => {
 
                         {/* third point */}
                         <div className=' mt-10'>
-                            <h1 className='smmob:text-center mx-5 mob:text-left tep:mx-5 tep:text-xl tep:text-center tfp:text-2xl ffp:mx-3 fifp:text-3xl shp:text-left font-medium text-2xl'>3. Account cancellation</h1>
+                            <h1 className='smmob:text-left mx-5 mob:text-left tep:mx-5 tep:text-xl tep:text-center tfp:text-2xl ffp:mx-3 fifp:text-3xl shp:text-left font-medium text-2xl'>3. Account cancellation</h1>
                             <div className='smmob:mx-4 tep:mx-10 tep:text-lg tfp:text-xl ffp:mx-7 shp:mx-3 text-xl mt-10'>1.The User may at any time cancel his account with the Website. </div>
                             <div className='smmob:mx-4 tep:mx-10 tep:text-lg tfp:text-xl ffp:mx-7 shp:mx-3 text-xl mt-10'>2.Cancellation of the User’s account results in the removal of any and all information and data pertaining to the User. The Portal Administrator, however, reserves the right to store the User’s information and to refuse to remove it to the extent and for a period which is legally permitted, this in order to settle any obligations that have arisen between the User and the Portal and in order to clarify the circumstances of an unauthorised use of the Portal, i.e. its use in breach of the Terms and Conditions and/or legal provisions in force.</div>
                         </div>
 
                         {/* fourth point */}
                         <div className='mt-10 xl:mb-56'>
-                            <h1 className='smmob:text-center mob:text-left mx-5 tep:mx-5 tep:text-xl tep:text-center tfp:text-2xl ffp:mx-3 fifp:text-3xl shp:text-left font-medium text-2xl'>4. Cookies</h1>
+                            <h1 className='smmob:text-left mob:text-left mx-5 tep:mx-5 tep:text-xl tep:text-center tfp:text-2xl ffp:mx-3 fifp:text-3xl shp:text-left font-medium text-2xl'>4. Cookies</h1>
                             <div className='smmob:mx-4 tep:mx-10 tep:text-lg tfp:text-xl ffp:mx-7 shp:mx-3 text-xl mt-10'>
                                 <p>Use of cookies</p>
                                 <p>1.Cookies are small text files downloaded onto the User’s device while using the website, used to identify the User or to store the history of activities undertaken thereby.</p>
@@ -66,7 +66,7 @@ const PrivacyPolicy = () => {
 
                         {/* fifth point */}
                         <div className='mt-10 xl:absolute xl:left-0 xl:bottom-0'>
-                            <h1 className='smmob:text-center mob:text-left mx-5 tep:mx-5 tep:text-xl tfp:text-2xl ffp:mx-3 fifp:text-3xl shp:text-left font-medium text-2xl'>5. Final provisions</h1>
+                            <h1 className='smmob:text-left mob:text-left mx-5 tep:mx-5 tep:text-xl tfp:text-2xl ffp:mx-3 fifp:text-3xl shp:text-left font-medium text-2xl'>5. Final provisions</h1>
                             <div className='smmob:mx-4 tep:mx-10 tep:text-lg tfp:text-xl ffp:mx-7 shp:mx-3 text-xl mt-10'>
                                 1.Users may send any questions and objections to this Privacy Policy via Contact form: https://TCGLoots.com/
                             </div>
