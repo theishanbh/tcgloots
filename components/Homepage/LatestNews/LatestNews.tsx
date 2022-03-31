@@ -29,7 +29,7 @@ const LatestNews = () => {
           </div>
         </div>
         {/* buuton */}
-        <div className=" text-right bg-white-100 py-8">
+        <div className=" px-4 2xl:px-2 3xl:px-0 text-center md:text-right bg-white-100 py-8">
             <button className=" border border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-2 shadow-full">Read More News</button>
         </div>
       </div>

@@ -152,16 +152,14 @@ const ProductTracker = () =>{
                     {/* image */}
                     <div className="flex items-center justify-center">
                         <div>
-                            <div>
-                                <Image
-                                    src={require("../../../assets/homepage/producttracker/groupimages.png")}
-                                ></Image>
-                            </div>
+                            <Image
+                                src={require("../../../assets/homepage/producttracker/groupimages.png")}
+                            ></Image>
                         </div>
                         {/*  */}
-                        <div className="text-center px-12">
-                            <p className=" text-4xl font-light">Want to suggest a product for us to track?</p>
-                            <button className=" bg-blue-300 text-white-100 text-xl flex items-center m-auto hover:bg-blue-100 mt-6 text-white py-2 px-4 rounded"> 
+                        <div className="text-center px-4 md:px-12">
+                            <p className=" text-left md:text-center text-base sm:text-lg md:text-4xl font-light">Want to suggest a product for us to track?</p>
+                            <button className=" bg-blue-300 text-white-100 text-xs sm:text-lg md:text-xl flex items-center m-auto hover:bg-blue-100 mt-6 text-white py-2 px-4 rounded"> 
                                 <span>
                                     Submit a suggestion 
                                 </span>

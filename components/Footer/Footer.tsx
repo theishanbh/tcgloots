@@ -88,9 +88,9 @@ const Footer = () => {
         </div>
 
         <div className='font-jost text-base bg-grey-100'>
-          <div className='max-w-7xl mx-auto py-6'>
+          <div className='max-w-7xl mx-auto py-6  px-4 3xl:px-0'>
             <p className='text-2sm'>All other trademarks and/or images cited herein are the property of their respective owners.</p>
-            <p className='text-2sm'>Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon.com or other retailer&apos;s at the time of purchase will apply to the purchase of this product. TCGLoots.com is a participant in the Amazon.com Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</p>
+            <p className='text-2sm pt-4 xl:pt-0'>Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon.com or other retailer&apos;s at the time of purchase will apply to the purchase of this product. TCGLoots.com is a participant in the Amazon.com Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</p>
             <p className='text-center pt-8 text-grey-400'> COPYRIGHT © TCGLOOTS.COM </p>
           </div>
         </div>
