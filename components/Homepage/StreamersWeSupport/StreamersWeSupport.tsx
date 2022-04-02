@@ -20,23 +20,14 @@ const StreamersWeSupport = () => {
               <span className='text-base font-light text-black-100'>58 k</span>
             </div>
             <div className='h-1 bg-yellow-200 w-1/2 my-6'></div>
-            <div className='w-2/3 text-centPer text-grey-400 text-lg'>
+            <div className='w-2/3 text-center text-grey-400 text-lg'>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
           {/* other streamers */}
-          <div className="relative w-full py-24 bg-[url('/assets/homepage/streamerswesupport/background.png')] bg-cover">
-            <div className='flex items-center justify-between px-4 bg-slate-400 bg-opacity-70 py-4'>
-              <div className="flex flex-col items-center ">
-                <div className='relative'>
-                  <Image
-                    src={require("../../../assets/homepage/streamerswesupport/person1.png")}
-                  ></Image>
-                </div>
-                <span className=' text-xl text-black-100'>John Doe</span>
-                <span className=' text-base font-light text-black-100'>58 K</span>
-              </div>
-              <div className='flex flex-col items-center'>
+          <div className="relative py-24 w-full bg-[url('/assets/homepage/streamerswesupport/background.png')] bg-cover">
+            <div className='flex items-center md:justify-between px-4 bg-slate-400 bg-opacity-70 py-4 overflow-x-scroll'>
+              <div className="flex flex-col px-8 shrink-0 items-center ">
                 <div className='relative'>
                   <Image
                     src={require("../../../assets/homepage/streamerswesupport/person2.png")}
@@ -45,7 +36,16 @@ const StreamersWeSupport = () => {
                 <span className=' text-xl text-black-100'>John Doe</span>
                 <span className=' text-base font-light text-black-100'>58 K</span>
               </div>
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col px-8 shrink-0 items-center'>
+                <div className='relative'>
+                  <Image
+                    src={require("../../../assets/homepage/streamerswesupport/person2.png")}
+                  ></Image>
+                </div>
+                <span className=' text-xl text-black-100'>John Doe</span>
+                <span className=' text-base font-light text-black-100'>58 K</span>
+              </div>
+              <div className='flex flex-col px-8 shrink-0 items-center'>
                 <div className='relative'>
                   <Image
                     src={require("../../../assets/homepage/streamerswesupport/person3.png")}
@@ -54,16 +54,16 @@ const StreamersWeSupport = () => {
                 <span className=' text-xl text-black-100'>John Doe</span>
                 <span className=' text-base font-light text-black-100'>58 K</span>
               </div>
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col px-8 shrink-0 items-center'>
                 <div className='relative'>
                   <Image
-                    src={require("../../../assets/homepage/streamerswesupport/person1.png")}
+                    src={require("../../../assets/homepage/streamerswesupport/person2.png")}
                   ></Image>
                 </div>
                 <span className=' text-xl text-black-100'>John Doe</span>
                 <span className=' text-base font-light text-black-100'>58 K</span>
               </div>
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col px-8 shrink-0 items-center'>
                 <div className='relative'>
                   <Image
                     src={require("../../../assets/homepage/streamerswesupport/person4.png")}
@@ -72,7 +72,7 @@ const StreamersWeSupport = () => {
                 <span className=' text-xl text-black-100'>John Doe</span>
                 <span className=' text-base font-light text-black-100'>58 K</span>
               </div>
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col px-8 shrink-0 items-center'>
                 <div className='relative'>
                   <Image
                     src={require("../../../assets/homepage/streamerswesupport/person5.png")}
@@ -81,7 +81,7 @@ const StreamersWeSupport = () => {
                 <span className=' text-xl text-black-100'>John Doe</span>
                 <span className=' text-base font-light text-black-100'>58 K</span>
               </div>
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col px-8 shrink-0 items-center'>
                 <div className='relative'>
                   <Image
                     src={require("../../../assets/homepage/streamerswesupport/person6.png")}
