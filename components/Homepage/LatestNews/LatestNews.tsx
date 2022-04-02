@@ -6,8 +6,8 @@ const LatestNews = () => {
       <div className=' max-w-7xl mx-auto font-jost'>
       <h1 className=" font-jost text-8xl text-black-200 font-semibold text-center py-12">Latest News</h1>
         {/* latest news items */}
-        <div className='flex'>
-          <div className='w-1/4 flex flex-col p-4 h-full'>
+        <div className='flex overflow-x-scroll'>
+          <div className=' mdw-1/4 flex flex-col p-4 h-full'>
             <img src="./assets/homepage/latestnews/night.png" alt="" />
             <span className=' text-lg text-ellipsis overflow-hidden font-medium whitespace-nowrap px-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis quisquam sint voluptatum cupiditate labore, aliquam quos modi? Ut illum veniam, quisquam, voluptate dignissimos excepturi dicta eveniet repellat accusamus magnam saepe?</span>
             <p className=' px-4 text-sm'>24 Nov, 2020</p>
