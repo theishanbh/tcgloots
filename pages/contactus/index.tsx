@@ -10,9 +10,9 @@ const ContactUs = () => {
             <Navbar></Navbar>
             <div className="bg-[url('/assets/contactus/background.png')] bg-center bg-cover">
                 <div className="mx-auto max-w-7xl font-jost ">
-                    <div className='flex overflow-hidden items-center justify-center py-20'>
+                    <div className='flex overflow-hidden items-center justify-center py-8 sm:py-20'>
                         {/* items container */}
-                        <div className=' bg-slate-500 px-8 py-4 bg-opacity-80 rounded-lg shadow-full w-full max-w-xl mx-auto'>
+                        <div className=' bg-slate-500 px-8 py-4 bg-opacity-80 rounded-lg shadow-full w-full max-w-xl mx-4 sm:mx-auto'>
                             <div className='flex flex-col'>
                                 {/* contact us logo and name */}
                                 <div className='flex items-center'>
@@ -28,9 +28,9 @@ const ContactUs = () => {
                                     </h1>
                                 </div>
                                 {/* your name and email */}
-                                <div className='flex mt-8 pt-8'>
+                                <div className='flex flex-col sm:flex-row mt-8 pt-8'>
                                     {/* your name */}
-                                    <div className='flex flex-col w-1/2'>
+                                    <div className='flex flex-col w-full sm:w-1/2'>
                                         <span className=' text-lg font-medium'>Your Name</span>
                                         <div className='mt-2'>
                                             <input 
@@ -41,9 +41,9 @@ const ContactUs = () => {
                                         </div>
                                     </div>
                                     {/* your email */}
-                                    <div className='flex flex-col ml-6  w-1/2'>
+                                    <div className='flex flex-col mt-4 sm:mt-0 sm:ml-6 w-full sm:w-1/2'>
                                         <span className=' text-lg font-medium'>Email Address</span>
-                                        <div className='mt-2'>
+                                        <div className='mt-2 '>
                                             <input 
                                                 type="text"
                                                 placeholder='Your Email'
@@ -84,7 +84,7 @@ const ContactUs = () => {
                                     </div>
                                 </div>
                                 {/* button */}
-                                <div className='text-right py-2'>
+                                <div className='text-center sm:text-right py-2'>
                                     <button className='font-jost text-black-100 bg-yellow-200 text-base font-medium rounded-md px-12 py-2'>SEND</button>
                                 </div>
                             </div>
