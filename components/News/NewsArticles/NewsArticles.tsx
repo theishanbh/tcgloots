@@ -7,7 +7,7 @@ const NewsArticles = () => {
     <div className="bg-slate-300">
         <div className=' max-w-7xl mx-auto font-jost py-12'>
             {/* Categories */}
-            <div className=' bg-white shadow-lg bg-white-100 p-4 border-4 rounded-lg border-grey-600'>
+            <div className=' hidden md:block bg-white shadow-lg bg-white-100 p-4 border-4 rounded-lg border-grey-600'>
                 <div className='flex text-black-100'>
                     <a className=' px-8 text-xl border-r border-grey-600'>ALL</a>
                     <a className=' px-8 text-xl border-r border-grey-600'>FEATURED</a>
@@ -20,23 +20,23 @@ const NewsArticles = () => {
               <div className="flex flex-row px-2 xl:px-0">
                   <div className="flex flex-col flex-3">
                     <div className="flex items-start flex-row justify-start border-solid border-b-4 border-grey-600 py-10" >
-                        <div 
-                          className="relative justify-center items-center my-auto flex-shrink-0 overflow-hidden"
-                        >
+                        <div className="relative flex-1 md:flex-initial justify-center items-center my-auto flex-shrink-0 overflow-hidden">
                             <Image
                               src={require("../../../assets/news/image1.png")}
                               objectFit="cover"
+                              layout = "responsive"
                               className=' rounded-lg'
                             />
                         </div>
-                        <div className="flex flex-col h-full ml-4 w-auto">
+                        <div className="flex flex-2 md:flex-initial flex-col h-full ml-4 w-auto">
                             <Link
                               href={"/news/1"}
                             >
-                            <span className=" text-6xl font-medium text-black-100 text-left no-underline hover:underline pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
+                            <span className=" text-base md:text-6xl font-medium text-black-100 text-left no-underline hover:underline pb-0 md:pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
                             </Link>
-                            <p className="text-xl font-light text-black-100 text-left text-ellipsis overflow-hidden"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </p>
-                            <div className=" text-2sm text-black-100 mt-auto text-left pt-3 pb-3"> 1 Dec 2021 </div>
+                            <p className="text-xl font-light text-black-100 text-left text-ellipsis overflow-hidden hidden md:block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </p>
+                            <div className=" md:text-2sm text-grey-400 md:text-black-100 mt-0 md:mt-auto text-left py-0 md:py-3"> 1 Dec 2021 </div>
+                            <div className=" text-base block md:hidden text-black-100 mt-auto text-left"> Read More &gt; </div>
                         </div>
                       </div>
                     </div>
@@ -44,23 +44,23 @@ const NewsArticles = () => {
               <div className="flex flex-row px-2 xl:px-0">
                   <div className="flex flex-col flex-3">
                     <div className="flex items-start flex-row justify-start border-solid border-b-4 border-grey-600 py-10" >
-                        <div 
-                          className="relative justify-center items-center my-auto flex-shrink-0 overflow-hidden"
-                        >
+                        <div className="relative flex-1 md:flex-initial justify-center items-center my-auto flex-shrink-0 overflow-hidden">
                             <Image
                               src={require("../../../assets/news/image1.png")}
                               objectFit="cover"
+                              layout = "responsive"
                               className=' rounded-lg'
                             />
                         </div>
-                        <div className="flex flex-col h-full ml-4 w-auto">
+                        <div className="flex flex-2 md:flex-initial flex-col h-full ml-4 w-auto">
                             <Link
                               href={"/news/1"}
                             >
-                            <span className=" text-6xl font-medium text-black-100 text-left no-underline hover:underline pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
+                            <span className=" text-base md:text-6xl font-medium text-black-100 text-left no-underline hover:underline pb-0 md:pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
                             </Link>
-                            <p className="text-xl font-light text-black-100 text-left text-ellipsis overflow-hidden"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </p>
-                            <div className=" text-2sm text-black-100 mt-auto text-left pt-3 pb-3"> 1 Dec 2021 </div>
+                            <p className="text-xl font-light text-black-100 text-left text-ellipsis overflow-hidden hidden md:block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </p>
+                            <div className=" md:text-2sm text-grey-400 md:text-black-100 mt-0 md:mt-auto text-left py-0 md:py-3"> 1 Dec 2021 </div>
+                            <div className=" text-base block md:hidden text-black-100 mt-auto text-left"> Read More &gt; </div>
                         </div>
                       </div>
                     </div>
@@ -68,23 +68,23 @@ const NewsArticles = () => {
               <div className="flex flex-row px-2 xl:px-0">
                   <div className="flex flex-col flex-3">
                     <div className="flex items-start flex-row justify-start border-solid border-b-4 border-grey-600 py-10" >
-                        <div 
-                          className="relative justify-center items-center my-auto flex-shrink-0 overflow-hidden"
-                        >
+                        <div className="relative flex-1 md:flex-initial justify-center items-center my-auto flex-shrink-0 overflow-hidden">
                             <Image
                               src={require("../../../assets/news/image1.png")}
                               objectFit="cover"
+                              layout = "responsive"
                               className=' rounded-lg'
                             />
                         </div>
-                        <div className="flex flex-col h-full ml-4 w-auto">
+                        <div className="flex flex-2 md:flex-initial flex-col h-full ml-4 w-auto">
                             <Link
                               href={"/news/1"}
                             >
-                            <span className=" text-6xl font-medium text-black-100 text-left no-underline hover:underline pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
+                            <span className=" text-base md:text-6xl font-medium text-black-100 text-left no-underline hover:underline pb-0 md:pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
                             </Link>
-                            <p className="text-xl font-light text-black-100 text-left text-ellipsis overflow-hidden"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </p>
-                            <div className=" text-2sm text-black-100 mt-auto text-left pt-3 pb-3"> 1 Dec 2021 </div>
+                            <p className="text-xl font-light text-black-100 text-left text-ellipsis overflow-hidden hidden md:block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </p>
+                            <div className=" md:text-2sm text-grey-400 md:text-black-100 mt-0 md:mt-auto text-left py-0 md:py-3"> 1 Dec 2021 </div>
+                            <div className=" text-base block md:hidden text-black-100 mt-auto text-left"> Read More &gt; </div>
                         </div>
                       </div>
                     </div>
@@ -92,23 +92,23 @@ const NewsArticles = () => {
               <div className="flex flex-row px-2 xl:px-0">
                   <div className="flex flex-col flex-3">
                     <div className="flex items-start flex-row justify-start border-solid border-b-4 border-grey-600 py-10" >
-                        <div 
-                          className="relative justify-center items-center my-auto flex-shrink-0 overflow-hidden"
-                        >
+                        <div className="relative flex-1 md:flex-initial justify-center items-center my-auto flex-shrink-0 overflow-hidden">
                             <Image
                               src={require("../../../assets/news/image1.png")}
                               objectFit="cover"
+                              layout = "responsive"
                               className=' rounded-lg'
                             />
                         </div>
-                        <div className="flex flex-col h-full ml-4 w-auto">
+                        <div className="flex flex-2 md:flex-initial flex-col h-full ml-4 w-auto">
                             <Link
                               href={"/news/1"}
                             >
-                            <span className=" text-6xl font-medium text-black-100 text-left no-underline hover:underline pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
+                            <span className=" text-base md:text-6xl font-medium text-black-100 text-left no-underline hover:underline pb-0 md:pb-2 hover:text-blue-700"> Lorem ipsum dolor sit amet </span>
                             </Link>
-                            <p className="text-xl font-light text-black-100 text-left text-ellipsis overflow-hidden"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </p>
-                            <div className=" text-2sm text-black-100 mt-auto text-left pt-3 pb-3"> 1 Dec 2021 </div>
+                            <p className="text-xl font-light text-black-100 text-left text-ellipsis overflow-hidden hidden md:block"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... </p>
+                            <div className=" md:text-2sm text-grey-400 md:text-black-100 mt-0 md:mt-auto text-left py-0 md:py-3"> 1 Dec 2021 </div>
+                            <div className=" text-base block md:hidden text-black-100 mt-auto text-left"> Read More &gt; </div>
                         </div>
                       </div>
                     </div>
