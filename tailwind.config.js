@@ -41,6 +41,7 @@ module.exports = {
         400: "#888888",
         500: "#CCCCCC",
         600: "#DDDDDD",
+        700: "#797979",
       },
       // slate
       slate: {
@@ -100,7 +101,6 @@ module.exports = {
     },
 
     extend: {
-
       fontFamily: {
         'jost': ['Jost', 'sans-serif']
       },
