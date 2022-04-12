@@ -16,6 +16,7 @@ export default function LiveDealCard({isLink}:LiveDealProps) {
                     src={require("../../assets/alerts/cardImage.png")}
                     width={62}
                     height={57}
+                    alt={'card image'}
                 ></Image>
                 <div className="flex font-jost font-semibold text-black-100 text-sm items-center">Target</div>
                 <div className="flex font-jost font-semibold text-black-100 text-sm items-center">Expired</div>

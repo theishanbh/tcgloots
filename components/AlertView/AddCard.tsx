@@ -10,6 +10,7 @@ export default function AddCard({title}: AlertItemProps) {
             <div className="flex-1 2md:flex items-center py-2 px-2">
                 <Image
                     src={require("../../assets/alerts/cardImage.png")}
+                    alt={'poster'}
                 ></Image>
             </div>
             <div className="flex-2 flex 2md:flex-2 2md:justify-center items-center   text-center " >

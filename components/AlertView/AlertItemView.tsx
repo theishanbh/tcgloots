@@ -16,6 +16,7 @@ export default function AlertItemView({title,price,date,buttonType}: AlertItemPr
             <div className="flex-1 flex items-center ">
                 <Image
                     src={require("../../assets/alerts/cardImage.png")}
+                    alt={'poster image'}
                 ></Image>              
             </div>
             <div className="flex-2 flex flex-col 2md:pt-5 space-y-3 justify-center" >

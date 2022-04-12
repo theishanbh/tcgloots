@@ -27,7 +27,7 @@ const Livedeals = () => {
                     ></Image></span>
 
                     <span className='flex items-end'><Image
-                        src={require("../../assets/alerts/line.svg")}
+                        src={require("../../assets/alerts/Line.svg")}
                         width={14}
                     ></Image></span>
                     <span className="text-blue-200 ">Telegram
