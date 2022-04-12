@@ -101,7 +101,7 @@ const Alerts = () => {
                 <div className="flex flex-col justify-center ">
                     {
                         tiles.length > 0 && tiles.map((item, index) => {
-                            return <div className="mb-2"><AlertItemView key={index} title={item.title} price={item.price} date={item.date} buttonType={item.buttonType} /></div>
+                            return <div className="mb-2" key={index}><AlertItemView key={index} title={item.title} price={item.price} date={item.date} buttonType={item.buttonType} /></div>
                         })
                     }
 
@@ -111,7 +111,7 @@ const Alerts = () => {
                 </div>
                 {
                     addtiles.length > 0 && addtiles.map((item, index) => {
-                        return <div className="mb-2"><AddCard key={index} title={item.title} /></div>
+                        return <div className="mb-2" key={index}><AddCard key={index} title={item.title} /></div>
                     })
                 }
                 <div className='flex justify-center mb-4 mt-8'>
