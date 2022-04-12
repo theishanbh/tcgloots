@@ -13,7 +13,6 @@ import Navbar from '../components/Navbar/Navbar'
 
 const Home: NextPage = () => {
   return (
-    <div>
       <div className=''>
         <Navbar></Navbar>
         <Slider></Slider>
@@ -27,7 +26,6 @@ const Home: NextPage = () => {
         <LatestNews></LatestNews>
         <Footer></Footer>
       </div>
-    </div>
   )
 }
 
