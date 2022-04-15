@@ -6,7 +6,7 @@ interface AlertItemProps {
 
 export default function AddCard({title}: AlertItemProps) {
     return (
-        <div className="flex  flex-row border rounded-lg border-grey-600">
+        <div className="flex  flex-row border rounded-lg bg-slate-500 border-grey-600">
             <div className="flex-1 2md:flex items-center py-2 px-2">
                 <Image
                     src={require("../../assets/alerts/cardImage.png")}

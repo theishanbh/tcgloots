@@ -10,7 +10,7 @@ interface LiveDealProps {
 
 export default function LiveDealCard({isLink}:LiveDealProps) {
     return (
-        <div className="flex  flex-col  space-x-2 rounded-lg shadow-default shadow-slate-100 px-2 py-2">
+        <div className="flex  flex-col  space-x-2 rounded-lg bg-white-100 shadow-default shadow-slate-100 px-2 py-2">
             <div className="flex-1 flex flex-row justify-between ">
                 <Image
                     src={require("../../assets/alerts/cardImage.png")}

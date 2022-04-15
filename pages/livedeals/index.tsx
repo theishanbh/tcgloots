@@ -11,9 +11,9 @@ const Livedeals = () => {
             <div className="basis-1/4">
                 <Navbar />
             </div>
-            <div className="mx-2">
+            <div className="mx-2 from-zinc-300">
                 <div className="mb-2 mt-5">
-                    <h2 className="text-xl font-medium font-jost text-black-100">My Alerts</h2>
+                    <h2 className="text-xl font-medium font-jost text-black-100">Live Deals</h2>
                 </div>
                 <div className=" text-grey-400 text-sm">
                     We also send immediate deals alerts via:
