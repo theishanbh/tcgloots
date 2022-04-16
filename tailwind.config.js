@@ -1,4 +1,4 @@
-const { transform } = require("typescript");
+
 
 module.exports = {
   content: [
@@ -156,5 +156,6 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }

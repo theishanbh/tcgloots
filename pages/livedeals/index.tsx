@@ -3,11 +3,12 @@ import React from 'react'
 import LiveDealCard from '../../components/Livedeals/LiveDealCard'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
+import Dropdown from '../../components/Livedeals/Dropdown'
 
 
 const Livedeals = () => {
     return (
-        <div className="flex flex-col content-between  ">
+        <div className="flex flex-col content-between from-zinc-300 ">
             <div className="basis-1/4">
                 <Navbar />
             </div>
@@ -37,7 +38,8 @@ const Livedeals = () => {
                         width={14}
                     ></Image></span>
                 </div>
-                <div className="flex flex-col items-between  mx-2 mb-4 space-y-3">
+                <div className="mb-6 z-40"><Dropdown/></div>
+                <div className="z-30 flex flex-col items-between  mx-2 mb-4 space-y-3">
                     <LiveDealCard isLink={false}/>
                     <LiveDealCard isLink={true}/>
                     <LiveDealCard isLink={false}/>
