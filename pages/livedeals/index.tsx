@@ -4,6 +4,7 @@ import LiveDealCard from '../../components/Livedeals/LiveDealCard'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import Dropdown from '../../components/Livedeals/Dropdown'
+import ListBox from '../../components/Livedeals/ListBox'
 
 
 const Livedeals = () => {
@@ -38,11 +39,16 @@ const Livedeals = () => {
                         width={14}
                     ></Image></span>
                 </div>
-                <div className="mb-6 z-40"><Dropdown/></div>
+
+                <div className="flex flex-1 justify-between space-x-4 mb-6 z-40">
+                    <div className="flex flex-1"><Dropdown /></div>
+                    <div className="flex flex-1"><ListBox/></div>
+                    
+                    </div>
                 <div className="z-30 flex flex-col items-between  mx-2 mb-4 space-y-3">
-                    <LiveDealCard isLink={false}/>
-                    <LiveDealCard isLink={true}/>
-                    <LiveDealCard isLink={false}/>
+                    <LiveDealCard isLink={false} />
+                    <LiveDealCard isLink={true} />
+                    <LiveDealCard isLink={false} />
                 </div>
             </div>
             <div className="b
@@ -54,7 +60,7 @@ const Livedeals = () => {
 }
 
 export default Livedeals
- 
+
 
 
 
