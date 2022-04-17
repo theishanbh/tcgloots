@@ -8,9 +8,9 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 export default function Dropdown() {
   return (
     <div className="z-40 flex flex-1">
-    <Menu as='div' className="flex flex-1">
-      <div className="flex flex-1">
-          <Menu.Button className="flex flex-1 justify-between items-center px-4 py-2 font-jost text-left bg-white-100 rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-grey-500 focus-visible:ring-offset-2 focus-visible:border-white-100 sm:text-sm">
+    <Menu as='div' className="flex flex-1 xl:block">
+      <div className="xl:w-60 xl:flex flex flex-1">
+          <Menu.Button className="flex flex-1 justify-between items-center xl:items-start px-4 py-2 font-jost text-left bg-white-100 rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-grey-500 focus-visible:ring-offset-2 focus-visible:border-white-100 sm:text-sm">
             Options
             <ChevronDownIcon
               className="w-5 h-5 ml-2 -mr-1 text-black-100"
