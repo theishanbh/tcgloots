@@ -6,16 +6,18 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 
 
 export default function Dropdown() {
+  const [name,setName] = useState('Options')
   return (
     <div className="z-40 flex flex-1">
-    <Menu as='div' className="flex flex-1 xl:block">
+    <Menu as='div' className="relative inline-flex flex-1 xl:block">
       <div className="xl:w-60 xl:flex flex flex-1">
           <Menu.Button className="flex flex-1 justify-between items-center xl:items-start px-4 py-2 font-jost text-left bg-white-100 rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-grey-500 focus-visible:ring-offset-2 focus-visible:border-white-100 sm:text-sm">
-            Options
+            {name}
             <ChevronDownIcon
-              className="w-5 h-5 ml-2 -mr-1 text-black-100"
+              className="w-5 h-5 ml-2 -mr-1  text-black-100"
               aria-hidden="true"
             />
+         
           </Menu.Button>
           <Transition
           as={Fragment}
@@ -26,7 +28,7 @@ export default function Dropdown() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute z-40  w-72 mt-2 origin-top-right bg-white-100  rounded-md shadow-lg ring-1 ring-white-100 ring-opacity-5 focus:outline-none">
+          <Menu.Items className="absolute top-8 z-40  w-72 mt-2 origin-top-right bg-white-100  rounded-md shadow-lg ring-1 ring-white-100 ring-opacity-5 focus:outline-none">
             <div className="px-1 py-1 ">
               <Menu.Item>
                 {({ active }) => (
@@ -34,6 +36,7 @@ export default function Dropdown() {
                     className={`${
                       active ? 'bg-blue-300 text-white-100 ' : 'text-black-100'
                     } group flex rounded-md items-center w-full font-medium font-jost text-sm px-4 py-2`}
+                  onClick={() => setName('Active')}
                   >
                     {/* {active ? (
                       <EditActiveIcon
@@ -59,6 +62,7 @@ export default function Dropdown() {
                     className={`${
                       active ? 'bg-blue-300 text-white-100 ' : 'text-black-100'
                     } group flex rounded-md items-center w-full font-medium font-jost text-sm px-4 py-2`}
+                    onClick={() => setName('Preorder')}
                   >
                     {/* {active ? (
                       <EditActiveIcon
@@ -83,6 +87,7 @@ export default function Dropdown() {
                     className={`${
                       active ? 'bg-blue-300 text-white-100 ' : 'text-black-100'
                     } group flex rounded-md items-center w-full font-medium font-jost text-sm px-4 py-2`}
+                    onClick={() => setName('Name: from A to Z')}
                   >
                     {/* {active ? (
                       <EditActiveIcon
@@ -109,6 +114,7 @@ export default function Dropdown() {
                     className={`${
                       active ? 'bg-blue-300 text-white-100 ' : 'text-black-100'
                     } group flex rounded-md items-center w-full font-medium font-jost text-sm px-4 py-2`}
+                    onClick={() => setName('Name: from Z to A')}
                   >
                     {/* {active ? (
                       <EditActiveIcon
@@ -134,6 +140,7 @@ export default function Dropdown() {
                     className={`${
                       active ? 'bg-blue-300 text-white-100 ' : 'text-black-100'
                     } group flex rounded-md items-center w-full font-medium font-jost text-sm px-4 py-2`}
+                    onClick={() => setName('Date added: from newest')}
                   >
                     {/* {active ? (
                       <EditActiveIcon
@@ -159,6 +166,7 @@ export default function Dropdown() {
                     className={`${
                       active ? 'bg-blue-300 text-white-100 ' : 'text-black-100'
                     } group flex rounded-md items-center w-full font-medium font-jost text-sm px-4 py-2`}
+                    onClick={() => setName('Date added: from oldest')}
                   >
                     {/* {active ? (
                       <EditActiveIcon

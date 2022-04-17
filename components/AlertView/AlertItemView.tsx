@@ -12,7 +12,7 @@ interface AlertItemProps {
 
 export default function  AlertItemView({title,price,date,buttonType}: AlertItemProps) {
     return (
-        <div className="flex  flex-row border items-center bg-white-100  space-x-2 py-2 px-1 rounded-lg border-grey-600 xl:h-20 xl:py xl:px-4">
+        <div className="flex flex-row border items-center bg-white-100  space-x-2 py-2 px-1 rounded-lg border-grey-600 xl:h-20 xl:py xl:px-4">
             <div className="flex-1 flex items-center  xl:w-14 xl:h-10 ">
                 <Image
                     src={require("../../assets/alerts/cardImage.png")}
@@ -46,8 +46,11 @@ export default function  AlertItemView({title,price,date,buttonType}: AlertItemP
                         {date}
                     </div>
                 </div>
-                <div className="xl:flex xl:flex-1  xl:justify-end xl:items-center xl:visible hidden ">
+                <div className="xl:flex xl:flex-8 xl:justify-end xl:items-center xl:visible hidden ">
                    {buttonType =='primary' ? <PrimaryButton>IN STOCK</PrimaryButton> : <SecondaryButton>MONITORING</SecondaryButton>}
+                </div>
+                <div className='xl:flex xl:flex-1  xl:justify-end xl:items-center hidden hidden-child'>
+                <Image src={require('../../assets/livedeals/cross.svg')} />
                 </div>
             </div>
         </div>

@@ -28,14 +28,14 @@ export default function LiveDealCard({ isLink }: LiveDealProps) {
                         Elit irure est ullamco voluptate. Ullamco mollit incididunt ex sit enim ut ad pariatur eu consectetur anim occaecat eu. Non aliqua sunt dolor dolore.
                     </div>
                 </div>
-                <div className="flex-1 flex flex-row justify-between pt-2">
+                <div className="flex-1 flex flex-row justify-between pt-2 space-x-1 xl:space-x-0 bg-grey-100">
                     <PrimaryButtonLiveDeal>Coupons:xyz12345</PrimaryButtonLiveDeal>
-                    <ButtonLiveDeal>Go To deal</ButtonLiveDeal>
+                    <ButtonLiveDeal notificationCount={0}>Go To deal</ButtonLiveDeal>
                 </div>
                 {isLink && <div className="flex-1 flex flex-row justify-between pt-2">
-                    <ButtonLiveDeal>Link 1</ButtonLiveDeal>
-                    <ButtonLiveDeal>Link 2</ButtonLiveDeal>
-                    <ButtonLiveDeal>Link 3</ButtonLiveDeal>
+                    <ButtonLiveDeal notificationCount={0}>Link 1</ButtonLiveDeal>
+                    <ButtonLiveDeal notificationCount={0}>Link 2</ButtonLiveDeal>
+                    <ButtonLiveDeal notificationCount={0}>Link 3</ButtonLiveDeal>
                 </div>}
             </div>
             <div className="hidden xl:flex  flex-col space-x-4 rounded-lg bg-white-100 shadow-default shadow-slate-100 px-2 py-4">
@@ -56,7 +56,7 @@ export default function LiveDealCard({ isLink }: LiveDealProps) {
                 <div className="flex flex-1 font-jost font-semibold text-black-100 text-sm items-center">Expired</div>
                 <div className="flex-2 flex flex-col flex-wrap  space-y-2">
                     <PrimaryButtonLiveDeal>Coupons:xyz12345</PrimaryButtonLiveDeal>
-                    <ButtonLiveDeal>Go To deal</ButtonLiveDeal>
+                    <ButtonLiveDeal notificationCount={3}>Go To deal</ButtonLiveDeal>
                 </div>
             </div>
                 {isLink && <div className="flex-1 flex flex-wrap space-x-8 justify-end pt-4">

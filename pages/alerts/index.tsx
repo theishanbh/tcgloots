@@ -112,16 +112,16 @@ const Alerts = () => {
                 </div>
                 <div className="hidden xl:w-4/6 xl:ml-28 xl:mt-5 xl:mb-20  xl:block"><NotificationView>Youll be notified when the following products are back in stock. Manage notification preferences in Settings. Not sure if your alerts are working? Watch this Demo product to test out receiving them every minute. </NotificationView></div>
                 <div className="xl:flex xl:ml-28 ">
-                    <div className="flex flex-col justify-center xl:w-5/6 ">
-                        <div className=" flex-row justify-between hidden xl:flex">
-                            <div className="font-jost text-base text-black-100 flex-3">Tracked Products</div>
-                            <div className="font-jost text-base text-black-100 flex-1">Last Price</div>
-                            <div className="font-jost text-base text-black-100 flex-1">Last Stock</div>
-                            <div className="font-jost text-base text-grey-400 flex-2">Constantly checking for stock</div>
+                    <div className="flex flex-col justify-center xl:w-5/6 xl:mr-14">
+                        <div className=" flex-row justify-between hidden xl:flex mb-2">
+                            <div className="font-jost text-base text-black-100  flex-3">Tracked Products</div>
+                            <div className="font-jost text-base text-black-100 flex-1 pl-12">Last Price</div>
+                            <div className="font-jost text-base text-black-100 flex-1 pl-12">Last Stock</div>
+                            <div className="font-jost text-base text-grey-400 flex-3 ">Constantly checking for stock&nbsp; &nbsp;<Image src={require('../../assets/livedeals/loader.png')} width={16} height={16} className='animate-spin'/></div>
                         </div>
                         {
                             tiles.length > 0 && tiles.map((item, index) => {
-                                return <div className="mb-2 " key={index}><AlertItemView key={index} title={item.title} price={item.price} date={item.date} buttonType={item.buttonType} /></div>
+                                return <div id='parent' className="mb-2 xl:pr-10 xl:hover:pr-0 xl:flex xl:flex-col" key={index}><AlertItemView key={index} title={item.title} price={item.price} date={item.date} buttonType={item.buttonType} /></div>
                             })
                         }
 

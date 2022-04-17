@@ -61,7 +61,8 @@ const Livedeals = () => {
                <div className="hidden xl:flex flex-1  flex-row items-between ml-28 mr-10 mb-2">
                         <div className="flex flex-2"><ListBox/></div>
                         <div className="flex flex-4"></div>
-                        <div className="flex flex-3 items-center justify-end text-sm">Constantly adding new deals</div>
+                        <div className="flex flex-3 items-center justify-end text-sm whitespace-normal">Constantly adding new deals 
+                        &nbsp;<Image src={require('../../assets/livedeals/loader.png')} className='animate-spin w-2'/></div>
                 </div>
                 <div className="xl:ml-28 xl:mr-10 z-30  flex flex-col items-between  mx-2 mb-40 space-y-3">
                     <LiveDealCard isLink={false} />
