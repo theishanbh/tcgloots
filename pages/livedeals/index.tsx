@@ -1,151 +1,91 @@
 import Image from 'next/image'
 import React from 'react'
+import LiveDealCard from '../../components/Livedeals/LiveDealCard'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
+import Dropdown from '../../components/Livedeals/Dropdown'
+import ListBox from '../../components/Livedeals/ListBox'
+import NotificationView from '../../components/AlertView/NotificationView'
 
-const LiveDeals = () => {
-  return (
-    <div>
-        <div>
-            <Navbar/>
-            <div className="mx-auto max-w-7xl">
-                <div className='flex'>
-                    <div className="flex-7">
-                        <div>
-                            {/* Alerts Notificatiosn */}
-                            <div className='flex flex-col'>
-                                {/* heading */}
-                                <div className='flex items-center justify-between'>
-                                    <div className='relative flex items-center justify-center'>
-                                        <Image
-                                            src={require("../../assets/alerts/notifications.svg")}
-                                        ></Image>
-                                    </div>
-                                    <h1>My Alerts</h1>
-                                    <div className='flex items-center'>
-                                        <span>We also send immmediate stock alerts via: </span>
-                                        <span className='flex items-center'>
-                                            <div className='flex items-center'>
-                                                <span>Discord</span>
-                                                <div className="relative flex items-center">
-                                                    <Image
-                                                        src={require("../../assets/alerts/discord.svg")}
-                                                    ></Image>
-                                                </div>
-                                            </div>
-                                            <div className='flex'>
-                                                <span>Telegram</span>
-                                                <div className="relative flex items-center">
-                                                    <Image
-                                                        src={require("../../assets/alerts/telegram.svg")}
-                                                    ></Image>
-                                                </div>
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className='p-8'>
-                                    <div className='border-4 rounded-xl border-yellow-primary p-4'>
-                                        You’ll be notified when the following products are back in stock. Manage notification preferences in Settings. Not sure if your alerts are working? Watch this Demo product to test out receiving them every minute. 
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Table */}
-                            <div className="flex">
-                                <div className=' flex-7'>
-                                    {/* laoding new pages */}
-                                    {/* loading */}
-                                    <div>
-                                        <div className="flex justify-end">
-                                            <span>Constantly adding new deals</span>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/livedeals/loading.png")}
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* target */}
-                                    <div className='flex flex-col'>
-                                        <div className='flex'>
-                                            {/* image */}
-                                            <div className='relative flex justify-center items-center'>
-                                                <Image
-                                                    src={require("../../assets/livedeals/default.png")}
-                                                />
-                                            </div>
-                                            {/* product tracker */}
-                                            <div>
-                                                <span>Target</span>
-                                            </div>                                            
-                                            {/* product info */}
-                                            <div>
-                                                <p>Just in case anyone was looking for this and hasn’t found it, the 25th anniversary ultra pro binder is available shipped and sold by Amazon</p>
-                                            </div>
-                                            {/*  time*/}
-                                            <div>
-                                                <span>30 seconds ago</span>
-                                            </div>
-                                            {/* status */}
-                                            <div>
-                                                <span>
-                                                    PREORDER
-                                                </span>
-                                            </div>
-                                            {/* button */}
-                                            <div className='flex flex-col'>
-                                                <button className='border flex font-jost text-white bg-blue-primary text-base font-medium rounded-md px-12 py-2 ml-2'>
-                                                    GO TO DEAL
-                                                </button>
-                                                <button className='border flex font-jost text-white bg-blue-primary text-base font-medium rounded-md px-12 py-2 ml-2'>
-                                                    COUPON: xyz12345
-                                                </button>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="flex-3">
-                                    <div>
-                                    <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" className="bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown header <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7"></path></svg></button>
 
-                                    <div id="dropdownInformation" className="z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
-                                    <ul className="py-1" aria-labelledby="dropdownInformationButton">
-                                        <li>
-                                            <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200">Active</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200">Preorder</a>
-                                        </li>
-                                        </ul>
-                                        <ul className="py-1" aria-labelledby="dropdownInformationButton">
-                                            <li>
-                                                <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200">Name: from A to Z</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200">Name: from Z to A</a>
-                                            </li>
-                                        </ul>
-                                        <ul className="py-1" aria-labelledby="dropdownInformationButton">
-                                            <li>
-                                                <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200">Date added: from newest</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200">Date added: from oldest</a>
-                                            </li>
-                                        </ul>
-</div>
-                                    </div>
-                                </div>
-                            </div>
+const Livedeals = () => {
+    return (
+        <div className="flex flex-col content-between from-zinc-300 ">
+            <div className="basis-1/4">
+                <Navbar />
+            </div>
+            <div className="mx-2 xl:mb-10 xl:mx-0 xl:flex flex-col xl:justify-center xl:flex-row  ">
+            <div className="xl:flex-3 mx-2 from-zinc-300">
+            <div className="xl:ml-28 xl:flex xl:flex-row xl:items-center xl:mt-20">
+                    <div className="mb-2 mt-5 xl:flex-2 xl:flex-row">
+                        <div className="hidden xl:inline pr-5 ">
+                            <Image
+                                src={require("../../assets/alerts/notifications.svg")}
+                                alt={'notifications'}
+                                width={24}
+                            ></Image>
                         </div>
+                        
+                        <h2 className="text-xl font-medium font-jost xl:inline text-black-100 xl:text-8xl">Live Deals</h2>
+                    </div>
+                    <div className=" text-grey-400  xl:flex xl:flex-2 xl:mb-2 xl:mt-5 text-sm xl:justify-center">
+                        We also send immediate deals alerts via:
+                    </div>
+                    <div className="mb-10 space-x-2 xl:flex-2 xl:mb-2 xl:mt-5 flex items-center xl:justify-start text-xs">
+                        <span className="text-blue-100 ">Discord
+                        </span>
+                        <span className='flex items-center'><Image
+                            src={require("../../assets/alerts/discord.svg")}
+                            width={14}
+                        ></Image></span>
+
+                        <span className='flex items-end'><Image
+                            src={require("../../assets/alerts/Line.svg")}
+                            width={14}
+                        ></Image></span>
+                        <span className="text-blue-200 ">Telegram
+                        </span>
+                        <span className=' flex items-center'><Image
+                            src={require("../../assets/alerts/telegram.svg")}
+                            width={14}
+                        ></Image></span>
+
                     </div>
                 </div>
+                <div className="hidden xl:w-4/6 xl:ml-28 xl:mt-5 xl:mb-20  xl:block"><NotificationView>Youll be notified when the following products are back in stock. Manage notification preferences in Settings. Not sure if your alerts are working? Watch this Demo product to test out receiving them every minute. </NotificationView></div>
+
+                <div className="xl:hidden flex flex-1 justify-between space-x-4 mb-6 z-40">
+                    <div className="flex flex-1"><Dropdown /></div>
+                    <div className="flex flex-1"><ListBox/></div>
+                    </div>
+               <div className="hidden xl:flex flex-1  flex-row items-between ml-28 mr-10 mb-2">
+                        <div className="flex flex-2"><ListBox/></div>
+                        <div className="flex flex-4"></div>
+                        <div className="flex flex-3 items-center justify-end text-sm whitespace-normal">Constantly adding new deals 
+                        &nbsp;<Image src={require('../../assets/livedeals/loader.png')} className='animate-spin w-2'/></div>
+                </div>
+                <div className="xl:ml-28 xl:mr-10 z-30  flex flex-col items-between  mx-2 mb-40 space-y-3">
+                    <LiveDealCard isLink={false} />
+                    <LiveDealCard isLink={true} />
+                    <LiveDealCard isLink={false} />
+                    <LiveDealCard isLink={true} />
+                    <LiveDealCard isLink={false} />
+                </div>
             </div>
-            <Footer></Footer>
+            <div className="hidden xl:flex flex-1 flex-row ">
+                <div className="mt-96 flex flex-1 pl-6 pt-6"><Dropdown /></div></div>
+            </div>
+            <div className="b
+            sis-1/4">
+                <Footer />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
-export default LiveDeals    
+export default Livedeals
+
+
+
+
+
