@@ -28,11 +28,11 @@ export default function LiveDealCard({ isLink }: LiveDealProps) {
                         Elit irure est ullamco voluptate. Ullamco mollit incididunt ex sit enim ut ad pariatur eu consectetur anim occaecat eu. Non aliqua sunt dolor dolore.
                     </div>
                 </div>
-                <div className="flex-1 flex flex-row justify-between pt-2 space-x-1 xl:space-x-0 bg-grey-100">
+                <div className="flex-1 flex flex-row justify-between pt-2 space-x-1 xl:space-x-0 ">
                     <PrimaryButtonLiveDeal>Coupons:xyz12345</PrimaryButtonLiveDeal>
                     <ButtonLiveDeal notificationCount={0}>Go To deal</ButtonLiveDeal>
                 </div>
-                {isLink && <div className="flex-1 flex flex-row justify-between pt-2">
+                {isLink && <div className="flex-1 flex flex-row space-x-2 justify-between pt-2">
                     <ButtonLiveDeal notificationCount={0}>Link 1</ButtonLiveDeal>
                     <ButtonLiveDeal notificationCount={0}>Link 2</ButtonLiveDeal>
                     <ButtonLiveDeal notificationCount={0}>Link 3</ButtonLiveDeal>
@@ -60,9 +60,9 @@ export default function LiveDealCard({ isLink }: LiveDealProps) {
                 </div>
             </div>
                 {isLink && <div className="flex-1 flex flex-wrap space-x-8 justify-end pt-4">
-                    <SecondaryButton><div className="w-36 h-8 flex justify-center items-center">Link 1</div></SecondaryButton>
-                    <SecondaryButton><div className="w-36 h-8 flex justify-center items-center">Link 2</div></SecondaryButton>
-                    <SecondaryButton><div className="w-36 h-8 flex justify-center items-center">Link 3</div></SecondaryButton>
+                    <SecondaryButton><div className=" flex justify-center items-center">Link 1</div></SecondaryButton>
+                    <SecondaryButton><div className=" flex justify-center items-center">Link 2</div></SecondaryButton>
+                    <SecondaryButton><div className=" flex justify-center items-center">Link 3</div></SecondaryButton>
                 </div>}
             </div>
         </>
