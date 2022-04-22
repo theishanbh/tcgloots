@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 interface props {
   isdes: boolean
+  setShowdes : (des:boolean) => void
 }
-
 export default function InstoreCard(props: props) {
   return (
-    <div className="flex  flex-col   rounded-lg bg-white-100 shadow-default shadow-slate-100 px-2 py-2">
+    <div className="flex  flex-col  rounded-lg bg-white-100 shadow-default shadow-slate-100 px-2 py-2" onClick={()=>props.setShowdes(true)}>
       <div className="flex-1 flex flex-row ">
         <div className="flex-1 flex-col">
           <div className="inline-flex  flex-row ">
