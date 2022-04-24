@@ -13,6 +13,42 @@
     visibility: visible;
 }
 
+.react-calendar{
+    border : none !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: #262D33 !important;
+    
+}
+
+.react-calendar__tile--active:enabled:hover{
+    border-radius: 5px !important;
+    background: #55AEF0 !important;
+    color: #ffffff !important;
+}
+
+.react-calendar__tile--now{
+    border-radius: 5px !important;
+    
+}
+
+abbr:where([title]) {
+    text-decoration: none !important;
+    color: #6E7781 !important;
+
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+    color:   #6E7781!important;
+    
+}
+
 @layer utilities {
     .pause {
         animation-play-state: paused;

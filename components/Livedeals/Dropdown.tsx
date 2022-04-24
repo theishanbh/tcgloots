@@ -6,7 +6,7 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 
 
 export default function Dropdown() {
-  const [name,setName] = useState('Options')
+  const [name,setName] = useState('Sort by')
   return (
     <div className="z-40 flex flex-1">
     <Menu as='div' className="relative inline-flex flex-1 xl:block">

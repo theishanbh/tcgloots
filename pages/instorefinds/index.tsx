@@ -51,7 +51,7 @@ const index = () => {
       <div className="relative hidden xl:flex flex-1 flex-row m-2 mb-10">
         <div className='w-1/3 h-full flex flex-col  from-zinc-300 justify-center'>
         <div className="flex flex-1 mx-4 mt-10" >
-      <Calendar onChange={onChange} value={value} />
+      <Calendar onChange={onChange} next2Label={null} prev2Label={null} className={'bg-white-100 rounded-xl'} value={value} />
     </div>
         <div className="flex flex-1  ml-10 mt-10"><Dropdown /></div>
         </div>
