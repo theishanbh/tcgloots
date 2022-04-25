@@ -8,9 +8,9 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 export default function Dropdown() {
   const [name,setName] = useState('Sort by')
   return (
-    <div className="z-40 flex flex-1">
+    <div className="z-40 flex flex-1 ">
     <Menu as='div' className="relative inline-flex flex-1 xl:block">
-      <div className="xl:w-60 xl:flex flex flex-1">
+      <div className=" xl:flex flex flex-1 drop">
           <Menu.Button className="flex flex-1 justify-between items-center xl:items-start px-4 py-2 font-jost text-left bg-white-100 rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-grey-500 focus-visible:ring-offset-2 focus-visible:border-white-100 sm:text-sm">
             {name}
             <ChevronDownIcon

@@ -9,6 +9,7 @@ import Dropdown from '../../components/Livedeals/Dropdown'
 import ListBox from '../../components/Livedeals/ListBox'
 import InstoreCardDescription from '../../components/InstoreFinds/InstoreCardDescription'
 import InstoreAddPost from '../../components/InstoreFinds/InstoreAddPost'
+import SearchComponent from '../../components/InstoreFinds/SearchComponent'
 
 const index = () => {
   const [showdes, setShowdes] = React.useState<boolean>(false)
@@ -50,10 +51,11 @@ const index = () => {
       </div>
       <div className="relative hidden xl:flex flex-1 flex-row m-2 mb-10">
         <div className='w-1/3 h-full flex flex-col  from-zinc-300 justify-center'>
-        <div className="flex flex-1 mx-4 mt-10" >
+        <div className="flex flex-1 mx-4 mt-10 w-80" >
       <Calendar onChange={onChange} next2Label={null} prev2Label={null} className={'bg-white-100 rounded-xl'} value={value} />
     </div>
-        <div className="flex flex-1  ml-10 mt-10"><Dropdown /></div>
+    <div className="flex flex-1 mx-4 mt-10"><SearchComponent/></div>
+        <div className="flex flex-1  mx-4 mt-10 w-80"><Dropdown /></div>
         </div>
         <div className='w-2/3 h-full flex flex-col mx-24  justify-center pt-4'>
         <div className="flex  flex-1 items-center justify-between flex-row space-x-4">

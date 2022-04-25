@@ -49,6 +49,35 @@ abbr:where([title]) {
     
 }
 
+.box-shadow-div{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Works on Firefox */
+.scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #DDDDDD #ffffff;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  .scrollbar::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #DDDDDD;
+    border-radius: 8px;    /* color of the scroll thumb */      /* roundness of the scroll thumb */
+     border: 5px solid #ffffff;
+  }
+
+  input:focus{
+    outline: none;
+}
+
 @layer utilities {
     .pause {
         animation-play-state: paused;
