@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import Image from 'next/image'
 
 interface props {
-    children: ReactNode;
+    children: ReactNode
 }
 export default function PrimaryButton(props: props) {
     return (
