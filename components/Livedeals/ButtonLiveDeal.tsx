@@ -8,7 +8,7 @@ interface props {
 export default function ButtonLiveDeal(props: props) {
     return (
         <>
-        <div className="bg-white-100  hidden relative xl:flex flex-1 pt-2 pr-2">
+        <div className="bg-white-100  hidden relative xl:flex flex-1 xl:pt-0 xl:pr-0 pt-2 pr-2">
             <button className="bg-slate-300 px-2 flex flex-1   font-jost text-sm text-blue-300 border border-1 border-blue-300 rounded-md py-2">
                 <div className="flex-1 items-center px-2">
                     <span>{props.children}</span>
