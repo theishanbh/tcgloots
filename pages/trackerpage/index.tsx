@@ -15,7 +15,7 @@ const TrackerPage = () => {
             <div className="basis-1/4">
                 <Navbar />
             </div>
-            <div className="mx-2 mb-20  flex flex-col">
+            <div className="mx-2 mb-20  flex basis-2/4 flex-1 flex-col xl:hidden">
             <div className="flex flex-col my-10 mx-2">
               <div className="flex flex-row items-baseline justify-between">
                  <div className="font-jost text-4xl text-blue-300 font-medium"> Pokemon Cards </div>
@@ -76,6 +76,15 @@ const TrackerPage = () => {
             </div>
               <StatusView/>
             </div>
+             <div className='mb-20 hidden xl:flex flex-row'>
+               <div className='flex flex-col w-1/4 bg-grey-600'>
+                <div className='mt-16'>
+                 <Dropdown/>
+                </div>
+               </div>
+               <div className='flex w-3/4'>table</div>
+             </div>
+            
             <div className="basis-1/4">
                 <Footer />
             </div>
