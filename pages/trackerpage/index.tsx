@@ -2,449 +2,268 @@ import Image from 'next/image'
 import React from 'react'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
-
+import TileMobileView from '../../components/TrackerPage/TileMobileView'
+import Dropdown from '../../components/Livedeals/Dropdown'
+import GridButton from '../../components/TrackerPage/GridButton'
+import PaginationComponent from '../../components/TrackerPage/PaginationComponent'
+import StackView from '../../components/TrackerPage/StackView'
+import StatusView from '../../components/TrackerPage/StatusView'
+import PrimaryButtonWithRightIcon from '../../components/TrackerPage/PrimaryButtonWithRightIcon'
+import FilterView from '../../components/TrackerPage/FilterView'
+import TypeView from '../../components/TrackerPage/TypeView'
+import StockAlertView from '../../components/TrackerPage/StockAlertView'
+import TileDesktopView from '../../components/TrackerPage/TileDesktopView'
+import CustomButton from '../../components/TrackerPage/CustomButton'
+import HistoryComponent from '../../components/TrackerPage/HistoryComponent'
+import ExpandFilter from '../../components/TrackerPage/ExpandFilter'
 const TrackerPage = () => {
+  const [isFocus, setFocus] = React.useState('stack')
   return (
-    <div>
-        <div>
-            <Navbar></Navbar>
-            <div className="mx-auto max-w-7xl">
-                <div className='flex'>
-                    <div className='flex flex-1'>
-                        <div className="flex flex-col">
-                            {/* sort by */}
-                            <div className='flex flex-col'>
-                                {/* heading */}
-                                <div className='flex justify-between'>
-                                    <span>Sort By</span>
-                                    <div className='relative'>
-                                        <Image
-                                            src={require("../../assets/trackerpage/uparrow.svg")}
-                                        />
-                                    </div>
-                                </div>
-                                {/* items */}
-                                <div className='flex flex-col'>
-                                    <ul>
-                                        <li>Name</li>
-                                        <li>Price</li>
-                                        <li>Sale start time</li>
-                                        <li>Added to Site</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* location */}
-                            <div className='flex flex-col'>
-                                {/* heading */}
-                                <div>
-                                    <span>Location</span>
-                                </div>
-                                {/* items */}
-                                <div className='flex flex-col'>
-                                    <ul className='flex flex-col'>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/flag-us.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>United States</span>
-                                        </li>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/flag-uk.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>United Kingdom</span>
-                                        </li>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/flag-ca.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>Canada</span>
-                                        </li>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/flag-ge.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>Deutschland</span>
-                                        </li>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/flag-it.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>Italia</span>
-                                        </li>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/flag-fr.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>France</span>
-                                        </li>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/flag-ja.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>Japan</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* Type */}
-                            <div className='flex flex-col'>
-                                {/* heading */}
-                                <div>
-                                    <span>Type</span>
-                                </div>
-                                {/* items */}
-                                <div className='flex flex-col'>
-                                    <ul>
-                                        <li>Game</li>
-                                        <li>Game + DLC</li>
-                                        <li>DLC</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* Free in stock alerts */}
-                            <div className='flex flex-col'>
-                                {/* heading */}
-                                <div>
-                                    <span>FREE in Stock Alerts!</span>
-                                </div>
-                                {/* items */}
-                                <div className='flex flex-col'>
-                                    <ul className='flex flex-col'>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/telegram.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>Telegram</span>
-                                        </li>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/discord.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>Discord</span>
-                                        </li>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/email.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>Email</span>
-                                        </li>
-                                        <li className='flex'>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/browser.svg")}
-                                                ></Image>
-                                            </div>
-                                            <span>Browser</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* button */}
-                            <div>
-                                <button className=" border bg-white flex text-black-100 font-jost text-xl rounded-md px-16 py-2">
-                                    <span>Suggest a Product</span>
-                                    <div className='relative'>
-                                        <Image
-                                            src={require("../../assets/trackerpage/uparrow.svg")}
-                                        ></Image>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex flex-col flex-5'>
-                        <div className='flex'>
-                            {/* link url and right icons */}
-                            <div className='flex justify-between'>
-                                <div>
-                                    <span>Home &gt; Collectibles &gt; Trading Cards &gt; Pokemon Cards</span>
-                                </div>
-                                <div className='flex'>
-                                    {/* checking for updates */}
-                                    <div className='flex'>
-                                        <span>Constantly checking for updates</span>
-                                        <div className='relative'>
-                                            <Image
-                                                src={require("../../assets/trackerpage/loading.png")}
-                                            ></Image>
-                                        </div>
-                                    </div>
-                                    {/* social icons */}
-                                    <div className='flex'>
-                                        <div>
-                                            <Image
-                                                src={require("../../assets/trackerpage/discord.svg")}
-                                            ></Image>
-                                        </div>
-                                        <div>
-                                            <Image
-                                                src={require("../../assets/trackerpage/telegram.svg")}
-                                            ></Image>
-                                        </div>
-                                        <div>
-                                            <Image
-                                                src={require("../../assets/trackerpage/email.svg")}
-                                            ></Image>
-                                        </div>
-                                        <div>
-                                            <Image
-                                                src={require("../../assets/trackerpage/browser.svg")}
-                                            ></Image>
-                                        </div>
-                                    </div>
-                                    {/* stack or grid */}
-                                    <div className='flex'>
-                                        <div>
-                                            <div className='relative bg-yellow-primary'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/stack.svg")}></Image>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className='relative'>
-                                                <Image
-                                                    src={require("../../assets/trackerpage/grid.svg")}></Image>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* stacks */}
-                        <div>
-                        <div className="hidden">
-                                <div>
-                                <table className=' table-auto w-full'>
-                                    <thead>
-                                        <tr>
-                                            <th> </th>
-                                            <th>Name</th>
-                                            <th>Store</th>
-                                            <th>Status</th>
-                                            <th>Last Price</th>
-                                            <th>Last Stock</th>
-                                            <th>Track</th>
-                                        </tr>
-                                    </thead>
-                                        <tbody>
-                                            {/* body row 1 */}
-                                            <tr>
-                                                <td></td>
-                                                <td>Category Name1</td>
-                                            </tr>
-                                            {/* body row 2 */}
-                                            <tr>
-                                                <td></td>
-                                                <td>Celebrations Collection Lance’s Charizard V</td>
-                                                <td>Gamestop</td>
-                                                <td>Out of Stock</td>
-                                                <td>$29.99</td>
-                                                <td>Jan 06  - 4:11 PM</td>
-                                                <td>
-                                                <div className='text-center my-4'>
-                                                    <button className='border font-jost bg-white text-grey-primary text-base font-medium rounded-md px-12 py-2'>ADD</button>
-                                                </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td>Celebrations Collection Lance’s Charizard V</td>
-                                                <td>Gamestop</td>
-                                                <td>Out of Stock</td>
-                                                <td>$29.99</td>
-                                                <td>Jan 06  - 4:11 PM</td>
-                                                <td>
-                                                <div className='text-center my-4'>
-                                                    <button className='border font-jost bg-white text-grey-primary text-base font-medium rounded-md px-12 py-2'>ADD</button>
-                                                </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td>Celebrations Collection Lance’s Charizard V</td>
-                                                <td>Gamestop</td>
-                                                <td>Out of Stock</td>
-                                                <td>$29.99</td>
-                                                <td>Jan 06  - 4:11 PM</td>
-                                                <td>
-                                                <div className='text-center my-4'>
-                                                    <button className='border font-jost bg-white text-grey-primary text-base font-medium rounded-md px-12 py-2'>ADD</button>
-                                                </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                        </div>
-                        </div>
-                        {/* grid */}
-                        <div>
-                            <div className='flex flex-wrap'>
-                                <div className='w-1/6'>
-                                    <div className='flex flex-col'>
-                                        <div className='relative'>
-                                            <Image
-                                                src={require("../../assets/trackerpage/default.png")}
-                                            ></Image>
-                                        </div>
-                                        <span>Lorem ipsum dolor sit </span>
-                                    </div>
-                                </div>
-                                <div className='w-1/6'>
-                                    <div className='flex flex-col'>
-                                        <div className='relative'>
-                                            <Image
-                                                src={require("../../assets/trackerpage/default.png")}
-                                            ></Image>
-                                        </div>
-                                        <span>Lorem ipsum dolor sit </span>
-                                    </div>
-                                </div>
-                                <div className='w-1/6'>
-                                    <div className='flex flex-col'>
-                                        <div className='relative'>
-                                            <Image
-                                                src={require("../../assets/trackerpage/default.png")}
-                                            ></Image>
-                                        </div>
-                                        <span>Lorem ipsum dolor sit </span>
-                                    </div>
-                                </div>
-                                <div className='w-1/6'>
-                                    <div className='flex flex-col'>
-                                        <div className='relative'>
-                                            <Image
-                                                src={require("../../assets/trackerpage/default.png")}
-                                            ></Image>
-                                        </div>
-                                        <span>Lorem ipsum dolor sit </span>
-                                    </div>
-                                </div>
-                                <div className='w-1/6'>
-                                    <div className='flex flex-col'>
-                                        <div className='relative'>
-                                            <Image
-                                                src={require("../../assets/trackerpage/default.png")}
-                                            ></Image>
-                                        </div>
-                                        <span>Lorem ipsum dolor sit </span>
-                                    </div>
-                                </div>
-                                <div className='w-1/6'>
-                                    <div className='flex flex-col'>
-                                        <div className='relative'>
-                                            <Image
-                                                src={require("../../assets/trackerpage/default.png")}
-                                            ></Image>
-                                        </div>
-                                        <span>Lorem ipsum dolor sit </span>
-                                    </div>
-                                </div>
-                                <div className='w-1/6'>
-                                    <div className='flex flex-col'>
-                                        <div className='relative'>
-                                            <Image
-                                                src={require("../../assets/trackerpage/default.png")}
-                                            ></Image>
-                                        </div>
-                                        <span>Lorem ipsum dolor sit </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* button */}
-                        <div className='text-center my-4'>
-                            <button className='border font-jost bg-white text-grey-primary text-base font-medium rounded-md px-12 py-2'>LOAD MORE</button>
-                        </div>
-                        {/* Recent Stock History */}
-                        <div>
-                            {/* Heading */}
-                            <div className='flex'>
-                                <div>
-                                    <Image
-                                        src={require("../../assets/trackerpage/recently-viewed.svg")}
-                                    />
-                                </div>
-                                <h1>Recent Stock History</h1>
-                            </div>
-                            {/* refresh */}
-                            <div className='flex'>
-                                <div className='text-center my-4'>
-                                    <button className='border font-jost bg-white text-grey-primary text-base font-medium rounded-md px-12 py-2'>LOG IN</button>
-                                </div>
-                                <span>
-                                Updates apprx. every 5 minutes
-                                </span>
-                            </div>
-                            {/* table */}
-                            <div>
-                                <div>
-                                    <table className=' table-auto'>
-                                    <thead>
-                                        <tr>
-                                            <th>Date/Time</th>
-                                            <th>Status</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                        <tbody>
-                                            {/* body row 1 */}
-                                            <tr>
-                                                <td>Feb 13 - 1:09 AM EST</td>
-                                                <td>CAmazon: Zacian V-UNION Special Collection Out of Stock</td>
-                                                <td>
-                                                    <div>
-                                                        <Image
-                                                            src={require("../../assets/trackerpage/cross.svg")}
-                                                        ></Image>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            {/* body row 2 */}
-                                            <tr>
-                                                <td></td>
-                                                <td>Celebrations Collection Lance’s Charizard V</td>
-                                                <td>Gamestop</td>
-                                                <td>Out of Stock</td>
-                                                <td>$29.99</td>
-                                                <td>Jan 06  - 4:11 PM</td>
-                                                <td>
-                                                <div className='text-center my-4'>
-                                                    <button className='border font-jost bg-white text-grey-primary text-base font-medium rounded-md px-12 py-2'>ADD</button>
-                                                </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <Footer></Footer>
+    <div className="flex flex-col content-between from-zinc-300 ">
+      <div className="basis-1/4">
+        <Navbar />
+      </div>
+      <div className="mx-2 mb-20  flex basis-2/4 flex-1 flex-col xl:hidden">
+        <div className="flex flex-col my-10 mx-2">
+          <div className="flex flex-row items-baseline justify-between">
+            <div className="font-jost text-4xl text-blue-300 font-medium"> Pokemon Cards </div>
+            <GridButton isFocus={isFocus} setFocus={setFocus} />
+          </div>
+          <div className="font-jost text-xs text-grey-400">Home {'>'} Collectibles {'>'} Trading Cards</div>
         </div>
+
+        {isFocus == 'stack' ?
+          <div className="flex flex-col ">
+            <div className="flex flex-1 mb-10"><Dropdown /></div>
+            <div>
+              <div className="font-jost text-lg font-medium ml-2">Category name 1</div>
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'primary'} isAdded={true} isLabel={true} isNew={true} />
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'secondary'} isAdded={false} isLabel={true} isNew={false} />
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'secondary'} isAdded={false} isLabel={false} isNew={false} />
+              <div className="font-jost text-lg font-medium ml-2">Category name 2</div>
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'primary'} isAdded={true} isLabel={true} isNew={true} />
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'secondary'} isAdded={false} isLabel={true} isNew={false} />
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'primary'} isAdded={true} isLabel={false} isNew={true} />
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'secondary'} isAdded={false} isLabel={false} isNew={false} />
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'secondary'} isAdded={false} isLabel={false} isNew={false} />
+              <div className="font-jost text-lg font-medium ml-2">Category name 3</div>
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'primary'} isAdded={true} isLabel={false} isNew={true} />
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'primary'} isAdded={true} isLabel={false} isNew={true} />
+              <TileMobileView title={'Sony PlayStation 5 Console (PS5)'} price={'499.9'} date={'12 Dec, 08:08'} buttonType={'secondary'} isAdded={false} isLabel={false} isNew={false} />
+            </div>
+          </div>
+          :
+          <div>
+            <div className="flex flex-1 mb-10"><Dropdown /></div>
+            <div className='grid grid-cols-2 gap-2'>
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={true} isNew={true} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={true} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+            </div>
+          </div>
+        }
+
+        <div className="flex flex-1 flex-row items-center justify-center mt-20">
+          <PaginationComponent />
+        </div>
+        <div className="flex flex-1 flex-col mt-24 mx-4 mb-4">
+          <div className="flex flex-row space-x-4">
+            <Image
+              src={require("../../assets/trackerpage/recent.svg")}
+              alt={'poster image'}
+            ></Image>
+            <div className="font-jost text-xl text-black-100 font-medium">Recent Stock History</div>
+          </div>
+        </div>
+        <StatusView />
+      </div>
+      <div className=' hidden xl:flex flex-row'>
+        <div className='flex flex-col w-1/4 bg-grey-600 '>
+          <div className='mb-6 space-y-6'>
+            <div className='mt-16 mx-10'>
+              <ExpandFilter/>
+            </div>
+            <div className=' mx-10'>
+              <FilterView />
+            </div>
+            <div className=' mx-10'>
+              <TypeView />
+            </div>
+            <div className=' mx-10'>
+              <StockAlertView />
+            </div>
+            
+            <div className='flex  justify-center mt-8'>
+              <PrimaryButtonWithRightIcon>Suggest a Product</PrimaryButtonWithRightIcon>
+            </div>
+          </div>
+        </div>
+        <div className='flex flex-col w-3/4 mt-16 mb-20 ml-2 relative'>
+         
+          {isFocus == 'stack' ? 
+          <>
+            <div className='flex flex-row mx-10 mb-20 justify-between items-center'>
+            <div className='text-sm text-grey-200'>Home  &nbsp;{'>'}
+              &nbsp;Collectibles&nbsp; {'>'}
+              &nbsp;Trading Cards&nbsp; {'>'} &nbsp;
+              <span className='text-blue-100'>Pokemon Cards</span></div>
+            <div className='flex flex-row space-x-4 mt-2 ml-20'>
+              <div className="font-jost text-xs text-grey-400 flex-3 ">Constantly checking for stock&nbsp; &nbsp;<Image src={require('../../assets/livedeals/loader.png')} width={16} height={16} className='animate-spin' /></div>
+              <div className='flex flex-row space-x-4'>
+                <div>
+                  <Image
+                    src={require("../../assets/trackerpage/telegram.svg")}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={require("../../assets/trackerpage/discord.svg")}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={require("../../assets/trackerpage/email.svg")}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={require("../../assets/trackerpage/browser.svg")}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="mb-1">
+              <GridButton isFocus={isFocus} setFocus={setFocus} />
+            </div>
+          </div>
+          <div className="flex flex-row mx-16 ">
+          <div className="absolute topalign1 w-16 left-0">
+              <Image
+                src={require("../../assets/trackerpage/updateLabel.svg")}
+                alt={'poster image'}
+              ></Image>
+            </div>
+          <div className="absolute topalign2 w-16 left-0">
+              <Image
+                src={require("../../assets/trackerpage/newLabel.svg")}
+                alt={'poster image'}
+              ></Image>
+            </div>
+          <div className="absolute topalign3 w-16 left-0">
+              <Image
+                src={require("../../assets/trackerpage/updateLabel.svg")}
+                alt={'poster image'}
+              ></Image>
+            </div>
+          <div className="absolute topalign4 w-16 left-0">
+              <Image
+                src={require("../../assets/trackerpage/updateLabel.svg")}
+                alt={'poster image'}
+              ></Image>
+            </div>
+          <div className="w-full">          
+            <TileDesktopView />
+          </div>
+          </div> </> :  <>
+          <div className='flex flex-row mx-8 mb-20 justify-between items-center'>
+            <div className='text-sm flex-2  text-grey-200'>Home  &nbsp;{'>'}
+              &nbsp;Collectibles&nbsp; {'>'}
+              &nbsp;Trading Cards&nbsp; {'>'} &nbsp;
+              <span className='text-blue-100'>Pokemon Cards</span></div>
+            <div className='flex flex-row space-x-4 mt-2 ml-20 items-baseline'>
+              <div className='flex flex-row space-x-4'>
+                <div>
+                  <Image
+                    src={require("../../assets/trackerpage/telegram.svg")}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={require("../../assets/trackerpage/discord.svg")}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={require("../../assets/trackerpage/email.svg")}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={require("../../assets/trackerpage/browser.svg")}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+              </div>
+            <div className="mb-1">
+              <GridButton isFocus={isFocus} setFocus={setFocus} />
+            </div>
+            <div className='flex flex-col space-y-2'><PaginationComponent/>
+            <div className="font-jost flex justify-end text-xs text-grey-400 flex-3 ">Constantly checking for stock&nbsp; &nbsp;<Image src={require('../../assets/livedeals/loader.png')} width={16} height={16} className='animate-spin' /></div>
+            </div>
+            </div>
+          </div>
+          <div className='grid grid-cols-6 gap-4 mx-10'>
+          <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={true} isNew={true} />
+            <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={true} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={true} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={true} isNew={true} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={true} isNew={true} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={true} isNew={true} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+              <StackView title={'Sony PlayStation 5 Console (PS5)'} isLabel={false} isNew={false} />
+             
+              
+            </div></>}
+          <div className="flex flex-row justify-center mt-16">
+            <CustomButton/>
+          </div>
+          <div className="mt-28 mx-10">
+             <HistoryComponent/>
+          </div>
+        </div>
+      </div>
+
+      <div className="basis-1/4">
+        <Footer />
+      </div>
     </div>
   )
 }

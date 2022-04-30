@@ -4,224 +4,93 @@ import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import Calendar from "react-calendar"
 import 'react-calendar/dist/Calendar.css';
+import InstoreCard from '../../components/InstoreFinds/InstoreCard'
+import Dropdown from '../../components/Livedeals/Dropdown'
+import ListBox from '../../components/Livedeals/ListBox'
+import InstoreCardDescription from '../../components/InstoreFinds/InstoreCardDescription'
+import InstoreAddPost from '../../components/InstoreFinds/InstoreAddPost'
+import SearchComponent from '../../components/InstoreFinds/SearchComponent'
 
 const index = () => {
+  const [showdes, setShowdes] = React.useState<boolean>(false)
+  const [post, setPost] = React.useState(false);
+  const [value, onChange] = React.useState(new Date());
   return (
-    <div>
-        <div>
-            <Navbar></Navbar>
-            <div className="mx-auto max-w-7xl">
-                <div className='flex'>
-                    {/* left section */}
-                    <div className="flex-4">
-                        <div>
-                            {/* info */}
-                            <div className='relative'>
-                                {/* background image */}
-                                <div className="absolute">
-                                    <Image
-                                        src={require("../../assets/instorefinds/background2.png")}
-                                        layout="fill"
-                                    />
-                                </div>
-                                <div className=' bg-opacity-0 '>
-                                    <p>
-                                        Every week we randomly reward contributors that help the community!
-                                    </p>
-                                </div>
-                            </div>
-                            <div>
-                                <Calendar></Calendar>
-                            </div>
-                            <div>
-                                <div className='flex justify-between'>
-                                    <span>Submitted Today(xx)</span>
-                                    <div>
-                                        <Image
-                                            src={require("../../assets/instorefinds/search.svg")}
-                                        ></Image>
-                                    </div>
-                                </div>
-                                {/* submitted today */}
-                                <div>
-                                    <ul>
-                                        <li>Seattle, WA (2)</li>
-                                        <li>Phoenix, AZ</li>
-                                        <li>Seattle, WA</li>
-                                        <li>Phoenix, AZ</li>
-                                        <li>Seattle, WA</li>
-                                        <li>Phoenix, AZ</li>
-                                    </ul>
-                                </div>
-                                {/* sort by */}
-                                <div>
-                                    <div className='flex justify-between'>
-                                        <span>Sort by</span>
-                                        <div>
-                                            <Image
-                                                src={require("../../assets/instorefinds/uparrow.svg")}
-                                            ></Image>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* middle section */}
-                    <div className="flex-7">
-                        <div>
-                            <div className='flex'>
-                                <div className='flex flex-col'>
-                                    <h1>Instore Finds</h1>
-                                    <span>Feb 16, 2022</span>
-                                </div>
-                                <div>
-                                    <button className="flex border bg-blue-primary text-white font-jost text-xl rounded-md px-16 py-2">
-                                        <div className="relative">
-                                            <Image
-                                                src={require("../../assets/instorefinds/add.svg")}
-                                            ></Image>
-                                        </div>
-                                        <span>
-                                            Post
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div className='flex flex-col'>
-                                <div>
-                                    <div className='flex flex-col justify-between items-center'>
-                                        <div className='flex'>
-                                            <div className='flex-3'>
-                                                <div className='flex'>
-                                                    <div>
-                                                        <img src="./assets/homepage/instoretracker/person.png" alt="" className='h-10 w-10 object-cover rounded-full'/>
-                                                    </div>
-                                                    <span>User12345678</span>
-                                                    <span>3 h ago</span>
-                                                </div>
-                                                <div className='flex flex-1 justify-around'>
-                                                    <span className='text-lg border rounded-md py-1 px-3'>Seattle, WA</span>
-                                                    <span className='text-lg border rounded-md py-1 px-3'>Target</span>
-                                                    <span className='text-lg border rounded-md py-1 px-3'>12:00 AM EST</span>
-                                                </div>
-                                            </div>
-                                            <div className="flex-1">
-                                                <div className='relative'>
-                                                    <Image
-                                                        src={require("../../assets/instorefinds/default.png")}
-                                                    ></Image>
-                                                </div>
-                                            </div>
-                                        </div>                                            
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className='flex flex-col justify-between items-center'>
-                                        <div className='flex'>
-                                            <div className='flex-3'>
-                                                <div className='flex'>
-                                                    <div>
-                                                        <img src="./assets/homepage/instoretracker/person.png" alt="" className='h-10 w-10 object-cover rounded-full'/>
-                                                    </div>
-                                                    <span>User12345678</span>
-                                                    <span>3 h ago</span>
-                                                </div>
-                                                <div className='flex flex-1 justify-around'>
-                                                    <span className='text-lg border rounded-md py-1 px-3'>Seattle, WA</span>
-                                                    <span className='text-lg border rounded-md py-1 px-3'>Target</span>
-                                                    <span className='text-lg border rounded-md py-1 px-3'>12:00 AM EST</span>
-                                                </div>
-                                            </div>
-                                            <div className="flex-1">
-                                                <div className='relative'>
-                                                    <Image
-                                                        src={require("../../assets/instorefinds/default.png")}
-                                                    ></Image>
-                                                </div>
-                                            </div>
-                                        </div>                                            
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className='flex flex-col justify-between items-center'>
-                                        <div className='flex'>
-                                            <div className='flex-3'>
-                                                <div className='flex'>
-                                                    <div>
-                                                        <img src="./assets/homepage/instoretracker/person.png" alt="" className='h-10 w-10 object-cover rounded-full'/>
-                                                    </div>
-                                                    <span>User12345678</span>
-                                                    <span>3 h ago</span>
-                                                </div>
-                                                <div className='flex flex-1 justify-around'>
-                                                    <span className='text-lg border rounded-md py-1 px-3'>Seattle, WA</span>
-                                                    <span className='text-lg border rounded-md py-1 px-3'>Target</span>
-                                                    <span className='text-lg border rounded-md py-1 px-3'>12:00 AM EST</span>
-                                                </div>
-                                            </div>
-                                            <div className="flex-1">
-                                                <div className='relative'>
-                                                    <Image
-                                                        src={require("../../assets/instorefinds/default.png")}
-                                                    ></Image>
-                                                </div>
-                                            </div>
-                                        </div>                                            
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-4">
-                        <div>
-                            <div className='flex'>
-                                <div className='flex-3'>
-                                    <div className='flex flex-col'>
-                                        {/* user info */}
-                                        <div className='flex'>
-                                            <div>
-                                                <img src="./assets/homepage/instoretracker/person.png" alt="" className='h-10 w-10 object-cover rounded-full'/>
-                                            </div>
-                                            <span>User12345678</span>
-                                            <span>3 h ago</span>
-                                        </div>
-                                        {/* image */}
-                                        <div>
-                                            <div className="relative h-56 w-56">
-                                                <Image
-                                                    src={require("../../assets/instorefinds/default.png")}
-                                                    layout="fill"
-                                                ></Image>
-                                            </div>
-                                        </div>
-                                        {/* info about other stuff */}
-                                        <div className='flex flex-col'>
-                                            <div>
-                                                <span>Location : </span>
-                                                <span> Seattle, WA</span>
-                                            </div>
-                                            <div>
-                                                <span>Store : </span>
-                                                <span> Gamestop</span>
-                                            </div>
-                                            <div>
-                                                <span>Time : </span>
-                                                <span> 12:00 AM EST</span>
-                                            </div>
-                                            <div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div className="flex flex-col content-between from-zinc-300 ">
+      <div className="basis-1/4">
+        <Navbar />
+      </div>
+      <div className="relative m-2 space-y-2 xl:hidden">
+        {
+          post ? <InstoreAddPost setPost={setPost} />
+            : showdes ? <InstoreCardDescription setShowdes={setShowdes} /> : <><div className="flex justify-between mx-4 mt-4 flex-row mb-4">
+              <div className="flex-col mb-4">
+                <div className="font-jost text-lg text-black-100">Instore Finds</div>
+                <div className="font-jost text-sm text-grey-200">Feb 16, 2022</div>
+              </div>
+              <div>
+                <button onClick={() => setPost(true)} className="bg-blue-300 mt-1 w-24 h-8  flex flex-row space-x-2 justify-center  font-jost text-sm text-white-100 rounded-md">
+                  <div className=''><Image
+                    src={require("../../assets/instorefinds/add.svg")}
+                    width={18}
+                  ></Image></div>
+                  <div className="pt-1">Post</div>
+                </button>
+              </div>
             </div>
-            <Footer></Footer>
+              <div className="xl:hidden flex flex-1 justify-between space-x-4 mb-6 z-40">
+                <div className="flex flex-1"><Dropdown /></div>
+                <div className="flex flex-1"><ListBox /></div>
+              </div>
+              <InstoreCard isdes={false} setShowdes={setShowdes} />
+              <InstoreCard isdes={true} setShowdes={setShowdes} />
+              <InstoreCard isdes={false} setShowdes={setShowdes} />
+              <InstoreCard isdes={true} setShowdes={setShowdes} /></>
+        }
+
+      </div>
+      <div className="relative hidden xl:flex flex-1 flex-row m-2 mb-10">
+        <div className='w-1/3 h-full flex flex-col  from-zinc-300 justify-center'>
+        <div className="flex flex-1 mx-4 mt-10 w-80" >
+      <Calendar onChange={onChange} next2Label={null} prev2Label={null} className={'bg-white-100 rounded-xl'} value={value} />
+    </div>
+    <div className="flex flex-1 mx-4 mt-10"><SearchComponent/></div>
+        <div className="flex flex-1  mx-4 mt-10 w-80"><Dropdown /></div>
         </div>
+        <div className='w-2/3 h-full flex flex-col mx-24  justify-center pt-4'>
+        <div className="flex  flex-1 items-center justify-between flex-row space-x-4">
+              <div className="flex-col flex flex-3">
+                <div className="font-jost text-8xl text-black-100">Instore Finds</div>
+                <div className="font-jost text-xl text-grey-200">Feb 16, 2022</div>
+              </div>
+              <div className="flex flex-2 items-center"><ListBox /></div>
+              <div className="flex flex-1 justify-end items-start">
+                <button onClick={() => {}} className="bg-blue-300 mt-1 w-24 h-8  flex flex-row space-x-2 justify-center  font-jost text-sm text-white-100 rounded-md">
+                  <div className=''><Image
+                    src={require("../../assets/instorefinds/add.svg")}
+                    width={18}
+                  ></Image></div>
+                  <div className="pt-1">Post</div>
+                </button>
+              </div>
+         </div>
+
+         <div className="flex flex-3 flex-col mt-8 space-y-8">
+          <InstoreCard isdes={false} setShowdes={setShowdes} />
+         <InstoreCard isdes={true} setShowdes={setShowdes}/>
+         <InstoreCard isdes={false} setShowdes={setShowdes} />
+         <InstoreCard isdes={true} setShowdes={setShowdes}/>
+         </div>
+         </div>
+         
+        <div className='w-1/3 h-full '>
+        <InstoreCardDescription setShowdes={setShowdes} />
+        </div>
+      </div>
+      <div className="b
+            sis-1/4">
+        <Footer />
+      </div>
     </div>
   )
 }

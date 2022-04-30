@@ -73,7 +73,7 @@ const Livedeals = () => {
                 </div>
             </div>
             <div className="hidden xl:flex flex-1 flex-row ">
-                <div className="mt-96 flex flex-1 pl-6 pt-6"><Dropdown /></div></div>
+                <div className="mt-96 flex flex-1 pl-6 pt-6 w-60"><Dropdown /></div></div>
             </div>
             <div className="b
             sis-1/4">

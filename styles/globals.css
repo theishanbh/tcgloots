@@ -13,6 +13,113 @@
     visibility: visible;
 }
 
+.react-calendar{
+    border : none !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: #262D33 !important;
+    
+}
+
+.react-calendar__tile--active:enabled:hover{
+    border-radius: 5px !important;
+    background: #55AEF0 !important;
+    color: #ffffff !important;
+}
+
+.react-calendar__tile--now{
+    border-radius: 5px !important;
+    
+}
+
+abbr:where([title]) {
+    text-decoration: none !important;
+    color: #6E7781 !important;
+
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+    color:   #6E7781!important;
+    
+}
+
+.box-shadow-div{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Works on Firefox */
+.scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #DDDDDD #ffffff;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  .scrollbar::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #DDDDDD;
+    border-radius: 8px;    /* color of the scroll thumb */      /* roundness of the scroll thumb */
+     border: 5px solid #ffffff;
+  }
+
+  input:focus{
+    outline: none;
+}
+
+.stackView{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 13.2911px rgba(0, 0, 0, 0.15);
+
+}
+.borderbutton{
+    border-bottom: 1px solid #DDDDDD;
+    background: #FCFCFC;
+}
+.borderTable{
+    border-bottom: 1px solid #DDDDDD;
+}
+
+td{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right: 20px;
+}
+
+td:first-child{
+    padding-left:10px;
+    padding-right:0;
+}
+
+.borderDivide{
+   background: #DDDDDD;
+   height: 1;
+}
+
+.topalign1{
+    top:210px;
+}
+.topalign2{
+    top:489px;
+}
+.topalign3{
+    top:546px;
+}
+.topalign4{
+    top:768px;
+}
+
 @layer utilities {
     .pause {
         animation-play-state: paused;
