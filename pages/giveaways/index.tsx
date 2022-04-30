@@ -16,9 +16,9 @@ const Giveaways = () => {
                   <p className=' text-xl text-center py-20'>Lorem ipsum dolor sit amet...</p>
                 </div>
                 {/* giveaways active */}
-                <div className='py-8'>
-                  <div className="flex flex-wrap p-4">
-                    <div className="w-1/3 p-2">
+                <div className='py-8 px-4 xl:px-20'>
+                  <div className="grid xl:grid-cols-3 xl:gap-2 grid-cols-1 gap-2">
+                    <div className="">
                       <div className="flex flex-col bg-white-100 shadow-full border border-grey-600 p-4 rounded-lg">
                         <h1 className='text-center text-xl'>Rainbow Secret Mewtwo & Mew PSA 9</h1>
                         <div className='flex justify-center items-center my-4'>
@@ -32,7 +32,7 @@ const Giveaways = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="w-1/3 p-2">
+                    <div className="">
                       <div className="flex flex-col bg-white-100 shadow-full border border-grey-600 p-4 rounded-lg">
                         <h1 className='text-center text-xl'>Rainbow Secret Mewtwo & Mew PSA 9</h1>
                         <div className='flex justify-center items-center my-4'>
@@ -46,7 +46,7 @@ const Giveaways = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="w-1/3 p-2">
+                    <div className="">
                       <div className="flex flex-col bg-white-100 shadow-full border border-grey-600 p-4 rounded-lg">
                         <h1 className='text-center text-xl'>Rainbow Secret Mewtwo & Mew PSA 9</h1>
                         <div className='flex justify-center items-center my-4'>
@@ -60,7 +60,7 @@ const Giveaways = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="w-1/3 p-2">
+                    <div className="">
                       <div className="flex flex-col bg-white-100 shadow-full border border-grey-600 p-4 rounded-lg">
                         <h1 className='text-center text-xl'>Rainbow Secret Mewtwo & Mew PSA 9</h1>
                         <div className='flex justify-center items-center my-4'>
@@ -74,7 +74,7 @@ const Giveaways = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="w-1/3 p-2">
+                    <div className="">
                       <div className="flex flex-col bg-white-100 shadow-full border border-grey-600 p-4 rounded-lg">
                         <h1 className='text-center text-xl'>Rainbow Secret Mewtwo & Mew PSA 9</h1>
                         <div className='flex justify-center items-center my-4'>
@@ -88,7 +88,7 @@ const Giveaways = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="w-1/3 p-2">
+                    <div className="">
                       <div className="flex flex-col bg-white-100 shadow-full border border-grey-600 p-4 rounded-lg">
                         <div className="flex flex-col opacity-50">
                           <h1 className='text-center text-xl'>Rainbow Secret Mewtwo & Mew PSA 9</h1>
@@ -129,9 +129,29 @@ const Giveaways = () => {
                   
                   </div>
                   {/* winners */}
-                  <div className="py-8">
-                    <div className="flex flex-wrap p-4">
-                      <div className="w-1/4 p-2">
+                  <div className="py-20 px-4 xl:px-20">
+                    <div className="grid xl:grid-cols-4 xl:gap-4 grid-cols-2 gap-2">
+                      <div className="">
+                        <div className="flex flex-col border border-black-100 rounded-lg">
+                          <div className="">
+                            <div className=' relative my-2'>
+                              
+                              <Image
+                                src={require("../../assets/giveaways/background.png")}
+                                layout="fill"
+                              />
+                            </div>
+                            <h1 className='text-center text-3xl py-4'>Ilyes101</h1>
+                            
+                          </div>
+                          <div className='flex justify-center items-center my-4'>
+                            <Image
+                              src={require("../../assets/homepage/producttracker/image.png")}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="">
                         <div className="flex flex-col border border-black-100 rounded-lg">
                           <div className="">
                             <div className='h-full w-full relative my-2'>
@@ -151,7 +171,7 @@ const Giveaways = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="w-1/4 p-2">
+                      <div className="">
                         <div className="flex flex-col border border-black-100 rounded-lg">
                           <div className="">
                             <div className='h-full w-full relative my-2'>
@@ -171,7 +191,7 @@ const Giveaways = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="w-1/4 p-2">
+                      <div className=" ">
                         <div className="flex flex-col border border-black-100 rounded-lg">
                           <div className="">
                             <div className='h-full w-full relative my-2'>
@@ -191,7 +211,7 @@ const Giveaways = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="w-1/4 p-2">
+                      <div className="">
                         <div className="flex flex-col border border-black-100 rounded-lg">
                           <div className="">
                             <div className='h-full w-full relative my-2'>
@@ -211,7 +231,7 @@ const Giveaways = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="w-1/4 p-2">
+                      <div className=" ">
                         <div className="flex flex-col border border-black-100 rounded-lg">
                           <div className="">
                             <div className='h-full w-full relative my-2'>
@@ -231,7 +251,7 @@ const Giveaways = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="w-1/4 p-2">
+                      <div className="">
                         <div className="flex flex-col border border-black-100 rounded-lg">
                           <div className="">
                             <div className='h-full w-full relative my-2'>
@@ -251,27 +271,7 @@ const Giveaways = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="w-1/4 p-2">
-                        <div className="flex flex-col border border-black-100 rounded-lg">
-                          <div className="">
-                            <div className='h-full w-full relative my-2'>
-                              
-                              <Image
-                                src={require("../../assets/giveaways/background.png")}
-                                layout="fill"
-                              />
-                            </div>
-                            <h1 className='text-center text-3xl py-4'>Ilyes101</h1>
-                            
-                          </div>
-                          <div className='flex justify-center items-center my-4'>
-                            <Image
-                              src={require("../../assets/homepage/producttracker/image.png")}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-1/4 p-2">
+                      <div className="">
                         <div className="flex flex-col border border-black-100 rounded-lg">
                           <div className="">
                             <div className='h-full w-full relative my-2'>

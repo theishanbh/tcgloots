@@ -11,7 +11,7 @@ import InstoreCardDescription from '../../components/InstoreFinds/InstoreCardDes
 import InstoreAddPost from '../../components/InstoreFinds/InstoreAddPost'
 import SearchComponent from '../../components/InstoreFinds/SearchComponent'
 
-const index = () => {
+ export default  function InstoreFinds() {
   const [showdes, setShowdes] = React.useState<boolean>(false)
   const [post, setPost] = React.useState(false);
   const [value, onChange] = React.useState(new Date());
@@ -95,5 +95,3 @@ const index = () => {
   )
 }
 
-
-export default index
