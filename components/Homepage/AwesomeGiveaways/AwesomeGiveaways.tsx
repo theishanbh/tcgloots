@@ -22,8 +22,8 @@ const AwesomeGiveaways = () => {
             ))}
           </div>
         </div>
-        <div className=" text-right py-8">
-          <button className=" border bg-white-100 border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-2 shadow-full">
+        <div className=" text-right py-12">
+          <button className=" border bg-white-100 border-grey-600 font-jost text-xl text-black-100 rounded-md px-16 py-4 shadow-full">
             View All
           </button>
         </div>
