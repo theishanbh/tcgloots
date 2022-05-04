@@ -129,6 +129,7 @@ module.exports = {
         outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
         dropleft: "10 0 0 10px rgba(255, 255, 255, 1)",
         none: "none",
+        bottom: "0 8px 6px -6px black",
       },
       maxWidth: {
         "7xl": "1440px",

@@ -167,38 +167,20 @@ const Giveaways = () => {
               </div>
               {/* winners */}
               <div className="py-20 px-4 xl:px-20">
-                <div className="grid xl:grid-cols-4 xl:gap-4 grid-cols-2 gap-2">
+                <div className="grid xl:grid-cols-4 xl:gap-12 grid-cols-2 gap-2">
                   <div className="">
-                    <div className="flex flex-col border border-black-100 rounded-lg">
+                    <div className="flex flex-col rounded-lg shadow-slate-100 shadow-full">
                       <div className="">
-                        <div className=" relative my-2">
+                        <div className=" relative">
                           <Image
                             src={require("../../assets/giveaways/background.png")}
                             layout="fill"
                             alt="alt"
                           />
                         </div>
-                        <h1 className="text-center text-3xl py-4">Ilyes101</h1>
-                      </div>
-                      <div className="flex justify-center items-center my-4">
-                        <Image
-                          src={require("../../assets/homepage/producttracker/image.png")}
-                          alt="alt"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="flex flex-col border border-black-100 rounded-lg">
-                      <div className="">
-                        <div className="h-full w-full relative my-2">
-                          <Image
-                            src={require("../../assets/giveaways/background.png")}
-                            alt="alt"
-                            layout="fill"
-                          />
-                        </div>
-                        <h1 className="text-center text-3xl py-4">Ilyes101</h1>
+                        <h1 className="text-center text-3xl py-4 shadow-full shadow-slate-100">
+                          Ilyes101
+                        </h1>
                       </div>
                       <div className="flex justify-center items-center my-4">
                         <Image
@@ -209,36 +191,18 @@ const Giveaways = () => {
                     </div>
                   </div>
                   <div className="">
-                    <div className="flex flex-col border border-black-100 rounded-lg">
+                    <div className="flex flex-col rounded-lg shadow-slate-100 shadow-full">
                       <div className="">
-                        <div className="h-full w-full relative my-2">
+                        <div className=" relative">
                           <Image
                             src={require("../../assets/giveaways/background.png")}
                             layout="fill"
                             alt="alt"
                           />
                         </div>
-                        <h1 className="text-center text-3xl py-4">Ilyes101</h1>
-                      </div>
-                      <div className="flex justify-center items-center my-4">
-                        <Image
-                          src={require("../../assets/homepage/producttracker/image.png")}
-                          alt="alt"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className=" ">
-                    <div className="flex flex-col border border-black-100 rounded-lg">
-                      <div className="">
-                        <div className="h-full w-full relative my-2">
-                          <Image
-                            src={require("../../assets/giveaways/background.png")}
-                            alt="alt"
-                            layout="fill"
-                          />
-                        </div>
-                        <h1 className="text-center text-3xl py-4">Ilyes101</h1>
+                        <h1 className="text-center text-3xl py-4 shadow-full shadow-slate-100">
+                          Ilyes101
+                        </h1>
                       </div>
                       <div className="flex justify-center items-center my-4">
                         <Image
@@ -249,36 +213,18 @@ const Giveaways = () => {
                     </div>
                   </div>
                   <div className="">
-                    <div className="flex flex-col border border-black-100 rounded-lg">
+                    <div className="flex flex-col rounded-lg shadow-slate-100 shadow-full">
                       <div className="">
-                        <div className="h-full w-full relative my-2">
+                        <div className=" relative">
                           <Image
                             src={require("../../assets/giveaways/background.png")}
                             layout="fill"
                             alt="alt"
                           />
                         </div>
-                        <h1 className="text-center text-3xl py-4">Ilyes101</h1>
-                      </div>
-                      <div className="flex justify-center items-center my-4">
-                        <Image
-                          src={require("../../assets/homepage/producttracker/image.png")}
-                          alt="alt"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className=" ">
-                    <div className="flex flex-col border border-black-100 rounded-lg">
-                      <div className="">
-                        <div className="h-full w-full relative my-2">
-                          <Image
-                            src={require("../../assets/giveaways/background.png")}
-                            alt="alt"
-                            layout="fill"
-                          />
-                        </div>
-                        <h1 className="text-center text-3xl py-4">Ilyes101</h1>
+                        <h1 className="text-center text-3xl py-4 shadow-full shadow-slate-100">
+                          Ilyes101
+                        </h1>
                       </div>
                       <div className="flex justify-center items-center my-4">
                         <Image
@@ -289,16 +235,18 @@ const Giveaways = () => {
                     </div>
                   </div>
                   <div className="">
-                    <div className="flex flex-col border border-black-100 rounded-lg">
+                    <div className="flex flex-col rounded-lg shadow-slate-100 shadow-full">
                       <div className="">
-                        <div className="h-full w-full relative my-2">
+                        <div className=" relative">
                           <Image
                             src={require("../../assets/giveaways/background.png")}
-                            alt="alt"
                             layout="fill"
+                            alt="alt"
                           />
                         </div>
-                        <h1 className="text-center text-3xl py-4">Ilyes101</h1>
+                        <h1 className="text-center text-3xl py-4 shadow-full shadow-slate-100">
+                          Ilyes101
+                        </h1>
                       </div>
                       <div className="flex justify-center items-center my-4">
                         <Image
@@ -309,16 +257,84 @@ const Giveaways = () => {
                     </div>
                   </div>
                   <div className="">
-                    <div className="flex flex-col border border-black-100 rounded-lg">
+                    <div className="flex flex-col rounded-lg shadow-slate-100 shadow-full">
                       <div className="">
-                        <div className="h-full w-full relative my-2">
+                        <div className=" relative">
                           <Image
                             src={require("../../assets/giveaways/background.png")}
-                            alt="alt"
                             layout="fill"
+                            alt="alt"
                           />
                         </div>
-                        <h1 className="text-center text-3xl py-4">Ilyes101</h1>
+                        <h1 className="text-center text-3xl py-4 shadow-full shadow-slate-100">
+                          Ilyes101
+                        </h1>
+                      </div>
+                      <div className="flex justify-center items-center my-4">
+                        <Image
+                          src={require("../../assets/homepage/producttracker/image.png")}
+                          alt="alt"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="flex flex-col rounded-lg shadow-slate-100 shadow-full">
+                      <div className="">
+                        <div className=" relative">
+                          <Image
+                            src={require("../../assets/giveaways/background.png")}
+                            layout="fill"
+                            alt="alt"
+                          />
+                        </div>
+                        <h1 className="text-center text-3xl py-4 shadow-full shadow-slate-100">
+                          Ilyes101
+                        </h1>
+                      </div>
+                      <div className="flex justify-center items-center my-4">
+                        <Image
+                          src={require("../../assets/homepage/producttracker/image.png")}
+                          alt="alt"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="flex flex-col rounded-lg shadow-slate-100 shadow-full">
+                      <div className="">
+                        <div className=" relative">
+                          <Image
+                            src={require("../../assets/giveaways/background.png")}
+                            layout="fill"
+                            alt="alt"
+                          />
+                        </div>
+                        <h1 className="text-center text-3xl py-4 shadow-full shadow-slate-100">
+                          Ilyes101
+                        </h1>
+                      </div>
+                      <div className="flex justify-center items-center my-4">
+                        <Image
+                          src={require("../../assets/homepage/producttracker/image.png")}
+                          alt="alt"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="flex flex-col rounded-lg shadow-slate-100 shadow-full">
+                      <div className="">
+                        <div className=" relative">
+                          <Image
+                            src={require("../../assets/giveaways/background.png")}
+                            layout="fill"
+                            alt="alt"
+                          />
+                        </div>
+                        <h1 className="text-center text-3xl py-4 shadow-full shadow-slate-100">
+                          Ilyes101
+                        </h1>
                       </div>
                       <div className="flex justify-center items-center my-4">
                         <Image
