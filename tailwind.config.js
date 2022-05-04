@@ -1,5 +1,3 @@
-
-
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -7,32 +5,33 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      xs: '.75rem',
-      sm: '.875rem',
-      '2sm': '.938rem',
-      base: '1rem',
-      lg: '1.125rem',
-      '2lg': '1.188rem',
-      xl: '1.25rem',
-      '2xl': '1.375rem',
-      '3xl': '1.5rem',
-      '4xl': '1.625rem',
-      '5xl': '1.75rem',
-      '6xl': '1.875rem',
-      '7xl': '2.188rem',
-      '8xl': '2.5rem',
-      '9xl': '5rem',
+      xs: ".75rem",
+      sm: ".875rem",
+      "2sm": ".938rem",
+      base: "1rem",
+      lg: "1.125rem",
+      "2lg": "1.188rem",
+      xl: "1.25rem",
+      "2xl": "1.375rem",
+      "3xl": "1.5rem",
+      "4xl": "1.625rem",
+      "5xl": "1.75rem",
+      "6xl": "1.875rem",
+      "7xl": "2.188rem",
+      "8xl": "2.5rem",
+      "9xl": "5rem",
     },
     colors: {
       // white
-      transparent: 'transparent',
+      transparent: "transparent",
       white: {
-        100: '#FFFFFF',
+        100: "#FFFFFF",
       },
       // black
       black: {
         100: "#454545",
         200: "#545454",
+        300: "#3E3E3E",
       },
       grey: {
         100: "#555555",
@@ -51,8 +50,7 @@ module.exports = {
         400: "#F9F9F9",
         500: "#FCFCFC",
         600: "#FAFAFA",
-        700: "#F5F5F5"
-
+        700: "#F5F5F5",
       },
       // yellow
       yellow: {
@@ -60,11 +58,11 @@ module.exports = {
         200: "#FFCC30",
         300: "#F9D260",
         400: "#FCE59F",
-        500: "#FFD235"
+        500: "#FFD235",
       },
       // brown
       brown: {
-        100: "#8D6E00"
+        100: "#8D6E00",
       },
       // red
       red: {
@@ -72,7 +70,7 @@ module.exports = {
       },
       // pink
       pink: {
-        100: "#FCE8E8"
+        100: "#FCE8E8",
       },
       // blue
       blue: {
@@ -80,7 +78,7 @@ module.exports = {
         200: "#1890CF",
         300: "#55AEF0",
         400: "#F7F8FC",
-        500: "#56ADEF"
+        500: "#56ADEF",
       },
       // green
       green: {
@@ -88,31 +86,31 @@ module.exports = {
       },
     },
 
-    screens :{
-      'smmob':'320px', //small mobile
-      'mob': '500px', // mobile
-      'sm': '640px', // small
-      'md': '768px', // medium
-      '2md' : '900px', // (md + lg)/2 = (768 + 1024)/2 = 896 (approx 900)
-      'lg': '1024px', // large
-      'xl': '1280px', // extra large
-      '2xl': '1440px',
-      '3xl': '1536px',
+    screens: {
+      smmob: "320px", //small mobile
+      mob: "500px", // mobile
+      sm: "640px", // small
+      md: "768px", // medium
+      "2md": "900px", // (md + lg)/2 = (768 + 1024)/2 = 896 (approx 900)
+      lg: "1024px", // large
+      xl: "1280px", // extra large
+      "2xl": "1440px",
+      "3xl": "1536px",
     },
 
     extend: {
       fontFamily: {
-        'jost': ['Jost', 'sans-serif']
+        jost: ["Jost", "sans-serif"],
       },
       flex: {
-        '2': '2 2 0%',
-        '3': '3 3 0%',
-        '4': '4 4 0%',
-        '5': '5 5 0%',
-        '6': '6 6 0%',
-        '7': '7 7 0%',
-        '8': '8 8 0%',
-        '9': '9 9 0%',
+        2: "2 2 0%",
+        3: "3 3 0%",
+        4: "4 4 0%",
+        5: "5 5 0%",
+        6: "6 6 0%",
+        7: "7 7 0%",
+        8: "8 8 0%",
+        9: "9 9 0%",
       },
       boxShadow: {
         half: "0px 0px 6px 6px rgba(0, 0, 0, 0.02)",
@@ -121,7 +119,8 @@ module.exports = {
         badgefull: "148px -148px #82C732",
         xs: "0 0 0 1px rgba(0, 0, 0, 0.16)",
         sm: "0 1px 2px 0 rgba(0, 0, 0, 0.16)",
-        default: "0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.03)",
+        default:
+          "0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.03)",
         md: "0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.03)",
         lg: "0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02)",
         xl: "0 20px 25px -5px rgba(0, 0, 0, 0.12), 0 10px 10px -5px rgba(0, 0, 0, 0.02)",
@@ -132,9 +131,9 @@ module.exports = {
         none: "none",
       },
       maxWidth: {
-        '7xl': '1440px'
+        "7xl": "1440px",
       },
-      screens:{
+      screens: {
         // 'smmob':'320px', //small mobile
         // 'mob': '500px', // mobile
         // 'sm': '640px', // small
@@ -145,17 +144,16 @@ module.exports = {
         // '2xl': '1440px',
         // '3xl': '1536px',
       },
-      animation:{
-        'ltor': 'scrolling 30s linear infinite'
+      animation: {
+        ltor: "scrolling 30s linear infinite",
       },
       keyframes: {
         scrolling: {
-          '0%': { transform : 'translateX(0vw)'},
-          '100%': { transform : 'translateX(-100vw)'}
-        }
-      }
+          "0%": { transform: "translateX(0vw)" },
+          "100%": { transform: "translateX(-100vw)" },
+        },
+      },
     },
   },
-  plugins: [
-  ],
-}
+  plugins: [],
+};

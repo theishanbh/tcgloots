@@ -8,7 +8,7 @@ const NewsArticles = () => {
     <div className="bg-slate-300">
       <div className=" max-w-7xl mx-auto font-jost py-12">
         {/* Categories */}
-        <div className=" hidden md:block bg-white shadow-lg bg-white-100 p-4 border-4 rounded-lg border-grey-600">
+        <div className=" hidden md:block bg-white shadow-lg bg-white-100 p-4 border-[7px] rounded-lg border-black-100 border-opacity-[0.15]">
           <div className="flex text-black-100">
             <a className=" px-8 text-xl border-r border-grey-600">ALL</a>
             <a className=" px-8 text-xl border-r border-grey-600">FEATURED</a>

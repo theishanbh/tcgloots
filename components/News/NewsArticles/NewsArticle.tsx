@@ -14,7 +14,7 @@ const NewsArticle = (props: PropsInterface) => {
           className={
             "flex items-start flex-row justify-start py-10 " +
             (props.border === true
-              ? "border-solid border-b-4 border-grey-600"
+              ? "border-solid border-b-2 border-grey-600"
               : "")
           }
         >
