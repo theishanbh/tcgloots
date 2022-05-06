@@ -24,6 +24,11 @@ const Giveaways = () => {
               <div className="grid xl:grid-cols-3 xl:gap-2 grid-cols-1 gap-2">
                 <div className="">
                   <div className="flex flex-col bg-white-100 shadow-full border border-grey-600 p-4 rounded-lg">
+                    <div className="absolute flex content-center items-center bg-white-100">
+                      <div className="relative bg-white-100">
+                        <span className="absolute -top-7 -left-8 w-40 h-40 flex items-center justify-center overflow-hidden before:content-['HOT'] before:absolute before:h-10 before:bg-blue-200  before:-rotate-45 before:w-56 before:-translate-x-[0.9rem] before:-translate-y-[0.9rem] before:flex before:justify-center before:items-center before:text-white-100 before:text-4xl before:font-semibold before:py-2 before:tracking-wider before:shadow-badge after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-4 after:w-4 after:bg-green-100 after:z-0 before:z-20 after:shadow-badgefull"></span>
+                      </div>
+                    </div>
                     <h1 className="text-center text-xl">
                       Rainbow Secret Mewtwo & Mew PSA 9
                     </h1>
