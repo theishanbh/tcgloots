@@ -35,7 +35,7 @@ const InstoreTracker = () => {
           <p className=" font-jost text-sm md:text-xl text-grey-400 font-medium text-center pb-8">
             Every week we randomly reward contributors that help the community!
           </p>
-          <div className="bg-contain bg-no-repeat px-20 py-6 overflow-x-hidden">
+          <div className="bg-contain bg-no-repeat px-20 py-6 overflow-x-scroll lg:overflow-x-hidden">
             <div className="flex items-center justify-start md:justify-center relative ">
               {/* second left element */}
               <div className="bg-white-100 w-auto inline-block p-3 shadow-xl rounded-lg lg:scale-75 shrink-0 lg:absolute lg:left-0 lg:z-10 lg:blur-[5px] mr-10 lg:mr-0">

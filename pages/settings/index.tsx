@@ -1,9 +1,18 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 
 const Settings = () => {
+  const [giveawayCheckbox, setGiveawayCheckbox] = useState(false);
+  const [trackedCheckbox, setTrackedCheckbox] = useState(false);
+  const [productEmailCheckbox, setProductEmailCheckbox] = useState(false);
+  const [productBrowserCheckbox, setProductBrowserCheckbox] = useState(false);
+  const [productAlertCheckbox, setProductAlertCheckbox] = useState(false);
+  const [dealsEmailCheckbox, setDealsEmailCheckbox] = useState(false);
+  const [dealsBrowserCheckbox, setDealsBrowserCheckbox] = useState(false);
+  const [dealsAlertCheckbox, setDealsAlertCheckbox] = useState(false);
+
   return (
     <div>
       <div className="bg-slate-500">
@@ -34,6 +43,7 @@ const Settings = () => {
                         <div className="flex relative pr-4 pt-3">
                           <Image
                             src={require("../../assets/settings/gift.png")}
+                            alt="alt"
                           />
                         </div>
                       </div>
@@ -75,6 +85,7 @@ const Settings = () => {
                         <div className="relative flex items-center justify-center">
                           <Image
                             src={require("../../assets/settings/questionmark.png")}
+                            alt="alt"
                           />
                         </div>
                         <span className="text-black-100 font-medium text-xl ml-4">
@@ -82,15 +93,47 @@ const Settings = () => {
                         </span>
                       </div>
                       <div className="flex flex-col px-6 text-grey-300 text-lg">
-                        <div className="flex pl-8 py-3 mt-3">
-                          <div className="h-6 w-6 border flex-shrink-0 rounded-sm" />
+                        <div className="flex pl-8 py-3 mt-3 items-center">
+                          <div
+                            className="h-6 w-6 relative flex-shrink-0"
+                            onClick={() =>
+                              setGiveawayCheckbox(!giveawayCheckbox)
+                            }
+                          >
+                            {giveawayCheckbox ? (
+                              <Image
+                                src={require("../../assets/settings/check.svg")}
+                                alt="alt"
+                              />
+                            ) : (
+                              <Image
+                                src={require("../../assets/settings/checkbox.svg")}
+                                alt="alt"
+                              />
+                            )}
+                          </div>
                           <p className=" text-lg leading-none pl-2">
                             Please keep me updated by email on any giveaways &
                             tcgloots news.
                           </p>
                         </div>
                         <div className="flex pl-8 py-3 mt-3">
-                          <div className="h-6 w-6 border flex-shrink-0 rounded-sm" />
+                          <div
+                            className="h-6 w-6 relative flex-shrink-0"
+                            onClick={() => setTrackedCheckbox(!trackedCheckbox)}
+                          >
+                            {trackedCheckbox ? (
+                              <Image
+                                src={require("../../assets/settings/check.svg")}
+                                alt="alt"
+                              />
+                            ) : (
+                              <Image
+                                src={require("../../assets/settings/checkbox.svg")}
+                                alt="alt"
+                              />
+                            )}
+                          </div>
                           <p className=" text-lg leading-none pl-2">
                             Please keep me updated by email onfuture tracked
                             items.
@@ -111,6 +154,7 @@ const Settings = () => {
                         <div>
                           <Image
                             src={require("../../assets/settings/notification.png")}
+                            alt="alt"
                           />
                         </div>
                         <div className="flex flex-col ml-2">
@@ -122,14 +166,50 @@ const Settings = () => {
                           </p>
 
                           <div className="flex items-center pt-2">
-                            <div className="h-6 w-6 border flex-shrink-0 rounded-sm" />
+                            <div
+                              className="relative flex-shrink-0 flex items-center justify-center"
+                              onClick={() =>
+                                setProductEmailCheckbox(!productEmailCheckbox)
+                              }
+                            >
+                              {productEmailCheckbox ? (
+                                <Image
+                                  src={require("../../assets/settings/check.svg")}
+                                  alt="alt"
+                                />
+                              ) : (
+                                <Image
+                                  src={require("../../assets/settings/checkbox.svg")}
+                                  alt="alt"
+                                />
+                              )}
+                            </div>
                             <span className=" leading-none pl-2 text-lg text-grey-400">
                               Email notifications
                             </span>
                           </div>
                           <div className="flex flex-col pt-6">
                             <div className="flex items-center">
-                              <div className="h-6 w-6 border flex-shrink-0 rounded-sm" />
+                              <div
+                                className="h-6 w-6 relative flex-shrink-0"
+                                onClick={() =>
+                                  setProductBrowserCheckbox(
+                                    !productBrowserCheckbox
+                                  )
+                                }
+                              >
+                                {productBrowserCheckbox ? (
+                                  <Image
+                                    src={require("../../assets/settings/check.svg")}
+                                    alt="alt"
+                                  />
+                                ) : (
+                                  <Image
+                                    src={require("../../assets/settings/checkbox.svg")}
+                                    alt="alt"
+                                  />
+                                )}
+                              </div>
                               <span className=" leading-none text-lg pl-2 text-grey-400">
                                 Browser notifications
                               </span>
@@ -137,13 +217,31 @@ const Settings = () => {
 
                             {/* browser notifications */}
                             <div className="flex ml-4 items-center justify-center pt-4">
-                              <div className="h-4 w-4 border flex-shrink-0 rounded-sm" />
+                              <div
+                                className="h-4 w-4 flex items-center flex-shrink-0 rounded-sm"
+                                onClick={() =>
+                                  setProductAlertCheckbox(!productAlertCheckbox)
+                                }
+                              >
+                                {productAlertCheckbox ? (
+                                  <Image
+                                    src={require("../../assets/settings/check.svg")}
+                                    alt="alt"
+                                  />
+                                ) : (
+                                  <Image
+                                    src={require("../../assets/settings/checkbox.svg")}
+                                    alt="alt"
+                                  />
+                                )}
+                              </div>
                               <span className=" text-sm leading-none pl-2 text-grey-400">
                                 Audible alerts
                               </span>
                               <div className="relative px-2">
                                 <Image
                                   src={require("../../assets/settings/sound.png")}
+                                  alt="alt"
                                 />
                               </div>
                               <span className=" text-blue-300">Test Alarm</span>
@@ -160,6 +258,7 @@ const Settings = () => {
                         <div>
                           <Image
                             src={require("../../assets/settings/notification.png")}
+                            alt="alt"
                           />
                         </div>
                         <div className="flex flex-col ml-2">
@@ -171,14 +270,48 @@ const Settings = () => {
                           </p>
 
                           <div className="flex items-center pt-2">
-                            <div className="h-6 w-6 border flex-shrink-0 rounded-sm" />
+                            <div
+                              className="relative flex-shrink-0 flex items-center justify-center"
+                              onClick={() =>
+                                setDealsEmailCheckbox(!dealsEmailCheckbox)
+                              }
+                            >
+                              {dealsEmailCheckbox ? (
+                                <Image
+                                  src={require("../../assets/settings/check.svg")}
+                                  alt="alt"
+                                />
+                              ) : (
+                                <Image
+                                  src={require("../../assets/settings/checkbox.svg")}
+                                  alt="alt"
+                                />
+                              )}
+                            </div>
                             <span className=" leading-none pl-2 text-lg text-grey-400">
                               Email notifications
                             </span>
                           </div>
                           <div className="flex flex-col pt-6">
                             <div className="flex items-center">
-                              <div className="h-6 w-6 border flex-shrink-0 rounded-sm" />
+                              <div
+                                className="h-6 w-6 relative flex-shrink-0"
+                                onClick={() =>
+                                  setDealsBrowserCheckbox(!dealsBrowserCheckbox)
+                                }
+                              >
+                                {dealsBrowserCheckbox ? (
+                                  <Image
+                                    src={require("../../assets/settings/check.svg")}
+                                    alt="alt"
+                                  />
+                                ) : (
+                                  <Image
+                                    src={require("../../assets/settings/checkbox.svg")}
+                                    alt="alt"
+                                  />
+                                )}
+                              </div>
                               <span className=" leading-none text-lg pl-2 text-grey-400">
                                 Browser notifications
                               </span>
@@ -186,13 +319,31 @@ const Settings = () => {
 
                             {/* browser notifications */}
                             <div className="flex ml-4 items-center justify-center pt-4">
-                              <div className="h-4 w-4 border flex-shrink-0 rounded-sm" />
+                              <div
+                                className="h-4 w-4 relative flex-shrink-0 flex items-center justify-center"
+                                onClick={() =>
+                                  setDealsAlertCheckbox(!dealsAlertCheckbox)
+                                }
+                              >
+                                {dealsAlertCheckbox ? (
+                                  <Image
+                                    src={require("../../assets/settings/check.svg")}
+                                    alt="alt"
+                                  />
+                                ) : (
+                                  <Image
+                                    src={require("../../assets/settings/checkbox.svg")}
+                                    alt="alt"
+                                  />
+                                )}
+                              </div>
                               <span className=" text-sm leading-none pl-2 text-grey-400">
                                 Audible alerts
                               </span>
                               <div className="relative px-2">
                                 <Image
                                   src={require("../../assets/settings/sound.png")}
+                                  alt="alt"
                                 />
                               </div>
                               <span className=" text-blue-300">Test Alarm</span>
