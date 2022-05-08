@@ -8,7 +8,7 @@ const LatestNews = () => {
           Latest News
         </h1>
         {/* latest news items */}
-        <div className="flex overflow-x-hidden">
+        <div className="flex overflow-x-scroll sm:overflow-x-hidden">
           <div className=" w-4/5 sm:w-1/4 flex flex-col p-4 h-full">
             <img src="./assets/homepage/latestnews/night.png" alt="" />
             <span className=" text-lg text-ellipsis overflow-hidden font-medium whitespace-nowrap px-4">

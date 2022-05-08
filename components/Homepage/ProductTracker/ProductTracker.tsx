@@ -15,6 +15,7 @@ const ProductTracker = () => {
                   <Image
                     src={require("../../../assets/homepage/producttracker/image.png")}
                     objectFit="contain"
+                    alt="alt"
                   />
                   <span className="bg-yellow-200 absolute top-2 left-2 py-1 text-lg font-jost font-medium text-black-100 px-6 rounded-lg">
                     NEW
@@ -32,6 +33,7 @@ const ProductTracker = () => {
                   <Image
                     src={require("../../../assets/homepage/producttracker/image.png")}
                     objectFit="contain"
+                    alt="alt"
                   />
                 </div>
                 {/* <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/> */}
@@ -46,6 +48,7 @@ const ProductTracker = () => {
                   <Image
                     src={require("../../../assets/homepage/producttracker/image.png")}
                     objectFit="contain"
+                    alt="alt"
                   />
                 </div>
                 {/* <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/> */}
@@ -60,6 +63,7 @@ const ProductTracker = () => {
                   <Image
                     src={require("../../../assets/homepage/producttracker/image.png")}
                     objectFit="contain"
+                    alt="alt"
                   />
                 </div>
                 {/* <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/> */}
@@ -74,6 +78,7 @@ const ProductTracker = () => {
                   <Image
                     src={require("../../../assets/homepage/producttracker/image.png")}
                     objectFit="contain"
+                    alt="alt"
                   />
                 </div>
                 {/* <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/> */}
@@ -88,6 +93,7 @@ const ProductTracker = () => {
                   <Image
                     src={require("../../../assets/homepage/producttracker/image.png")}
                     objectFit="contain"
+                    alt="alt"
                   />
                 </div>
                 {/* <img src="./assets/homepage/producttracker/image.png" alt="" className="h-full w-full p-2 shadow-full rounded-lg"/> */}
@@ -102,6 +108,7 @@ const ProductTracker = () => {
                   <Image
                     src={require("../../../assets/homepage/producttracker/image.png")}
                     layout="fill"
+                    alt="alt"
                   />
                   <span className="bg-yellow-200 absolute py-1 text-lg font-jost font-medium text-black-100 px-6 rounded-lg">
                     NEW
@@ -191,6 +198,7 @@ const ProductTracker = () => {
             <div>
               <Image
                 src={require("../../../assets/homepage/producttracker/groupimages.png")}
+                alt="alt"
               ></Image>
             </div>
             {/*  */}
@@ -203,6 +211,7 @@ const ProductTracker = () => {
                 <div className="relative flex justify-center items-center ml-2">
                   <Image
                     src={require("../../../assets/homepage/producttracker/rightarrow.svg")}
+                    alt="alt"
                   />
                 </div>
               </button>

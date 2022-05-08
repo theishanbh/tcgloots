@@ -268,6 +268,7 @@ const TrackerPage = () => {
                       width={16}
                       height={16}
                       className="animate-spin"
+                      alt="alt"
                     />
                   </div>
                   <div className="flex flex-row space-x-4">
@@ -276,6 +277,7 @@ const TrackerPage = () => {
                         src={require("../../assets/trackerpage/telegram.svg")}
                         width={20}
                         height={20}
+                        alt="alt"
                       />
                     </div>
                     <div>
@@ -283,6 +285,7 @@ const TrackerPage = () => {
                         src={require("../../assets/trackerpage/discord.svg")}
                         width={20}
                         height={20}
+                        alt="alt"
                       />
                     </div>
                     <div>
@@ -290,6 +293,7 @@ const TrackerPage = () => {
                         src={require("../../assets/trackerpage/email.svg")}
                         width={20}
                         height={20}
+                        alt="alt"
                       />
                     </div>
                     <div>
@@ -297,6 +301,7 @@ const TrackerPage = () => {
                         src={require("../../assets/trackerpage/browser.svg")}
                         width={20}
                         height={20}
+                        alt="alt"
                       />
                     </div>
                   </div>
