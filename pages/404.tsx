@@ -25,7 +25,7 @@ const Default = () => {
           </p>
           <div>
             <Link href={"/"} passHref>
-              <button className=" my-2 border text-blue-200 font-semibold bg-white border-blue-primary font-jost text-xl rounded-md px-16 py-4">
+              <button className=" my-2 text-blue-200 border font-semibold bg-white border-blue-primary font-jost text-xl rounded-md px-16 py-4">
                 Back To Home
               </button>
             </Link>
