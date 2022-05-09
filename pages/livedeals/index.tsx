@@ -10,9 +10,8 @@ import NotificationView from "../../components/AlertView/NotificationView";
 const Livedeals = () => {
   return (
     <div className="flex flex-col content-between from-zinc-300 ">
-      <div className="basis-1/4">
-        <Navbar />
-      </div>
+      <Navbar />
+      <div className="basis-1/4"></div>
       <div className="mx-2 xl:mb-10 xl:mx-0 xl:flex flex-col xl:justify-center xl:flex-row  ">
         <div className="xl:flex-3 mx-2 from-zinc-300">
           <div className="xl:ml-28 xl:flex xl:flex-row xl:items-center xl:mt-20">

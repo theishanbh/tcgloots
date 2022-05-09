@@ -20,9 +20,8 @@ const TrackerPage = () => {
   const [isFocus, setFocus] = React.useState("stack");
   return (
     <div className="flex flex-col content-between from-zinc-300 ">
-      <div className="basis-1/4">
-        <Navbar />
-      </div>
+      <Navbar />
+      <div className="basis-1/4"></div>
       <div className="mx-2 mb-20  flex basis-2/4 flex-1 flex-col xl:hidden">
         <div className="flex flex-col my-10 mx-2">
           <div className="flex flex-row items-baseline justify-between">

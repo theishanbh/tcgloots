@@ -10,8 +10,8 @@ const NewsHero = () => {
             News
           </h1>
           <div className="flex flex-grow py-8 bg-[url('/assets/news/news/background.png')] bg-center pt-28 pb-28">
-            <div className="flex flex-col px-4 ">
-              <div className="bg-slate-500 shadow-full rounded-md">
+            <div className="flex flex-col px-4 w-full h-full 2md:w-fit">
+              <div className="bg-slate-500 shadow-full h-full rounded-md">
                 {/* image container */}
                 <div className="relative">
                   <Image
@@ -37,14 +37,15 @@ const NewsHero = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col px-4 ">
-              <div className="bg-slate-500 shadow-full rounded-xl">
+            <div className="flex flex-col px-4">
+              <div className="bg-slate-500 shadow-full rounded-xl h-full">
                 {/* image container */}
                 <div className="">
                   <div className="relative">
                     <Image
                       src={require("../../../assets/news/image2.png")}
                       layout="responsive"
+                      alt="alt"
                     ></Image>
                   </div>
                 </div>
@@ -67,7 +68,7 @@ const NewsHero = () => {
               </div>
             </div>
             <div className="flex flex-col px-4 ">
-              <div className="bg-slate-500 shadow-full rounded-xl">
+              <div className="bg-slate-500 shadow-full h-full rounded-xl">
                 {/* image container */}
                 <div className="">
                   <div className="relative">
@@ -96,13 +97,14 @@ const NewsHero = () => {
               </div>
             </div>
             <div className="flex flex-col px-4 ">
-              <div className="bg-slate-500 shadow-full rounded-md">
+              <div className="bg-slate-500 shadow-full rounded-md h-full">
                 {/* image container */}
                 <div className="">
                   <div className="relative">
                     <Image
                       src={require("../../../assets/news/image2.png")}
                       layout="responsive"
+                      alt="alt"
                     ></Image>
                   </div>
                 </div>
