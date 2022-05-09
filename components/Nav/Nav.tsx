@@ -27,7 +27,7 @@ const Nav: React.FC = () => {
     ));
 
     return (
-        <div className="fixed font-jost top-0 w-full">
+        <div className="fixed font-jost top-0 w-full z-20 bg-white-100">
             <div className="flex flex-col items-end w-full z-10">
                 <div className="flex items-center justify-between lg:justify-between px-8 shadow-lg w-full">
                     <div className="flex lg:gap-5 xl:gap-16">
