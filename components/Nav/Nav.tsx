@@ -75,7 +75,7 @@ const Nav: React.FC = () => {
         <div className="w-3/4 h-[calc(100vh-70px)] py-6 flex flex-col shadow-[-8px_0px_10px_-5px_rgba(0,0,0,0.1)] justify-between lg:hidden bg-white-100 absolute right-0 z-20">
           <div>{items}</div>
           <div className="px-10 flex gap-4">
-            {/* <Link href="/" passHref>
+            <Link href="/" passHref>
               <Image
                 src={require("../../assets/socials/telegram.svg")}
                 height={30}
@@ -106,7 +106,7 @@ const Nav: React.FC = () => {
                 alt=""
                 className="cursor-pointer"
               />
-            </Link> */}
+            </Link>
           </div>
         </div>
       )}

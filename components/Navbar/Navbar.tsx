@@ -22,6 +22,14 @@ const navigation = [
   { name: "REGISTER", href: "register", current: false, mobile: true },
 ];
 
+const items = navigation.map((tab, index) => (
+  <Link href={"/"} key={index} passHref>
+    <div className="font-jost text-xl text-[#888888] py-6 px-10 hover:bg-[#F9F9F9] hover:border-[#55AEF0] border-l-4 border-transparent cursor-pointer">
+      {tab.name}
+    </div>
+  </Link>
+));
+
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
@@ -54,50 +62,18 @@ const Navbar = () => {
                       <div className="flex flex-1 justify-start space-x-4 items-center">
                         {navigation.map((item) =>
                           item.mobile == false ? (
-                            item.name == "GIVEAWAYS" ? (
-                              <Link href={`/${item.href}`}>
-                                <a
-                                  key={item.name}
-                                  href={item.href}
-                                  className={classNames(
-                                    "pl-10 py-2 font-jost text-grey-400 text-base rounded-md font-medium inline-flex items-center uppercase"
-                                  )}
-                                  aria-current={
-                                    item.current ? "page" : undefined
-                                  }
-                                >
-                                  <img
-                                    src="./assets/logos/giveaways.png"
-                                    alt=""
-                                    className="inline h-full"
-                                  />
-                                  {/* <div className='sehp:inline sehp:w-4 sehp:h-full'>
-                                                                        <Image
-                                                                            src={giveaway}
-                                                                            alt='giveaway image here'
-                                                                            // width={20}
-                                                                            // height={30}
-                                                                        />
-                                                                    </div> */}
-                                  <span className="ml-2"> {item.name} </span>
-                                </a>
-                              </Link>
-                            ) : (
-                              <Link href={`/${item.href}`}>
-                                <a
-                                  key={item.name}
-                                  href={item.href}
-                                  className={classNames(
-                                    "pl-10 py-2 rounded-md font-jost text-grey-400 text-base font-medium uppercase"
-                                  )}
-                                  aria-current={
-                                    item.current ? "page" : undefined
-                                  }
-                                >
-                                  {item.name}
-                                </a>
-                              </Link>
-                            )
+                            <Link href={`/${item.href}`}>
+                              <a
+                                key={item.name}
+                                href={item.href}
+                                className={classNames(
+                                  "pl-8 py-2 rounded-md font-jost text-grey-400 text-base font-medium uppercase"
+                                )}
+                                aria-current={item.current ? "page" : undefined}
+                              >
+                                {item.name}
+                              </a>
+                            </Link>
                           ) : (
                             false
                           )
@@ -147,22 +123,44 @@ const Navbar = () => {
 
               <Disclosure.Panel className="lg:hidden">
                 <div className="px-2 pt-2 pb-3 space-y-1">
-                  {navigation.map((item) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as="a"
-                      href={item.href}
-                      className={classNames(
-                        item.current
-                          ? "bg-gray-900 text-white"
-                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                        "block px-3 py-2 rounded-md text-base font-medium"
-                      )}
-                      aria-current={item.current ? "page" : undefined}
-                    >
-                      {item.name}
-                    </Disclosure.Button>
-                  ))}
+                  <div className="w-3/4 h-[calc(100vh-70px)] py-6 flex flex-col shadow-[-8px_0px_10px_-5px_rgba(0,0,0,0.1)] justify-between lg:hidden bg-white-100 absolute right-0 z-20">
+                    <div>{items}</div>
+                    <div className="px-10 flex gap-4">
+                      <Link href="/" passHref>
+                        <Image
+                          src={require("../../assets/logos/telegram.svg")}
+                          height={30}
+                          alt=""
+                          className="cursor-pointer"
+                        />
+                      </Link>
+                      <Link href="/" passHref>
+                        <Image
+                          src={require("../../assets/logos/discord.svg")}
+                          height={30}
+                          alt=""
+                          className="cursor-pointer"
+                        />
+                      </Link>
+                      <Link href="/" passHref>
+                        <Image
+                          src={require("../../assets/trackerpage/email.svg")}
+                          height={30}
+                          alt=""
+                          className="cursor-pointer"
+                        />
+                      </Link>
+                      {/* pages svg */}
+                      <Link href="/" passHref>
+                        <Image
+                          src={require("../../assets/logos/discord.svg")}
+                          height={30}
+                          alt=""
+                          className="cursor-pointer"
+                        />
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </Disclosure.Panel>
             </>
