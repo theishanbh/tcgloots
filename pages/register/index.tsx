@@ -14,7 +14,7 @@ const Register = () => {
               {/* items container */}
               <div className=" flex bg-grey-600 bg-opacity-80 rounded-r-xl shadow-full">
                 {/* left block */}
-                <div className="relative flex items-center justify-center flex-4 shadow-full bg-blue-primary rounded-l-md">
+                <div className="relative hidden md:flex items-center justify-center flex-4 shadow-full bg-blue-primary rounded-l-md">
                   <div className="absolute h-full w-full">
                     <Image
                       src={require("../../assets/register/background.png")}
@@ -31,9 +31,9 @@ const Register = () => {
                   </div>
                 </div>
                 {/* right block */}
-                <div className=" flex-5 pl-20 pr-6 py-6 rounded-r-md bg-white-100 shadow-full">
-                  <div className="flex flex-col">
-                    <div className="w-3/4">
+                <div className=" flex-5 md:pl-20 p-6 rounded-r-md bg-white-100 shadow-full">
+                  <div className="flex flex-col items-center md:justify-start md:items-start">
+                    <div className=" w-full md:w-3/4">
                       {/* your email */}
                       <div className="flex flex-col">
                         <span className=" text-lg font-medium">EMAIL</span>
@@ -85,6 +85,11 @@ const Register = () => {
                           </span>
                         </div>
                       </div>
+                      <div className="text-center pt-4 block md:hidden">
+                        <button className="border font-jost text-white-100 bg-yellow-200 text-base font-medium rounded-md px-12 py-2">
+                          REGISTER
+                        </button>
+                      </div>
                       {/* or */}
                       <div className="flex justify-center items-center">
                         <div className="flex-1 h-px bg-grey-600"></div>
@@ -107,7 +112,7 @@ const Register = () => {
                       </div>
                     </div>
                     {/* button */}
-                    <div className="text-right pt-4">
+                    <div className="text-right pt-4 hidden md:block">
                       <button className="border font-jost text-white-100 bg-yellow-200 text-base font-medium rounded-md px-12 py-2">
                         REGISTER
                       </button>
