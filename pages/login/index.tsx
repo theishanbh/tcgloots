@@ -44,7 +44,7 @@ const Login = () => {
                                                 <div className="w-[5%] -ml-8  flex items-center">
                                                     {!showPassword && (
                                                         <EyeIcon
-                                                            className="cursor-pointer text-[#888888]"
+                                                            className="cursor-pointer text-grey-400"
                                                             onClick={() =>
                                                                 setShowPassword(
                                                                     !showPassword
@@ -54,7 +54,7 @@ const Login = () => {
                                                     )}
                                                     {showPassword && (
                                                         <EyeOffIcon
-                                                            className="cursor-pointer text-[#888888]"
+                                                            className="cursor-pointer text-grey-400"
                                                             onClick={() =>
                                                                 setShowPassword(
                                                                     !showPassword
