@@ -9,18 +9,19 @@ const NewsHero = () => {
           <h1 className="font-jost text-8xl text-black-200 pt-8 font-semibold text-center">
             News
           </h1>
-          <div className="flex flex-grow py-8 bg-[url('/assets/news/news/background.png')] bg-center pt-28 pb-28">
-            <div className="flex flex-col px-4 w-full h-full 2md:w-fit">
-              <div className="bg-slate-500 shadow-full h-full rounded-md">
+          <div className="flex py-8 bg-[url('/assets/news/news/background.png')] bg-top 2md:bg-center bg-contain bg-no-repeat 2md:bg-cover 2md:py-28 overflow-x-scroll 2md:overflow-visible">
+            <div className="flex flex-col flex-shrink-0 px-2 2md:px-4 w-4/5 2md:w-1/4">
+              <div className="bg-slate-500 shadow-full h-full rounded-md flex flex-col">
                 {/* image container */}
                 <div className="relative">
                   <Image
                     src={require("../../../assets/news/image1.png")}
                     alt="alt"
+                    layout="responsive"
                   />
                 </div>
                 {/* text container */}
-                <div className="flex flex-col py-1 md:py-2 px-4">
+                <div className="flex flex-col flex-grow py-1 md:py-2 px-4 justify-between h-max">
                   <p className=" font-medium text-xl 2md:text-2xl text-black-100">
                     Lorem ipsum dolor sit amet
                   </p>
@@ -37,7 +38,7 @@ const NewsHero = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col px-4">
+            <div className="flex flex-col flex-shrink-0 px-2 2md:px-4 w-4/5 2md:w-1/4">
               <div className="bg-slate-500 shadow-full rounded-xl h-full">
                 {/* image container */}
                 <div className="">
@@ -67,7 +68,7 @@ const NewsHero = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col px-4 ">
+            <div className="flex flex-col flex-shrink-0 px-2 2md:px-4 w-4/5 2md:w-1/4">
               <div className="bg-slate-500 shadow-full h-full rounded-xl">
                 {/* image container */}
                 <div className="">
@@ -96,7 +97,7 @@ const NewsHero = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col px-4 ">
+            <div className="flex flex-col flex-shrink-0 px-2 2md:px-4 w-4/5 2md:w-1/4">
               <div className="bg-slate-500 shadow-full rounded-md h-full">
                 {/* image container */}
                 <div className="">
