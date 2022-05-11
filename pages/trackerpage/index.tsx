@@ -391,6 +391,7 @@ const TrackerPage = () => {
                         width={16}
                         height={16}
                         className="animate-spin"
+                        alt=""
                       />
                     </div>
                   </div>

@@ -20,11 +20,13 @@ const Settings = () => {
         <div className="mx-auto max-w-7xl font-jost bg-slate-600 ">
           {/* heading */}
           <div className="">
-            <h1 className="text-8xl font-medium py-8 pl-8">Settings</h1>
+            <h1 className="text-8xl font-medium py-8 pl-12 lg:pl-8">
+              Settings
+            </h1>
           </div>
           {/* settings */}
-          <div className="p-1 pl-20">
-            <div className="flex">
+          <div className="p-2 lg:pl-20 lg:p-1">
+            <div className="flex flex-col lg:flex-row">
               {/* left */}
               <div className="flex flex-col flex-4">
                 {/* first box */}
@@ -35,12 +37,14 @@ const Settings = () => {
                       {/* username */}
                       <div className="flex justify-between items-center">
                         <div className="flex flex-col">
-                          <h2 className=" text-xl text-grey-400">Username</h2>
-                          <span className=" text-lg font-medium">
+                          <h2 className=" text-sm lg:text-xl text-grey-400">
+                            Username
+                          </h2>
+                          <span className=" text-base lg:text-lg font-medium">
                             Username1234
                           </span>
                         </div>
-                        <div className="flex relative pr-4 pt-3">
+                        <div className="flex relative pr-0 lg:pr-4 pt-3">
                           <Image
                             src={require("../../assets/settings/gift.png")}
                             alt="alt"
@@ -50,13 +54,15 @@ const Settings = () => {
                       {/* email */}
                       <div className="flex flex-col py-12">
                         <div className="flex text-xl">
-                          <span className="text-xl text-grey-400">Email</span>
-                          <span className=" pl-12 text-red-100">
+                          <span className="text-sm lg:text-xl text-grey-400">
+                            Email
+                          </span>
+                          <span className="text-sm lg:text-xl pl-12 text-red-100">
                             Verify your Email
                           </span>
                         </div>
                         <div>
-                          <span className="text-lg font-medium">
+                          <span className="text-base lg:text-lg font-medium">
                             loremipsum@gmail.com
                           </span>
                         </div>
@@ -68,7 +74,7 @@ const Settings = () => {
                       </div>
                       {/* password reset button */}
                       <div className="pt-8">
-                        <button className="border font-jost text-blue-300 border-blue-300 text-base font-medium rounded-md px-6 py-2">
+                        <button className="border font-jost text-blue-300 border-blue-300 text-sm lg:text-base font-medium rounded-md px-6 py-2">
                           Send Reset Password Email
                         </button>
                       </div>
@@ -77,23 +83,23 @@ const Settings = () => {
                 </div>
 
                 {/* second box */}
-                <div className="flex-grow">
+                <div className="flex-grow py-2">
                   <div className="p-1 flex-grow h-full">
                     <div className="flex flex-col bg-white-100 h-full p-8 rounded-lg shadow-half">
-                      <div className="flex items-center">
+                      <div className="flex items-center lg:flex-row flex-row-reverse justify-between lg:justify-start">
                         {/* image question mark */}
-                        <div className="relative flex items-center justify-center">
+                        <div className="relative items-center justify-center flex">
                           <Image
                             src={require("../../assets/settings/questionmark.png")}
                             alt="alt"
                           />
                         </div>
-                        <span className="text-black-100 font-medium text-xl ml-4">
+                        <span className="text-black-100 font-medium text-lg lg:text-xl lg:ml-4 ml-0">
                           Other Preferences
                         </span>
                       </div>
-                      <div className="flex flex-col px-6 text-grey-300 text-lg">
-                        <div className="flex pl-8 py-3 mt-3 items-center">
+                      <div className="flex flex-col lg:px-6 px-0 text-grey-300 text-lg">
+                        <div className="flex lg:pl-8 pl-4 py-3 mt-3 items-center">
                           <div
                             className="h-6 w-6 relative flex-shrink-0"
                             onClick={() =>
@@ -117,7 +123,7 @@ const Settings = () => {
                             tcgloots news.
                           </p>
                         </div>
-                        <div className="flex pl-8 py-3 mt-3">
+                        <div className="flex lg:pl-8 pl-4 py-3 mt-3">
                           <div
                             className="h-6 w-6 relative flex-shrink-0"
                             onClick={() => setTrackedCheckbox(!trackedCheckbox)}
@@ -146,11 +152,11 @@ const Settings = () => {
               </div>
               {/* right */}
               <div className="flex flex-col flex-7">
-                <div className="flex">
+                <div className="flex lg:flex-row flex-col">
                   {/* left section */}
                   <div className="flex-1 p-1">
                     <div className="flex flex-col bg-white-100 p-4 rounded-xl shadow-half">
-                      <div className="flex">
+                      <div className="flex flex-row-reverse lg:flex-row lg:justify-start justify-between">
                         <div>
                           <Image
                             src={require("../../assets/settings/notification.png")}
